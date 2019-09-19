@@ -10,5 +10,7 @@ Individual Members will be able to view all the applications the team would own 
 ## Project Technologies
 
 
-## Application Flow
-![Process Flow](DesignDocument.png)
+## Design
+* Process Flow  
+![Process Flow](DesignDocument/DesignDocument.png)
+* [User Stories](DesignDocument/UserStories.md)
