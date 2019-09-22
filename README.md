@@ -14,3 +14,4 @@ Individual Members will be able to view all the applications the team would own 
 * Process Flow  
 ![Process Flow](DesignDocument/DesignDocument.png)
 * [User Stories](DesignDocument/UserStories.md)
+* [Screen Design](DesignDocument/ScreenDesign.md)
