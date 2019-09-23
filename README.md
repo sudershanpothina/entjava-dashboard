@@ -13,6 +13,7 @@ Individual Members will be able to view all the applications the team would own 
 ## Design
 * Process Flow  
 ![Process Flow](DesignDocument/DesignDocument.png)
+* Data Flow
 ![Data Flow](DataDesign/dashboard.png)
 * [User Stories](DesignDocument/UserStories.md)
 * [Screen Design](DesignDocument/ScreenDesign.md)
