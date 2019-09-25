@@ -17,3 +17,4 @@ Individual Members will be able to view all the applications the team would own 
 ![Data Flow](DataDesign/dashboard.png)
 * [User Stories](DesignDocument/UserStories.md)
 * [Screen Design](DesignDocument/ScreenDesign.md)
+* [Project Plan](ProjectPlan.md)
