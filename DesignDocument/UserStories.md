@@ -1,16 +1,16 @@
 # User Stories
 
-### Create Login Page
+### Create Login Page (MVP)
 create a default page that the application will serve. For MVP this will just use default credentials.
-### Create stub user repository and service
+### Create stub user repository and service (MVP)
 create a dummy repo with hardcoded users. This story will entail creating a new table. populating it with dummy data and accessing that stored information
-### Create Team Page
+### Create Team Page (MVP)
 Page to show information about the respective team. Use bootstrap css to build this page and pull information from the user DAO and display it on the jsp
-### Display user name and team information  
+### Display user name and team information (MVP)
 Upon login for a particular user figure out the right team and route to the appropriate team page and display information about the team and also the user in this page
-### Create stub Application repository and service
+### Create stub Application repository and service (MVP)
 create dummy application repo with application information and have options to perform CRUD operations
-### Create Application Page
+### Create Application Page (MVP)
 Display the list of applications for the team. This will be a simple table showing the name and the description of the application along with options to add and delete new or existing applications. 
 Each application will have a link to the its own error page.   
 ### Create stub Error Repository and service
