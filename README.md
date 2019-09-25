@@ -18,3 +18,5 @@ Individual Members will be able to view all the applications the team would own 
 * [User Stories](DesignDocument/UserStories.md)
 * [Screen Design](DesignDocument/ScreenDesign.md)
 * [Project Plan](ProjectPlan.md)
+* [Technologies](Technologies.md)
+* [Journal](Journal.md)
