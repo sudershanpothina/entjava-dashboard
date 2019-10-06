@@ -49,3 +49,21 @@ create table Error
     constraint Error_Applications_id_fk
         foreign key (application_id) references Applications (id)
 );
+
+create table ERROR_DATA
+(
+    ID             int auto_increment
+        primary key,
+    MESSAGE        varchar(20) null,
+    DESCRIPTION    varchar(45) null,
+    APPLICATION_ID int         null,
+    constraint Error_Applications_id_fk
+        foreign key (APPLICATION_ID) references APPLICATIONS (ID)
+);
+create table APPLICATIONS
+(
+    ID          int auto_increment
+        primary key,
+    NAME        varchar(20) null,
+    DESCRIPTION varchar(40) null
+);
