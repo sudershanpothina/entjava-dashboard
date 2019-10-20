@@ -46,4 +46,13 @@ public class ApplicationDao {
         transaction.commit();
         session.close();
     }
+    public int insert(Application application) {
+        int id = 0;
+        Session session = sessionFactory.openSession();
+        Transaction transaction = session.beginTransaction();
+        id = (int) session.save(application);
+        transaction.commit();
+        session.close();
+        return id;
+    }
 }

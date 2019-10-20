@@ -1,6 +1,7 @@
 package com.enterprise.dashboard.dao;
 
 import com.enterprise.dashboard.model.Application;
+import com.enterprise.dashboard.model.ErrorData;
 import com.enterprise.dashboard.utils.Database;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -39,5 +40,18 @@ public class TestApplicationDao {
         application.setDescription("This is Application 1 for test");
         applicationDao.updateOrSave(application);
         assertEquals(applicationDao.getById(1), application);
+    }
+    @Test
+    public void insertSuccess() {
+        Application application = new Application("Application Test", "This is a test Application");
+        int id = applicationDao.insert(application);
+        assertEquals(applicationDao.getAll().size(), 3);
+    }
+    @Test
+    public void insertWithErrorRecordSuccess() {
+        Application application = new Application("Application Test", "This is a test Application");
+        ErrorData errorData = new ErrorData("ERR-111", "this is a test error ", application);
+        application.addErrorData(errorData);
+        applicationDao.insert(application);
     }
 }

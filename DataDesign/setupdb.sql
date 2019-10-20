@@ -1,69 +1,63 @@
 create database dashboard;
 use dashboard;
-create table Users
+create table USER_ROLES
 (
-    id         int auto_increment
-        primary key,
-    user_name  varchar(15) null,
-    first_name varchar(30) null,
-    last_name  varchar(30) null,
-    user_role  int         null,
-    team_id    int         null,
-    constraint Users_Users__fk
-        foreign key (team_id) references Users (id)
+	ID int auto_increment,
+	NAME VARCHAR(15) null,
+	DESCRIPTION VARCHAR(30) null,
+	constraint USER_ROLES_pk
+		primary key (ID)
 );
-create table User_Roles
+create table TEAMS
 (
-    id          int auto_increment
-        primary key,
-    name        varchar(15) null,
-    description varchar(15) null
-);
-create table Teams
-(
-    id     int auto_increment
-        primary key,
-    name   varchar(20) null,
-    domain varchar(10) null
-);
-create table Applications
-(
-    id          int auto_increment
-        primary key,
-    name        varchar(20) null,
-    description varchar(40) null,
-    user_id     int         null,
-    team_id     int         null,
-    constraint Applications_Teams_id_fk
-        foreign key (team_id) references Teams (id),
-    constraint Applications_Users_id_fk
-        foreign key (user_id) references Users (id)
-);
-create table Error
-(
-    id             int auto_increment
-        primary key,
-    message        varchar(20) null,
-    description    varchar(45) null,
-    application_id int         null,
-    constraint Error_Applications_id_fk
-        foreign key (application_id) references Applications (id)
+	ID int auto_increment,
+	NAME VARCHAR(15) null,
+	DOMAIN VARCHAR(15) null,
+	constraint TEAMS_pk
+		primary key (ID)
 );
 
-create table ERROR_DATA
+create table USERS
 (
-    ID             int auto_increment
-        primary key,
-    MESSAGE        varchar(20) null,
-    DESCRIPTION    varchar(45) null,
-    APPLICATION_ID int         null,
-    constraint Error_Applications_id_fk
-        foreign key (APPLICATION_ID) references APPLICATIONS (ID)
+	ID int auto_increment,
+	USER_NAME VARCHAR(15) not null,
+	FIRST_NAME VARCHAR(30) not null,
+	LAST_NAME VARCHAR(30) not null,
+	USER_ROLE_ID int null,
+	TEAM_ID int null,
+	constraint USERS_pk
+		primary key (ID),
+	constraint USERS_TEAMS_ID_fk
+		foreign key (TEAM_ID) references TEAMS (ID),
+	constraint USERS_USER_ROLES_ID_fk
+		foreign key (USER_ROLE_ID) references USER_ROLES (ID)
 );
+
 create table APPLICATIONS
 (
-    ID          int auto_increment
-        primary key,
-    NAME        varchar(20) null,
-    DESCRIPTION varchar(40) null
+	ID int auto_increment,
+	NAME VARCHAR(30) not null,
+	DESCRIPTION VARCHAR(30) null,
+	TEAM_ID int null,
+	constraint APPLICATIONS_pk
+		primary key (ID),
+	constraint APPLICATIONS_TEAMS_ID_fk
+		foreign key (TEAM_ID) references TEAMS (ID)
 );
+
+create table ERRORS
+(
+	ID int null,
+	MESSAGE VARCHAR(30) not null,
+	DESCRIPTION VARCHAR(45) null,
+	APPLICATION_ID int null,
+	constraint ERRORS_APPLICATIONS_ID_fk
+		foreign key (APPLICATION_ID) references APPLICATIONS (ID)
+);
+
+
+
+
+
+
+
