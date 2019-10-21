@@ -77,12 +77,12 @@ public class ErrorDataDao {
         CriteriaBuilder builder = session.getCriteriaBuilder();
         CriteriaQuery<ErrorData> query = builder.createQuery( ErrorData.class );
         Root<ErrorData> root = query.from( ErrorData.class );
-        List<ErrorData> Books = session.createQuery( query ).getResultList();
+        List<ErrorData> errors = session.createQuery( query ).getResultList();
 
-        logger.debug("The list of ErrorData " + Books);
+        logger.debug("The list of ErrorData " + errors);
         session.close();
 
-        return Books;
+        return errors;
     }
 
 }
