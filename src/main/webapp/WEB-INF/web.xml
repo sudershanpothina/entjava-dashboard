@@ -6,5 +6,53 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
          version="3.1">
-  <display-name>Archetype Created Web Application</display-name>
+  <display-name>Enterprise Dashboard</display-name>
+  <login-config>
+    <auth-method>FORM</auth-method>
+    <form-login-config>
+      <form-login-page>/login.jsp</form-login-page>
+      <form-error-page>/failedLogin.jsp</form-error-page>
+    </form-login-config>
+  </login-config>
+
+  <security-constraint>
+    <web-resource-collection>
+      <web-resource-name>any</web-resource-name>
+      <url-pattern>/team1page</url-pattern>
+    </web-resource-collection>
+<!--    constraints the page to load only if the role matches the following-->
+    <auth-constraint>
+      <role-name>admin</role-name>
+    </auth-constraint>
+  </security-constraint>
+
+  <security-constraint>
+    <web-resource-collection>
+      <web-resource-name>any</web-resource-name>
+      <url-pattern>/team2page</url-pattern>
+    </web-resource-collection>
+    <!--    constraints the page to load only if the role matches the following-->
+    <auth-constraint>
+      <role-name>admin</role-name>
+    </auth-constraint>
+  </security-constraint>
+
+  <security-constraint>
+    <web-resource-collection>
+      <web-resource-name>any</web-resource-name>
+      <url-pattern>/team2page</url-pattern>
+    </web-resource-collection>
+    <!--    constraints the page to load only if the role matches the following-->
+    <auth-constraint>
+      <role-name>admin</role-name>
+    </auth-constraint>
+  </security-constraint>
+
+<!--  define all the possible roles-->
+  <security-role>
+    <role-name>admin</role-name>
+  </security-role>
+  <security-role>
+    <role-name>team1</role-name>
+  </security-role>
 </web-app>

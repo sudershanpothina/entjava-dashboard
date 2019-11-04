@@ -18,6 +18,7 @@
 
         <mapping class="com.enterprise.dashboard.model.Application" />
         <mapping class="com.enterprise.dashboard.model.ErrorData" />
+        <mapping class="com.enterprise.dashboard.model.User" />
     </session-factory>
 
 </hibernate-configuration>

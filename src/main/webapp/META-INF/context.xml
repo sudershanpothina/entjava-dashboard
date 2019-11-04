@@ -1,0 +1,8 @@
+<Context docBase="formbasedauth" path="/formbasedauth_war" reloadable="true">
+    <Realm className="org.apache.catalina.realm.JDBCRealm"
+           driverName="com.mysql.cj.jdbc.Driver"
+           connectionURL="jdbc:mysql://localhost:3307/sample1?user=root&amp;password=student"
+           userTable="user" userNameCol="user_name" userCredCol="pass"
+           userRoleTable="role" roleNameCol="role_name" >
+    </Realm>
+</Context>
