@@ -1,7 +1,10 @@
 package com.enterprise.dashboard.controllers;
 
 import com.enterprise.dashboard.dao.GenericDao;
+import com.enterprise.dashboard.model.Application;
 import com.enterprise.dashboard.model.User;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -15,11 +18,17 @@ import java.io.IOException;
         urlPatterns = {"/team1page"}
 )
 public class Team1Members extends HttpServlet {
+    private final Logger logger = LogManager.getLogger(this.getClass());
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        logger.info("------" + req.getUserPrincipal().getName());
+        logger.info("------" + req.getUserPrincipal());
+        logger.info("------" + req.getUserPrincipal().toString());
         GenericDao userDAO = new GenericDao(User.class);
+        GenericDao applicationDAO = new GenericDao(Application.class);
         req.setAttribute("users", userDAO.getAll());
+        req.setAttribute("applications", applicationDAO.getAll());
         RequestDispatcher dispatcher = req.getRequestDispatcher("/userlist.jsp");
         dispatcher.forward(req, resp);
     }

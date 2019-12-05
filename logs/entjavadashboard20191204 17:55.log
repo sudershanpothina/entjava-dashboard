@@ -1,0 +1,1006 @@
+[DEBUG] 2019-12-04 17:55:41.105 [main] IntegratorServiceImpl - Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+[DEBUG] 2019-12-04 17:55:41.115 [main] IntegratorServiceImpl - Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+[DEBUG] 2019-12-04 17:55:41.121 [main] IntegratorServiceImpl - Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+[INFO ] 2019-12-04 17:55:41.226 [main] Version - HHH000412: Hibernate Core {5.4.4.Final}
+[DEBUG] 2019-12-04 17:55:41.229 [main] Environment - HHH000206: hibernate.properties not found
+[DEBUG] 2019-12-04 17:55:41.516 [main] LocalXmlResourceResolver - Interpreting public/system identifier : [-//Hibernate/Hibernate Configuration DTD//EN] - [http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd]
+[DEBUG] 2019-12-04 17:55:41.519 [main] LocalXmlResourceResolver - Recognized hibernate-configuration identifier; attempting to resolve on classpath under org/hibernate/
+[DEBUG] 2019-12-04 17:55:41.525 [main] JaxbCfgProcessor - cfg.xml document did not define namespaces; wrapping in custom event reader to introduce namespace information
+[DEBUG] 2019-12-04 17:55:41.963 [main] ServiceBinding - Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+[DEBUG] 2019-12-04 17:55:41.993 [main] RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+[DEBUG] 2019-12-04 17:55:41.998 [main] RegionFactoryInitiator - Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+[INFO ] 2019-12-04 17:55:42.025 [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+[DEBUG] 2019-12-04 17:55:42.078 [main] BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@4760f169
+[DEBUG] 2019-12-04 17:55:42.079 [main] BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@4760f169
+[DEBUG] 2019-12-04 17:55:42.079 [main] BasicTypeRegistry - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@4760f169
+[DEBUG] 2019-12-04 17:55:42.080 [main] BasicTypeRegistry - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@25290bca
+[DEBUG] 2019-12-04 17:55:42.081 [main] BasicTypeRegistry - Adding type registration true_false -> org.hibernate.type.TrueFalseType@508a65bf
+[DEBUG] 2019-12-04 17:55:42.082 [main] BasicTypeRegistry - Adding type registration yes_no -> org.hibernate.type.YesNoType@22a736d7
+[DEBUG] 2019-12-04 17:55:42.084 [main] BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@2127e66e
+[DEBUG] 2019-12-04 17:55:42.084 [main] BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@2127e66e
+[DEBUG] 2019-12-04 17:55:42.084 [main] BasicTypeRegistry - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@2127e66e
+[DEBUG] 2019-12-04 17:55:42.086 [main] BasicTypeRegistry - Adding type registration character -> org.hibernate.type.CharacterType@60f70249
+[DEBUG] 2019-12-04 17:55:42.086 [main] BasicTypeRegistry - Adding type registration char -> org.hibernate.type.CharacterType@60f70249
+[DEBUG] 2019-12-04 17:55:42.087 [main] BasicTypeRegistry - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@60f70249
+[DEBUG] 2019-12-04 17:55:42.088 [main] BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@5fa23c
+[DEBUG] 2019-12-04 17:55:42.088 [main] BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@5fa23c
+[DEBUG] 2019-12-04 17:55:42.089 [main] BasicTypeRegistry - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@5fa23c
+[DEBUG] 2019-12-04 17:55:42.090 [main] BasicTypeRegistry - Adding type registration integer -> org.hibernate.type.IntegerType@252dc8c4
+[DEBUG] 2019-12-04 17:55:42.090 [main] BasicTypeRegistry - Adding type registration int -> org.hibernate.type.IntegerType@252dc8c4
+[DEBUG] 2019-12-04 17:55:42.090 [main] BasicTypeRegistry - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@252dc8c4
+[DEBUG] 2019-12-04 17:55:42.092 [main] BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@d109c4f
+[DEBUG] 2019-12-04 17:55:42.092 [main] BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@d109c4f
+[DEBUG] 2019-12-04 17:55:42.094 [main] BasicTypeRegistry - Adding type registration java.lang.Long -> org.hibernate.type.LongType@d109c4f
+[DEBUG] 2019-12-04 17:55:42.100 [main] BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@63c12e52
+[DEBUG] 2019-12-04 17:55:42.100 [main] BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@63c12e52
+[DEBUG] 2019-12-04 17:55:42.101 [main] BasicTypeRegistry - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@63c12e52
+[DEBUG] 2019-12-04 17:55:42.103 [main] BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@255eaa6b
+[DEBUG] 2019-12-04 17:55:42.103 [main] BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@255eaa6b
+[DEBUG] 2019-12-04 17:55:42.103 [main] BasicTypeRegistry - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@255eaa6b
+[DEBUG] 2019-12-04 17:55:42.104 [main] BasicTypeRegistry - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@7aac8884
+[DEBUG] 2019-12-04 17:55:42.105 [main] BasicTypeRegistry - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@7aac8884
+[DEBUG] 2019-12-04 17:55:42.106 [main] BasicTypeRegistry - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@895416d
+[DEBUG] 2019-12-04 17:55:42.106 [main] BasicTypeRegistry - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@895416d
+[DEBUG] 2019-12-04 17:55:42.108 [main] BasicTypeRegistry - Adding type registration string -> org.hibernate.type.StringType@623dcf2a
+[DEBUG] 2019-12-04 17:55:42.108 [main] BasicTypeRegistry - Adding type registration java.lang.String -> org.hibernate.type.StringType@623dcf2a
+[DEBUG] 2019-12-04 17:55:42.109 [main] BasicTypeRegistry - Adding type registration nstring -> org.hibernate.type.StringNVarcharType@646c0a67
+[DEBUG] 2019-12-04 17:55:42.110 [main] BasicTypeRegistry - Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@5bc28f40
+[DEBUG] 2019-12-04 17:55:42.113 [main] BasicTypeRegistry - Adding type registration url -> org.hibernate.type.UrlType@6dfa915a
+[DEBUG] 2019-12-04 17:55:42.114 [main] BasicTypeRegistry - Adding type registration java.net.URL -> org.hibernate.type.UrlType@6dfa915a
+[DEBUG] 2019-12-04 17:55:42.116 [main] BasicTypeRegistry - Adding type registration Duration -> org.hibernate.type.DurationType@26cb5207
+[DEBUG] 2019-12-04 17:55:42.116 [main] BasicTypeRegistry - Adding type registration java.time.Duration -> org.hibernate.type.DurationType@26cb5207
+[DEBUG] 2019-12-04 17:55:42.128 [main] BasicTypeRegistry - Adding type registration Instant -> org.hibernate.type.InstantType@6cff61fc
+[DEBUG] 2019-12-04 17:55:42.129 [main] BasicTypeRegistry - Adding type registration java.time.Instant -> org.hibernate.type.InstantType@6cff61fc
+[DEBUG] 2019-12-04 17:55:42.131 [main] BasicTypeRegistry - Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@7fe82967
+[DEBUG] 2019-12-04 17:55:42.132 [main] BasicTypeRegistry - Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@7fe82967
+[DEBUG] 2019-12-04 17:55:42.134 [main] BasicTypeRegistry - Adding type registration LocalDate -> org.hibernate.type.LocalDateType@1aad0b1
+[DEBUG] 2019-12-04 17:55:42.134 [main] BasicTypeRegistry - Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@1aad0b1
+[DEBUG] 2019-12-04 17:55:42.145 [main] BasicTypeRegistry - Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@44536de4
+[DEBUG] 2019-12-04 17:55:42.145 [main] BasicTypeRegistry - Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@44536de4
+[DEBUG] 2019-12-04 17:55:42.153 [main] BasicTypeRegistry - Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@4d21c56e
+[DEBUG] 2019-12-04 17:55:42.154 [main] BasicTypeRegistry - Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@4d21c56e
+[DEBUG] 2019-12-04 17:55:42.156 [main] BasicTypeRegistry - Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@4faa298
+[DEBUG] 2019-12-04 17:55:42.156 [main] BasicTypeRegistry - Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@4faa298
+[DEBUG] 2019-12-04 17:55:42.159 [main] BasicTypeRegistry - Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@4745e9c
+[DEBUG] 2019-12-04 17:55:42.159 [main] BasicTypeRegistry - Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@4745e9c
+[DEBUG] 2019-12-04 17:55:42.164 [main] BasicTypeRegistry - Adding type registration date -> org.hibernate.type.DateType@7ecec90d
+[DEBUG] 2019-12-04 17:55:42.165 [main] BasicTypeRegistry - Adding type registration java.sql.Date -> org.hibernate.type.DateType@7ecec90d
+[DEBUG] 2019-12-04 17:55:42.170 [main] BasicTypeRegistry - Adding type registration time -> org.hibernate.type.TimeType@dc4a691
+[DEBUG] 2019-12-04 17:55:42.170 [main] BasicTypeRegistry - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@dc4a691
+[DEBUG] 2019-12-04 17:55:42.179 [main] BasicTypeRegistry - Adding type registration timestamp -> org.hibernate.type.TimestampType@bc042d5
+[DEBUG] 2019-12-04 17:55:42.180 [main] BasicTypeRegistry - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@bc042d5
+[DEBUG] 2019-12-04 17:55:42.181 [main] BasicTypeRegistry - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@bc042d5
+[DEBUG] 2019-12-04 17:55:42.183 [main] BasicTypeRegistry - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@7724704f
+[DEBUG] 2019-12-04 17:55:42.185 [main] BasicTypeRegistry - Adding type registration calendar -> org.hibernate.type.CalendarType@517a2b0
+[DEBUG] 2019-12-04 17:55:42.185 [main] BasicTypeRegistry - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@517a2b0
+[DEBUG] 2019-12-04 17:55:42.185 [main] BasicTypeRegistry - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@517a2b0
+[DEBUG] 2019-12-04 17:55:42.186 [main] BasicTypeRegistry - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@41eb94bc
+[DEBUG] 2019-12-04 17:55:42.187 [main] BasicTypeRegistry - Adding type registration locale -> org.hibernate.type.LocaleType@4c1bdcc2
+[DEBUG] 2019-12-04 17:55:42.187 [main] BasicTypeRegistry - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@4c1bdcc2
+[DEBUG] 2019-12-04 17:55:42.189 [main] BasicTypeRegistry - Adding type registration currency -> org.hibernate.type.CurrencyType@252a8aae
+[DEBUG] 2019-12-04 17:55:42.190 [main] BasicTypeRegistry - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@252a8aae
+[DEBUG] 2019-12-04 17:55:42.190 [main] BasicTypeRegistry - Adding type registration timezone -> org.hibernate.type.TimeZoneType@20ab3e3a
+[DEBUG] 2019-12-04 17:55:42.191 [main] BasicTypeRegistry - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@20ab3e3a
+[DEBUG] 2019-12-04 17:55:42.192 [main] BasicTypeRegistry - Adding type registration class -> org.hibernate.type.ClassType@1716e8c5
+[DEBUG] 2019-12-04 17:55:42.192 [main] BasicTypeRegistry - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@1716e8c5
+[DEBUG] 2019-12-04 17:55:42.195 [main] BasicTypeRegistry - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@518bfd90
+[DEBUG] 2019-12-04 17:55:42.196 [main] BasicTypeRegistry - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@518bfd90
+[DEBUG] 2019-12-04 17:55:42.197 [main] BasicTypeRegistry - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@7fb29ca9
+[DEBUG] 2019-12-04 17:55:42.198 [main] BasicTypeRegistry - Adding type registration binary -> org.hibernate.type.BinaryType@176996c3
+[DEBUG] 2019-12-04 17:55:42.198 [main] BasicTypeRegistry - Adding type registration byte[] -> org.hibernate.type.BinaryType@176996c3
+[DEBUG] 2019-12-04 17:55:42.199 [main] BasicTypeRegistry - Adding type registration [B -> org.hibernate.type.BinaryType@176996c3
+[DEBUG] 2019-12-04 17:55:42.200 [main] BasicTypeRegistry - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@39a87e72
+[DEBUG] 2019-12-04 17:55:42.200 [main] BasicTypeRegistry - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@39a87e72
+[DEBUG] 2019-12-04 17:55:42.200 [main] BasicTypeRegistry - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@39a87e72
+[DEBUG] 2019-12-04 17:55:42.203 [main] BasicTypeRegistry - Adding type registration row_version -> org.hibernate.type.RowVersionType@7b948f3e
+[DEBUG] 2019-12-04 17:55:42.204 [main] BasicTypeRegistry - Adding type registration image -> org.hibernate.type.ImageType@6c0e13b7
+[DEBUG] 2019-12-04 17:55:42.209 [main] BasicTypeRegistry - Adding type registration characters -> org.hibernate.type.CharArrayType@50fb33a
+[DEBUG] 2019-12-04 17:55:42.209 [main] BasicTypeRegistry - Adding type registration char[] -> org.hibernate.type.CharArrayType@50fb33a
+[DEBUG] 2019-12-04 17:55:42.209 [main] BasicTypeRegistry - Adding type registration [C -> org.hibernate.type.CharArrayType@50fb33a
+[DEBUG] 2019-12-04 17:55:42.213 [main] BasicTypeRegistry - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@20b9d5d5
+[DEBUG] 2019-12-04 17:55:42.214 [main] BasicTypeRegistry - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@20b9d5d5
+[DEBUG] 2019-12-04 17:55:42.215 [main] BasicTypeRegistry - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@20b9d5d5
+[DEBUG] 2019-12-04 17:55:42.216 [main] BasicTypeRegistry - Adding type registration text -> org.hibernate.type.TextType@2a369e14
+[DEBUG] 2019-12-04 17:55:42.216 [main] BasicTypeRegistry - Adding type registration ntext -> org.hibernate.type.NTextType@250a500b
+[DEBUG] 2019-12-04 17:55:42.218 [main] BasicTypeRegistry - Adding type registration blob -> org.hibernate.type.BlobType@a5272be
+[DEBUG] 2019-12-04 17:55:42.219 [main] BasicTypeRegistry - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@a5272be
+[DEBUG] 2019-12-04 17:55:42.220 [main] BasicTypeRegistry - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@4c58255
+[DEBUG] 2019-12-04 17:55:42.221 [main] BasicTypeRegistry - Adding type registration clob -> org.hibernate.type.ClobType@76ad6715
+[DEBUG] 2019-12-04 17:55:42.221 [main] BasicTypeRegistry - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@76ad6715
+[DEBUG] 2019-12-04 17:55:42.223 [main] BasicTypeRegistry - Adding type registration nclob -> org.hibernate.type.NClobType@f1d0004
+[DEBUG] 2019-12-04 17:55:42.223 [main] BasicTypeRegistry - Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@f1d0004
+[DEBUG] 2019-12-04 17:55:42.224 [main] BasicTypeRegistry - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@4821aa9f
+[DEBUG] 2019-12-04 17:55:42.224 [main] BasicTypeRegistry - Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@4996c99
+[DEBUG] 2019-12-04 17:55:42.225 [main] BasicTypeRegistry - Adding type registration serializable -> org.hibernate.type.SerializableType@534180a2
+[DEBUG] 2019-12-04 17:55:42.230 [main] BasicTypeRegistry - Adding type registration object -> org.hibernate.type.ObjectType@26586b74
+[DEBUG] 2019-12-04 17:55:42.230 [main] BasicTypeRegistry - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@26586b74
+[DEBUG] 2019-12-04 17:55:42.231 [main] BasicTypeRegistry - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@439b15f2
+[DEBUG] 2019-12-04 17:55:42.231 [main] BasicTypeRegistry - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@3aa41da1
+[DEBUG] 2019-12-04 17:55:42.231 [main] BasicTypeRegistry - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@74fab04a
+[DEBUG] 2019-12-04 17:55:42.231 [main] BasicTypeRegistry - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@3c83468e
+[DEBUG] 2019-12-04 17:55:42.232 [main] BasicTypeRegistry - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@272ce069
+[DEBUG] 2019-12-04 17:55:42.232 [main] BasicTypeRegistry - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@3d7fb838
+[DEBUG] 2019-12-04 17:55:42.232 [main] BasicTypeRegistry - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@1c26273d
+[DEBUG] 2019-12-04 17:55:42.232 [main] BasicTypeRegistry - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@3a37a501
+[DEBUG] 2019-12-04 17:55:42.277 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+[DEBUG] 2019-12-04 17:55:42.278 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+[DEBUG] 2019-12-04 17:55:42.279 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+[DEBUG] 2019-12-04 17:55:42.279 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+[DEBUG] 2019-12-04 17:55:42.280 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+[DEBUG] 2019-12-04 17:55:42.281 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+[DEBUG] 2019-12-04 17:55:42.281 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+[DEBUG] 2019-12-04 17:55:42.283 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+[DEBUG] 2019-12-04 17:55:42.284 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+[DEBUG] 2019-12-04 17:55:42.284 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+[DEBUG] 2019-12-04 17:55:42.285 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+[DEBUG] 2019-12-04 17:55:42.285 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+[DEBUG] 2019-12-04 17:55:42.286 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+[DEBUG] 2019-12-04 17:55:42.287 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+[INFO ] 2019-12-04 17:55:42.302 [main] C3P0ConnectionProvider - HHH010002: C3P0 using driver: com.mysql.cj.jdbc.Driver at URL: jdbc:mysql://localhost:3307/dashboard
+[INFO ] 2019-12-04 17:55:42.303 [main] C3P0ConnectionProvider - HHH10001001: Connection properties: {password=****, user=root}
+[INFO ] 2019-12-04 17:55:42.303 [main] C3P0ConnectionProvider - HHH10001003: Autocommit mode: false
+[INFO ] 2019-12-04 17:55:42.540 [main] C3P0ConnectionProvider - HHH10001007: JDBC isolation level: <unknown>
+[DEBUG] 2019-12-04 17:55:42.763 [main] JdbcEnvironmentInitiator - Database ->
+       name : MySQL
+    version : 8.0.17
+      major : 8
+      minor : 0
+[DEBUG] 2019-12-04 17:55:42.764 [main] JdbcEnvironmentInitiator - Driver ->
+       name : MySQL Connector/J
+    version : mysql-connector-java-8.0.16 (Revision: 34cbc6bc61f72836e26327537a432d6db7c77de6)
+      major : 8
+      minor : 0
+[DEBUG] 2019-12-04 17:55:42.764 [main] JdbcEnvironmentInitiator - JDBC version : 4.2
+[INFO ] 2019-12-04 17:55:42.819 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[DEBUG] 2019-12-04 17:55:42.870 [main] IdentifierHelperBuilder - JDBC driver metadata reported database stores quoted identifiers in more than one case
+[DEBUG] 2019-12-04 17:55:42.911 [main] IdentifierHelperBuilder - IdentifierCaseStrategy for both quoted and unquoted identifiers was set to the same strategy [MIXED]; that will likely lead to problems in schema update and validation if using quoted identifiers
+[DEBUG] 2019-12-04 17:55:43.018 [main] Namespace - Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
+[DEBUG] 2019-12-04 17:55:43.023 [main] TypeConfiguration$Scope - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@7ddd84b5] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@73aeef7d]
+[DEBUG] 2019-12-04 17:55:43.136 [main] AnnotationBinder - Binding entity from annotated class: com.enterprise.dashboard.model.Application
+[DEBUG] 2019-12-04 17:55:43.185 [main] Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+[DEBUG] 2019-12-04 17:55:43.203 [main] EntityBinder - Import with entity name Applications
+[DEBUG] 2019-12-04 17:55:43.208 [main] EntityBinder - Bind entity com.enterprise.dashboard.model.Application on table APPLICATIONS
+[DEBUG] 2019-12-04 17:55:43.259 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(APPLICATIONS), mappingColumn=ID, insertable=true, updatable=true, unique=false}
+[DEBUG] 2019-12-04 17:55:43.267 [main] PropertyBinder - MetadataSourceProcessor property id with lazy=false
+[DEBUG] 2019-12-04 17:55:43.269 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.enterprise.dashboard.model.Application:id]
+[DEBUG] 2019-12-04 17:55:43.271 [main] SimpleValueBinder - building SimpleValue for id
+[DEBUG] 2019-12-04 17:55:43.274 [main] PropertyBinder - Building property id
+[DEBUG] 2019-12-04 17:55:43.279 [main] BinderHelper - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(ID)]), id, org.hibernate.id.enhanced.SequenceStyleGenerator, native, ...)
+[DEBUG] 2019-12-04 17:55:43.281 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(APPLICATIONS), mappingColumn=DESCRIPTION, insertable=true, updatable=true, unique=false}
+[DEBUG] 2019-12-04 17:55:43.281 [main] PropertyBinder - MetadataSourceProcessor property description with lazy=false
+[DEBUG] 2019-12-04 17:55:43.282 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.enterprise.dashboard.model.Application:description]
+[DEBUG] 2019-12-04 17:55:43.282 [main] SimpleValueBinder - building SimpleValue for description
+[DEBUG] 2019-12-04 17:55:43.282 [main] PropertyBinder - Building property description
+[DEBUG] 2019-12-04 17:55:43.284 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='application'}
+[DEBUG] 2019-12-04 17:55:43.287 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(APPLICATIONS), mappingColumn=errorDataSet, insertable=true, updatable=true, unique=false}
+[DEBUG] 2019-12-04 17:55:43.289 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(APPLICATIONS), mappingColumn=null, insertable=true, updatable=true, unique=false}
+[DEBUG] 2019-12-04 17:55:43.311 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(APPLICATIONS), mappingColumn=element, insertable=true, updatable=true, unique=false}
+[DEBUG] 2019-12-04 17:55:43.312 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(APPLICATIONS), mappingColumn=errorDataSet_KEY, insertable=true, updatable=true, unique=false}
+[DEBUG] 2019-12-04 17:55:43.314 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='errorDataSet_KEY', referencedColumn='null', mappedBy='null'}
+[DEBUG] 2019-12-04 17:55:43.318 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='application'}
+[DEBUG] 2019-12-04 17:55:43.318 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='application'}
+[DEBUG] 2019-12-04 17:55:43.319 [main] CollectionBinder - Collection role: com.enterprise.dashboard.model.Application.errorDataSet
+[DEBUG] 2019-12-04 17:55:43.322 [main] PropertyBinder - Building property errorDataSet
+[DEBUG] 2019-12-04 17:55:43.323 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(APPLICATIONS), mappingColumn=NAME, insertable=true, updatable=true, unique=false}
+[DEBUG] 2019-12-04 17:55:43.323 [main] PropertyBinder - MetadataSourceProcessor property name with lazy=false
+[DEBUG] 2019-12-04 17:55:43.323 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.enterprise.dashboard.model.Application:name]
+[DEBUG] 2019-12-04 17:55:43.323 [main] SimpleValueBinder - building SimpleValue for name
+[DEBUG] 2019-12-04 17:55:43.323 [main] PropertyBinder - Building property name
+[DEBUG] 2019-12-04 17:55:43.325 [main] AnnotationBinder - Binding entity from annotated class: com.enterprise.dashboard.model.ErrorData
+[DEBUG] 2019-12-04 17:55:43.325 [main] Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+[DEBUG] 2019-12-04 17:55:43.326 [main] EntityBinder - Import with entity name ErrorData
+[DEBUG] 2019-12-04 17:55:43.326 [main] EntityBinder - Bind entity com.enterprise.dashboard.model.ErrorData on table ERROR_DATA
+[DEBUG] 2019-12-04 17:55:43.330 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(ERROR_DATA), mappingColumn=ID, insertable=true, updatable=true, unique=false}
+[DEBUG] 2019-12-04 17:55:43.330 [main] PropertyBinder - MetadataSourceProcessor property id with lazy=false
+[DEBUG] 2019-12-04 17:55:43.330 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.enterprise.dashboard.model.ErrorData:id]
+[DEBUG] 2019-12-04 17:55:43.330 [main] SimpleValueBinder - building SimpleValue for id
+[DEBUG] 2019-12-04 17:55:43.330 [main] PropertyBinder - Building property id
+[DEBUG] 2019-12-04 17:55:43.331 [main] BinderHelper - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(ID)]), id, org.hibernate.id.enhanced.SequenceStyleGenerator, native, ...)
+[DEBUG] 2019-12-04 17:55:43.331 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='null'}
+[DEBUG] 2019-12-04 17:55:43.331 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(ERROR_DATA), mappingColumn=application, insertable=true, updatable=true, unique=false}
+[DEBUG] 2019-12-04 17:55:43.334 [main] PropertyBinder - Building property application
+[DEBUG] 2019-12-04 17:55:43.335 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(ERROR_DATA), mappingColumn=DESCRIPTION, insertable=true, updatable=true, unique=false}
+[DEBUG] 2019-12-04 17:55:43.335 [main] PropertyBinder - MetadataSourceProcessor property description with lazy=false
+[DEBUG] 2019-12-04 17:55:43.335 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.enterprise.dashboard.model.ErrorData:description]
+[DEBUG] 2019-12-04 17:55:43.335 [main] SimpleValueBinder - building SimpleValue for description
+[DEBUG] 2019-12-04 17:55:43.335 [main] PropertyBinder - Building property description
+[DEBUG] 2019-12-04 17:55:43.335 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(ERROR_DATA), mappingColumn=MESSAGE, insertable=true, updatable=true, unique=false}
+[DEBUG] 2019-12-04 17:55:43.335 [main] PropertyBinder - MetadataSourceProcessor property message with lazy=false
+[DEBUG] 2019-12-04 17:55:43.335 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.enterprise.dashboard.model.ErrorData:message]
+[DEBUG] 2019-12-04 17:55:43.335 [main] SimpleValueBinder - building SimpleValue for message
+[DEBUG] 2019-12-04 17:55:43.336 [main] PropertyBinder - Building property message
+[DEBUG] 2019-12-04 17:55:43.336 [main] AnnotationBinder - Binding entity from annotated class: com.enterprise.dashboard.model.User
+[DEBUG] 2019-12-04 17:55:43.336 [main] Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+[DEBUG] 2019-12-04 17:55:43.336 [main] EntityBinder - Import with entity name User
+[DEBUG] 2019-12-04 17:55:43.336 [main] EntityBinder - Bind entity com.enterprise.dashboard.model.User on table user
+[DEBUG] 2019-12-04 17:55:43.337 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=id, insertable=true, updatable=true, unique=false}
+[DEBUG] 2019-12-04 17:55:43.337 [main] PropertyBinder - MetadataSourceProcessor property id with lazy=false
+[DEBUG] 2019-12-04 17:55:43.337 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.enterprise.dashboard.model.User:id]
+[DEBUG] 2019-12-04 17:55:43.337 [main] SimpleValueBinder - building SimpleValue for id
+[DEBUG] 2019-12-04 17:55:43.338 [main] PropertyBinder - Building property id
+[DEBUG] 2019-12-04 17:55:43.338 [main] BinderHelper - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, org.hibernate.id.enhanced.SequenceStyleGenerator, native, ...)
+[DEBUG] 2019-12-04 17:55:43.338 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=first_name, insertable=true, updatable=true, unique=false}
+[DEBUG] 2019-12-04 17:55:43.338 [main] PropertyBinder - MetadataSourceProcessor property firstName with lazy=false
+[DEBUG] 2019-12-04 17:55:43.338 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.enterprise.dashboard.model.User:firstName]
+[DEBUG] 2019-12-04 17:55:43.338 [main] SimpleValueBinder - building SimpleValue for firstName
+[DEBUG] 2019-12-04 17:55:43.338 [main] PropertyBinder - Building property firstName
+[DEBUG] 2019-12-04 17:55:43.338 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=last_name, insertable=true, updatable=true, unique=false}
+[DEBUG] 2019-12-04 17:55:43.339 [main] PropertyBinder - MetadataSourceProcessor property lastName with lazy=false
+[DEBUG] 2019-12-04 17:55:43.339 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.enterprise.dashboard.model.User:lastName]
+[DEBUG] 2019-12-04 17:55:43.339 [main] SimpleValueBinder - building SimpleValue for lastName
+[DEBUG] 2019-12-04 17:55:43.339 [main] PropertyBinder - Building property lastName
+[DEBUG] 2019-12-04 17:55:43.339 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=user_name, insertable=true, updatable=true, unique=false}
+[DEBUG] 2019-12-04 17:55:43.339 [main] PropertyBinder - MetadataSourceProcessor property userName with lazy=false
+[DEBUG] 2019-12-04 17:55:43.339 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.enterprise.dashboard.model.User:userName]
+[DEBUG] 2019-12-04 17:55:43.340 [main] SimpleValueBinder - building SimpleValue for userName
+[DEBUG] 2019-12-04 17:55:43.340 [main] PropertyBinder - Building property userName
+[DEBUG] 2019-12-04 17:55:43.343 [main] SimpleValueBinder - Starting fillSimpleValue for id
+[DEBUG] 2019-12-04 17:55:43.344 [main] SimpleValueBinder - Starting fillSimpleValue for description
+[DEBUG] 2019-12-04 17:55:43.344 [main] SimpleValueBinder - Starting fillSimpleValue for name
+[DEBUG] 2019-12-04 17:55:43.344 [main] SimpleValueBinder - Starting fillSimpleValue for id
+[DEBUG] 2019-12-04 17:55:43.344 [main] SimpleValueBinder - Starting fillSimpleValue for description
+[DEBUG] 2019-12-04 17:55:43.345 [main] SimpleValueBinder - Starting fillSimpleValue for message
+[DEBUG] 2019-12-04 17:55:43.345 [main] SimpleValueBinder - Starting fillSimpleValue for id
+[DEBUG] 2019-12-04 17:55:43.345 [main] SimpleValueBinder - Starting fillSimpleValue for firstName
+[DEBUG] 2019-12-04 17:55:43.345 [main] SimpleValueBinder - Starting fillSimpleValue for lastName
+[DEBUG] 2019-12-04 17:55:43.345 [main] SimpleValueBinder - Starting fillSimpleValue for userName
+[DEBUG] 2019-12-04 17:55:43.361 [main] PrimaryKey - Forcing column [id] to be non-null as it is part of the primary key for table [applications]
+[DEBUG] 2019-12-04 17:55:43.361 [main] PrimaryKey - Forcing column [id] to be non-null as it is part of the primary key for table [error_data]
+[DEBUG] 2019-12-04 17:55:43.362 [main] PrimaryKey - Forcing column [id] to be non-null as it is part of the primary key for table [user]
+[DEBUG] 2019-12-04 17:55:43.362 [main] CollectionSecondPass - Second pass for collection: com.enterprise.dashboard.model.Application.errorDataSet
+[DEBUG] 2019-12-04 17:55:43.365 [main] CollectionBinder - Binding a OneToMany: com.enterprise.dashboard.model.Application.errorDataSet through a foreign key
+[DEBUG] 2019-12-04 17:55:43.369 [main] CollectionBinder - Mapping collection: com.enterprise.dashboard.model.Application.errorDataSet -> ERROR_DATA
+[DEBUG] 2019-12-04 17:55:43.371 [main] TableBinder - Retrieving property com.enterprise.dashboard.model.ErrorData.application
+[DEBUG] 2019-12-04 17:55:43.372 [main] CollectionSecondPass - Mapped collection key: application_ID, one-to-many: com.enterprise.dashboard.model.ErrorData
+[DEBUG] 2019-12-04 17:55:43.372 [main] InFlightMetadataCollectorImpl - Resolving reference to class: com.enterprise.dashboard.model.Application
+[DEBUG] 2019-12-04 17:55:43.375 [main] InFlightMetadataCollectorImpl - Resolving reference to class: com.enterprise.dashboard.model.Application
+[DEBUG] 2019-12-04 17:55:43.433 [main] SessionFactoryImpl - Building session factory
+[DEBUG] 2019-12-04 17:55:43.434 [main] Settings - SessionFactory name : null
+[DEBUG] 2019-12-04 17:55:43.434 [main] Settings - Automatic flush during beforeCompletion(): enabled
+[DEBUG] 2019-12-04 17:55:43.434 [main] Settings - Automatic session close at end of transaction: disabled
+[DEBUG] 2019-12-04 17:55:43.434 [main] Settings - Statistics: disabled
+[DEBUG] 2019-12-04 17:55:43.434 [main] Settings - Deleted entity synthetic identifier rollback: disabled
+[DEBUG] 2019-12-04 17:55:43.434 [main] Settings - Default entity-mode: pojo
+[DEBUG] 2019-12-04 17:55:43.434 [main] Settings - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+[DEBUG] 2019-12-04 17:55:43.434 [main] Settings - Allow initialization of lazy state outside session : disabled
+[DEBUG] 2019-12-04 17:55:43.435 [main] Settings - Using BatchFetchStyle : LEGACY
+[DEBUG] 2019-12-04 17:55:43.435 [main] Settings - Default batch fetch size: -1
+[DEBUG] 2019-12-04 17:55:43.435 [main] Settings - Maximum outer join fetch depth: 2
+[DEBUG] 2019-12-04 17:55:43.435 [main] Settings - Default null ordering: NONE
+[DEBUG] 2019-12-04 17:55:43.435 [main] Settings - Order SQL updates by primary key: disabled
+[DEBUG] 2019-12-04 17:55:43.435 [main] Settings - Order SQL inserts for batching: disabled
+[DEBUG] 2019-12-04 17:55:43.435 [main] Settings - multi-tenancy strategy : NONE
+[DEBUG] 2019-12-04 17:55:43.435 [main] Settings - JTA Track by Thread: enabled
+[DEBUG] 2019-12-04 17:55:43.435 [main] Settings - Query language substitutions: {}
+[DEBUG] 2019-12-04 17:55:43.435 [main] Settings - Named query checking : enabled
+[DEBUG] 2019-12-04 17:55:43.435 [main] Settings - Second-level cache: disabled
+[DEBUG] 2019-12-04 17:55:43.435 [main] Settings - Second-level query cache: disabled
+[DEBUG] 2019-12-04 17:55:43.436 [main] Settings - Second-level query cache factory: null
+[DEBUG] 2019-12-04 17:55:43.436 [main] Settings - Second-level cache region prefix: null
+[DEBUG] 2019-12-04 17:55:43.436 [main] Settings - Optimize second-level cache for minimal puts: disabled
+[DEBUG] 2019-12-04 17:55:43.436 [main] Settings - Structured second-level cache entries: disabled
+[DEBUG] 2019-12-04 17:55:43.436 [main] Settings - Second-level cache direct-reference entries: disabled
+[DEBUG] 2019-12-04 17:55:43.436 [main] Settings - Automatic eviction of collection cache: disabled
+[DEBUG] 2019-12-04 17:55:43.436 [main] Settings - JDBC batch size: 15
+[DEBUG] 2019-12-04 17:55:43.436 [main] Settings - JDBC batch updates for versioned data: enabled
+[DEBUG] 2019-12-04 17:55:43.436 [main] Settings - Scrollable result sets: enabled
+[DEBUG] 2019-12-04 17:55:43.436 [main] Settings - Wrap result sets: disabled
+[DEBUG] 2019-12-04 17:55:43.436 [main] Settings - JDBC3 getGeneratedKeys(): enabled
+[DEBUG] 2019-12-04 17:55:43.436 [main] Settings - JDBC result set fetch size: null
+[DEBUG] 2019-12-04 17:55:43.437 [main] Settings - Connection release mode: AFTER_TRANSACTION
+[DEBUG] 2019-12-04 17:55:43.437 [main] Settings - Generate SQL with comments: disabled
+[DEBUG] 2019-12-04 17:55:43.437 [main] Settings - JPA compliance - query : 
+[DEBUG] 2019-12-04 17:55:43.437 [main] Settings - JPA compliance - closed-handling : 
+[DEBUG] 2019-12-04 17:55:43.437 [main] Settings - JPA compliance - lists : 
+[DEBUG] 2019-12-04 17:55:43.437 [main] Settings - JPA compliance - transactions : 
+[INFO ] 2019-12-04 17:55:43.539 [main] beans - HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
+[DEBUG] 2019-12-04 17:55:43.577 [main] SessionFactoryImpl - Session factory constructed with filter configurations : {}
+[DEBUG] 2019-12-04 17:55:43.577 [main] SessionFactoryImpl - Instantiating session factory with properties: {gopherProxySet=false, awt.toolkit=sun.lwawt.macosx.LWCToolkit, java.specification.version=11, sun.cpu.isalist=, hibernate.c3p0.idle_test_period=3000, sun.jnu.encoding=UTF-8, hibernate.c3p0.min_size=5, java.class.path=/Users/Sdrshn-Home/IdeaProjects/entjavadashboard/target/test-classes:/Users/Sdrshn-Home/IdeaProjects/entjavadashboard/target/classes:/Users/Sdrshn-Home/.m2/repository/org/hibernate/hibernate-core/5.4.4.Final/hibernate-core-5.4.4.Final.jar:/Users/Sdrshn-Home/.m2/repository/org/jboss/logging/jboss-logging/3.3.2.Final/jboss-logging-3.3.2.Final.jar:/Users/Sdrshn-Home/.m2/repository/javax/persistence/javax.persistence-api/2.2/javax.persistence-api-2.2.jar:/Users/Sdrshn-Home/.m2/repository/org/javassist/javassist/3.24.0-GA/javassist-3.24.0-GA.jar:/Users/Sdrshn-Home/.m2/repository/net/bytebuddy/byte-buddy/1.9.11/byte-buddy-1.9.11.jar:/Users/Sdrshn-Home/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar:/Users/Sdrshn-Home/.m2/repository/org/jboss/spec/javax/transaction/jboss-transaction-api_1.2_spec/1.1.1.Final/jboss-transaction-api_1.2_spec-1.1.1.Final.jar:/Users/Sdrshn-Home/.m2/repository/org/jboss/jandex/2.0.5.Final/jandex-2.0.5.Final.jar:/Users/Sdrshn-Home/.m2/repository/com/fasterxml/classmate/1.3.4/classmate-1.3.4.jar:/Users/Sdrshn-Home/.m2/repository/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.jar:/Users/Sdrshn-Home/.m2/repository/org/dom4j/dom4j/2.1.1/dom4j-2.1.1.jar:/Users/Sdrshn-Home/.m2/repository/org/hibernate/common/hibernate-commons-annotations/5.1.0.Final/hibernate-commons-annotations-5.1.0.Final.jar:/Users/Sdrshn-Home/.m2/repository/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.jar:/Users/Sdrshn-Home/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/jaxb-runtime-2.3.1.jar:/Users/Sdrshn-Home/.m2/repository/org/glassfish/jaxb/txw2/2.3.1/txw2-2.3.1.jar:/Users/Sdrshn-Home/.m2/repository/com/sun/istack/istack-commons-runtime/3.0.7/istack-commons-runtime-3.0.7.jar:/Users/Sdrshn-Home/.m2/repository/org/jvnet/staxex/stax-ex/1.8/stax-ex-1.8.jar:/Users/Sdrshn-Home/.m2/repository/com/sun/xml/fastinfoset/FastInfoset/1.2.15/FastInfoset-1.2.15.jar:/Users/Sdrshn-Home/.m2/repository/org/hibernate/hibernate-c3p0/5.4.4.Final/hibernate-c3p0-5.4.4.Final.jar:/Users/Sdrshn-Home/.m2/repository/com/mchange/c3p0/0.9.5.3/c3p0-0.9.5.3.jar:/Users/Sdrshn-Home/.m2/repository/com/mchange/mchange-commons-java/0.2.15/mchange-commons-java-0.2.15.jar:/Users/Sdrshn-Home/.m2/repository/org/junit/platform/junit-platform-runner/1.0.0/junit-platform-runner-1.0.0.jar:/Users/Sdrshn-Home/.m2/repository/org/apiguardian/apiguardian-api/1.0.0/apiguardian-api-1.0.0.jar:/Users/Sdrshn-Home/.m2/repository/org/junit/platform/junit-platform-launcher/1.0.0/junit-platform-launcher-1.0.0.jar:/Users/Sdrshn-Home/.m2/repository/org/junit/platform/junit-platform-suite-api/1.0.0/junit-platform-suite-api-1.0.0.jar:/Users/Sdrshn-Home/.m2/repository/org/junit/platform/junit-platform-commons/1.0.0/junit-platform-commons-1.0.0.jar:/Users/Sdrshn-Home/.m2/repository/org/junit/vintage/junit-vintage-engine/4.12.0/junit-vintage-engine-4.12.0.jar:/Users/Sdrshn-Home/.m2/repository/org/junit/platform/junit-platform-engine/1.0.0/junit-platform-engine-1.0.0.jar:/Users/Sdrshn-Home/.m2/repository/org/opentest4j/opentest4j/1.0.0/opentest4j-1.0.0.jar:/Users/Sdrshn-Home/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.0.0/junit-jupiter-engine-5.0.0.jar:/Users/Sdrshn-Home/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.0.0/junit-jupiter-api-5.0.0.jar:/Users/Sdrshn-Home/.m2/repository/junit/junit/4.12/junit-4.12.jar:/Users/Sdrshn-Home/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/Sdrshn-Home/.m2/repository/javax/javaee-web-api/7.0/javaee-web-api-7.0.jar:/Users/Sdrshn-Home/.m2/repository/mysql/mysql-connector-java/8.0.16/mysql-connector-java-8.0.16.jar:/Users/Sdrshn-Home/.m2/repository/com/google/protobuf/protobuf-java/3.6.1/protobuf-java-3.6.1.jar:/Users/Sdrshn-Home/.m2/repository/jstl/jstl/1.2/jstl-1.2.jar:/Users/Sdrshn-Home/.m2/repository/org/apache/logging/log4j/log4j-api/2.10.0/log4j-api-2.10.0.jar:/Users/Sdrshn-Home/.m2/repository/org/apache/logging/log4j/log4j-core/2.10.0/log4j-core-2.10.0.jar:, java.vm.vendor=Oracle Corporation, sun.arch.data.model=64, java.vendor.url=http://java.oracle.com/, user.timezone=America/Chicago, os.name=Mac OS X, java.vm.specification.version=11, sun.java.launcher=SUN_STANDARD, user.country=US, sun.boot.library.path=/Library/Java/JavaVirtualMachines/jdk-11.0.4.jdk/Contents/Home/lib, sun.java.command=/Users/Sdrshn-Home/IdeaProjects/entjavadashboard/target/surefire/surefirebooter17978663166541312608.jar /Users/Sdrshn-Home/IdeaProjects/entjavadashboard/target/surefire/surefire8435226558867076467tmp /Users/Sdrshn-Home/IdeaProjects/entjavadashboard/target/surefire/surefire_06545535789432561300tmp, http.nonProxyHosts=local|*.local|169.254/16|*.169.254/16, jdk.debug=release, surefire.test.class.path=/Users/Sdrshn-Home/IdeaProjects/entjavadashboard/target/test-classes:/Users/Sdrshn-Home/IdeaProjects/entjavadashboard/target/classes:/Users/Sdrshn-Home/.m2/repository/org/hibernate/hibernate-core/5.4.4.Final/hibernate-core-5.4.4.Final.jar:/Users/Sdrshn-Home/.m2/repository/org/jboss/logging/jboss-logging/3.3.2.Final/jboss-logging-3.3.2.Final.jar:/Users/Sdrshn-Home/.m2/repository/javax/persistence/javax.persistence-api/2.2/javax.persistence-api-2.2.jar:/Users/Sdrshn-Home/.m2/repository/org/javassist/javassist/3.24.0-GA/javassist-3.24.0-GA.jar:/Users/Sdrshn-Home/.m2/repository/net/bytebuddy/byte-buddy/1.9.11/byte-buddy-1.9.11.jar:/Users/Sdrshn-Home/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar:/Users/Sdrshn-Home/.m2/repository/org/jboss/spec/javax/transaction/jboss-transaction-api_1.2_spec/1.1.1.Final/jboss-transaction-api_1.2_spec-1.1.1.Final.jar:/Users/Sdrshn-Home/.m2/repository/org/jboss/jandex/2.0.5.Final/jandex-2.0.5.Final.jar:/Users/Sdrshn-Home/.m2/repository/com/fasterxml/classmate/1.3.4/classmate-1.3.4.jar:/Users/Sdrshn-Home/.m2/repository/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.jar:/Users/Sdrshn-Home/.m2/repository/org/dom4j/dom4j/2.1.1/dom4j-2.1.1.jar:/Users/Sdrshn-Home/.m2/repository/org/hibernate/common/hibernate-commons-annotations/5.1.0.Final/hibernate-commons-annotations-5.1.0.Final.jar:/Users/Sdrshn-Home/.m2/repository/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.jar:/Users/Sdrshn-Home/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/jaxb-runtime-2.3.1.jar:/Users/Sdrshn-Home/.m2/repository/org/glassfish/jaxb/txw2/2.3.1/txw2-2.3.1.jar:/Users/Sdrshn-Home/.m2/repository/com/sun/istack/istack-commons-runtime/3.0.7/istack-commons-runtime-3.0.7.jar:/Users/Sdrshn-Home/.m2/repository/org/jvnet/staxex/stax-ex/1.8/stax-ex-1.8.jar:/Users/Sdrshn-Home/.m2/repository/com/sun/xml/fastinfoset/FastInfoset/1.2.15/FastInfoset-1.2.15.jar:/Users/Sdrshn-Home/.m2/repository/org/hibernate/hibernate-c3p0/5.4.4.Final/hibernate-c3p0-5.4.4.Final.jar:/Users/Sdrshn-Home/.m2/repository/com/mchange/c3p0/0.9.5.3/c3p0-0.9.5.3.jar:/Users/Sdrshn-Home/.m2/repository/com/mchange/mchange-commons-java/0.2.15/mchange-commons-java-0.2.15.jar:/Users/Sdrshn-Home/.m2/repository/org/junit/platform/junit-platform-runner/1.0.0/junit-platform-runner-1.0.0.jar:/Users/Sdrshn-Home/.m2/repository/org/apiguardian/apiguardian-api/1.0.0/apiguardian-api-1.0.0.jar:/Users/Sdrshn-Home/.m2/repository/org/junit/platform/junit-platform-launcher/1.0.0/junit-platform-launcher-1.0.0.jar:/Users/Sdrshn-Home/.m2/repository/org/junit/platform/junit-platform-suite-api/1.0.0/junit-platform-suite-api-1.0.0.jar:/Users/Sdrshn-Home/.m2/repository/org/junit/platform/junit-platform-commons/1.0.0/junit-platform-commons-1.0.0.jar:/Users/Sdrshn-Home/.m2/repository/org/junit/vintage/junit-vintage-engine/4.12.0/junit-vintage-engine-4.12.0.jar:/Users/Sdrshn-Home/.m2/repository/org/junit/platform/junit-platform-engine/1.0.0/junit-platform-engine-1.0.0.jar:/Users/Sdrshn-Home/.m2/repository/org/opentest4j/opentest4j/1.0.0/opentest4j-1.0.0.jar:/Users/Sdrshn-Home/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.0.0/junit-jupiter-engine-5.0.0.jar:/Users/Sdrshn-Home/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.0.0/junit-jupiter-api-5.0.0.jar:/Users/Sdrshn-Home/.m2/repository/junit/junit/4.12/junit-4.12.jar:/Users/Sdrshn-Home/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/Sdrshn-Home/.m2/repository/javax/javaee-web-api/7.0/javaee-web-api-7.0.jar:/Users/Sdrshn-Home/.m2/repository/mysql/mysql-connector-java/8.0.16/mysql-connector-java-8.0.16.jar:/Users/Sdrshn-Home/.m2/repository/com/google/protobuf/protobuf-java/3.6.1/protobuf-java-3.6.1.jar:/Users/Sdrshn-Home/.m2/repository/jstl/jstl/1.2/jstl-1.2.jar:/Users/Sdrshn-Home/.m2/repository/org/apache/logging/log4j/log4j-api/2.10.0/log4j-api-2.10.0.jar:/Users/Sdrshn-Home/.m2/repository/org/apache/logging/log4j/log4j-core/2.10.0/log4j-core-2.10.0.jar:, sun.cpu.endian=little, user.home=/Users/Sdrshn-Home, hibernate.c3p0.max_statements=50, user.language=en, java.specification.vendor=Oracle Corporation, java.version.date=2019-07-16, idea.version2019.2.2=true, java.home=/Library/Java/JavaVirtualMachines/jdk-11.0.4.jdk/Contents/Home, file.separator=/, basedir=/Users/Sdrshn-Home/IdeaProjects/entjavadashboard, java.vm.compressedOopsMode=Zero based, line.separator=
+, hibernate.c3p0.timeout=300, java.specification.name=Java Platform API Specification, java.vm.specification.vendor=Oracle Corporation, java.awt.graphicsenv=sun.awt.CGraphicsEnvironment, surefire.real.class.path=/Users/Sdrshn-Home/IdeaProjects/entjavadashboard/target/surefire/surefirebooter17978663166541312608.jar, connection.password=student, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, ftp.nonProxyHosts=local|*.local|169.254/16|*.169.254/16, hibernate.c3p0.max_size=20, java.runtime.version=11.0.4+10-LTS, user.name=Sdrshn-Home, path.separator=:, hibernate.connection.username=****, os.version=10.13.6, java.runtime.name=Java(TM) SE Runtime Environment, hibernate.connection.url=jdbc:mysql://localhost:3307/dashboard, file.encoding=US-ASCII, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, java.vendor.version=18.9, localRepository=/Users/Sdrshn-Home/.m2/repository, hibernate.connection.driver_class=com.mysql.cj.jdbc.Driver, java.vendor.url.bug=http://bugreport.java.com/bugreport/, java.io.tmpdir=/var/folders/6g/c2d6vh4s4yn046jwp22bplkm0000gn/T/, java.version=11.0.4, user.dir=/Users/Sdrshn-Home/IdeaProjects/entjavadashboard, os.arch=x86_64, connection.username=root, java.vm.specification.name=Java Virtual Machine Specification, java.awt.printerjob=sun.lwawt.macosx.CPrinterJob, hibernate.connection.password=****, sun.os.patch.level=unknown, connection.driver_class=com.mysql.cj.jdbc.Driver, hibernate.boot.CfgXmlAccessService.key=org.hibernate.boot.cfgxml.spi.LoadedConfig@19b07407, java.library.path=/Users/Sdrshn-Home/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:., java.vendor=Oracle Corporation, java.vm.info=mixed mode, java.vm.version=11.0.4+10-LTS, hibernate.bytecode.use_reflection_optimizer=false, sun.io.unicode.encoding=UnicodeBig, connection.url=jdbc:mysql://localhost:3307/dashboard, socksNonProxyHosts=local|*.local|169.254/16|*.169.254/16, java.class.version=55.0}
+[DEBUG] 2019-12-04 17:55:43.602 [main] TypeSafeActivator - Unable to acquire Bean Validation ValidatorFactory, skipping activation
+[DEBUG] 2019-12-04 17:55:43.602 [main] JaccIntegrator - Skipping JACC integration as it was not enabled
+[DEBUG] 2019-12-04 17:55:43.603 [main] SessionFactoryImpl - Instantiated session factory
+[DEBUG] 2019-12-04 17:55:43.603 [main] TypeConfiguration$Scope - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@7ddd84b5] to SessionFactoryImpl [org.hibernate.internal.SessionFactoryImpl@67d4c48d]
+[DEBUG] 2019-12-04 17:55:43.695 [main] ClassLoaderAccessImpl - Not known whether passed class name [com.enterprise.dashboard.model.User] is safe
+[DEBUG] 2019-12-04 17:55:43.696 [main] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.enterprise.dashboard.model.User
+[DEBUG] 2019-12-04 17:55:43.739 [main] ClassLoaderAccessImpl - Not known whether passed class name [com.enterprise.dashboard.model.User] is safe
+[DEBUG] 2019-12-04 17:55:43.739 [main] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.enterprise.dashboard.model.User
+[DEBUG] 2019-12-04 17:55:44.117 [main] ClassLoaderAccessImpl - Not known whether passed class name [com.enterprise.dashboard.model.Application] is safe
+[DEBUG] 2019-12-04 17:55:44.117 [main] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.enterprise.dashboard.model.Application
+[DEBUG] 2019-12-04 17:55:44.119 [main] ClassLoaderAccessImpl - Not known whether passed class name [com.enterprise.dashboard.model.Application] is safe
+[DEBUG] 2019-12-04 17:55:44.120 [main] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.enterprise.dashboard.model.Application
+[DEBUG] 2019-12-04 17:55:44.313 [main] ClassLoaderAccessImpl - Not known whether passed class name [com.enterprise.dashboard.model.ErrorData] is safe
+[DEBUG] 2019-12-04 17:55:44.313 [main] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.enterprise.dashboard.model.ErrorData
+[DEBUG] 2019-12-04 17:55:44.314 [main] ClassLoaderAccessImpl - Not known whether passed class name [com.enterprise.dashboard.model.ErrorData] is safe
+[DEBUG] 2019-12-04 17:55:44.315 [main] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.enterprise.dashboard.model.ErrorData
+[DEBUG] 2019-12-04 17:55:44.355 [main] AbstractCollectionPersister - Static SQL for collection: com.enterprise.dashboard.model.Application.errorDataSet
+[DEBUG] 2019-12-04 17:55:44.355 [main] AbstractCollectionPersister -  Row insert: update ERROR_DATA set application_ID=? where ID=?
+[DEBUG] 2019-12-04 17:55:44.355 [main] AbstractCollectionPersister -  Row update: update ERROR_DATA set  where ID=?
+[DEBUG] 2019-12-04 17:55:44.355 [main] AbstractCollectionPersister -  Row delete: update ERROR_DATA set application_ID=null where application_ID=? and ID=?
+[DEBUG] 2019-12-04 17:55:44.355 [main] AbstractCollectionPersister -  One-shot delete: update ERROR_DATA set application_ID=null where application_ID=?
+[DEBUG] 2019-12-04 17:55:44.363 [main] AbstractEntityPersister - Static SQL for entity: com.enterprise.dashboard.model.User
+[DEBUG] 2019-12-04 17:55:44.364 [main] AbstractEntityPersister -  Version select: select id from user where id =?
+[DEBUG] 2019-12-04 17:55:44.364 [main] AbstractEntityPersister -  Snapshot select: select user_.id, user_.first_name as first_na2_2_, user_.last_name as last_nam3_2_, user_.user_name as user_nam4_2_ from user user_ where user_.id=?
+[DEBUG] 2019-12-04 17:55:44.365 [main] AbstractEntityPersister -  Insert 0: insert into user (first_name, last_name, user_name, id) values (?, ?, ?, ?)
+[DEBUG] 2019-12-04 17:55:44.365 [main] AbstractEntityPersister -  Update 0: update user set first_name=?, last_name=?, user_name=? where id=?
+[DEBUG] 2019-12-04 17:55:44.366 [main] AbstractEntityPersister -  Delete 0: delete from user where id=?
+[DEBUG] 2019-12-04 17:55:44.366 [main] AbstractEntityPersister -  Identity insert: insert into user (first_name, last_name, user_name) values (?, ?, ?)
+[DEBUG] 2019-12-04 17:55:44.413 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@727986ad]
+[DEBUG] 2019-12-04 17:55:44.416 [main] MetamodelGraphWalker - Visiting attribute path : firstName
+[DEBUG] 2019-12-04 17:55:44.416 [main] MetamodelGraphWalker - Visiting attribute path : lastName
+[DEBUG] 2019-12-04 17:55:44.416 [main] MetamodelGraphWalker - Visiting attribute path : userName
+[DEBUG] 2019-12-04 17:55:44.417 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2019-12-04 17:55:44.436 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2019-12-04 17:55:44.440 [main] LoadPlanTreePrinter - LoadPlan(entity=com.enterprise.dashboard.model.User)
+    - Returns
+       - EntityReturnImpl(entity=com.enterprise.dashboard.model.User, querySpaceUid=<gen:0>, path=com.enterprise.dashboard.model.User)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.enterprise.dashboard.model.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_2_0_}
+
+[DEBUG] 2019-12-04 17:55:44.444 [main] EntityLoader - Static select for entity com.enterprise.dashboard.model.User [NONE]: select user0_.id as id1_2_0_, user0_.first_name as first_na2_2_0_, user0_.last_name as last_nam3_2_0_, user0_.user_name as user_nam4_2_0_ from user user0_ where user0_.id=?
+[DEBUG] 2019-12-04 17:55:44.444 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@7336fd8f]
+[DEBUG] 2019-12-04 17:55:44.445 [main] MetamodelGraphWalker - Visiting attribute path : firstName
+[DEBUG] 2019-12-04 17:55:44.445 [main] MetamodelGraphWalker - Visiting attribute path : lastName
+[DEBUG] 2019-12-04 17:55:44.446 [main] MetamodelGraphWalker - Visiting attribute path : userName
+[DEBUG] 2019-12-04 17:55:44.446 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2019-12-04 17:55:44.446 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2019-12-04 17:55:44.447 [main] LoadPlanTreePrinter - LoadPlan(entity=com.enterprise.dashboard.model.User)
+    - Returns
+       - EntityReturnImpl(entity=com.enterprise.dashboard.model.User, querySpaceUid=<gen:0>, path=com.enterprise.dashboard.model.User)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.enterprise.dashboard.model.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_2_0_}
+
+[DEBUG] 2019-12-04 17:55:44.447 [main] EntityLoader - Static select for entity com.enterprise.dashboard.model.User [READ]: select user0_.id as id1_2_0_, user0_.first_name as first_na2_2_0_, user0_.last_name as last_nam3_2_0_, user0_.user_name as user_nam4_2_0_ from user user0_ where user0_.id=?
+[DEBUG] 2019-12-04 17:55:44.468 [main] Loader - Static select for action ACTION_MERGE on entity com.enterprise.dashboard.model.User: select user0_.id as id1_2_0_, user0_.first_name as first_na2_2_0_, user0_.last_name as last_nam3_2_0_, user0_.user_name as user_nam4_2_0_ from user user0_ where user0_.id=?
+[DEBUG] 2019-12-04 17:55:44.469 [main] Loader - Static select for action ACTION_REFRESH on entity com.enterprise.dashboard.model.User: select user0_.id as id1_2_0_, user0_.first_name as first_na2_2_0_, user0_.last_name as last_nam3_2_0_, user0_.user_name as user_nam4_2_0_ from user user0_ where user0_.id=?
+[DEBUG] 2019-12-04 17:55:44.469 [main] AbstractEntityPersister - Static SQL for entity: com.enterprise.dashboard.model.Application
+[DEBUG] 2019-12-04 17:55:44.469 [main] AbstractEntityPersister -  Version select: select ID from APPLICATIONS where ID =?
+[DEBUG] 2019-12-04 17:55:44.469 [main] AbstractEntityPersister -  Snapshot select: select applicatio_.ID, applicatio_.DESCRIPTION as DESCRIPT2_0_, applicatio_.NAME as NAME3_0_ from APPLICATIONS applicatio_ where applicatio_.ID=?
+[DEBUG] 2019-12-04 17:55:44.469 [main] AbstractEntityPersister -  Insert 0: insert into APPLICATIONS (DESCRIPTION, NAME, ID) values (?, ?, ?)
+[DEBUG] 2019-12-04 17:55:44.470 [main] AbstractEntityPersister -  Update 0: update APPLICATIONS set DESCRIPTION=?, NAME=? where ID=?
+[DEBUG] 2019-12-04 17:55:44.470 [main] AbstractEntityPersister -  Delete 0: delete from APPLICATIONS where ID=?
+[DEBUG] 2019-12-04 17:55:44.470 [main] AbstractEntityPersister -  Identity insert: insert into APPLICATIONS (DESCRIPTION, NAME) values (?, ?)
+[DEBUG] 2019-12-04 17:55:44.470 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@45eab322]
+[DEBUG] 2019-12-04 17:55:44.470 [main] MetamodelGraphWalker - Visiting attribute path : description
+[DEBUG] 2019-12-04 17:55:44.470 [main] MetamodelGraphWalker - Visiting attribute path : errorDataSet
+[DEBUG] 2019-12-04 17:55:44.474 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@2bb31455]
+[DEBUG] 2019-12-04 17:55:44.477 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@33627576]
+[DEBUG] 2019-12-04 17:55:44.479 [main] MetamodelGraphWalker - Visiting attribute path : errorDataSet.application
+[DEBUG] 2019-12-04 17:55:44.479 [main] MetamodelGraphWalker - Property path deemed to be circular : errorDataSet.application
+[DEBUG] 2019-12-04 17:55:44.480 [main] MetamodelGraphWalker - Visiting attribute path : errorDataSet.description
+[DEBUG] 2019-12-04 17:55:44.480 [main] MetamodelGraphWalker - Visiting attribute path : errorDataSet.message
+[DEBUG] 2019-12-04 17:55:44.480 [main] MetamodelGraphWalker - Visiting attribute path : name
+[DEBUG] 2019-12-04 17:55:44.480 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2019-12-04 17:55:44.480 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2019-12-04 17:55:44.483 [main] LoadPlanTreePrinter - LoadPlan(entity=com.enterprise.dashboard.model.Application)
+    - Returns
+       - EntityReturnImpl(entity=com.enterprise.dashboard.model.Application, querySpaceUid=<gen:0>, path=com.enterprise.dashboard.model.Application)
+          - CollectionAttributeFetchImpl(collection=com.enterprise.dashboard.model.Application.errorDataSet, querySpaceUid=<gen:1>, path=com.enterprise.dashboard.model.Application.errorDataSet)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=com.enterprise.dashboard.model.ErrorData, querySpaceUid=<gen:2>, path=com.enterprise.dashboard.model.Application.errorDataSet.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.enterprise.dashboard.model.Application)
+          - SQL table alias mapping - applicatio0_
+          - alias suffix - 0_
+          - suffixed key columns - {ID1_0_0_}
+          - JOIN (JoinDefinedByMetadata(errorDataSet)) : <gen:0> -> <gen:1>
+             - CollectionQuerySpaceImpl(uid=<gen:1>, collection=com.enterprise.dashboard.model.Application.errorDataSet)
+                - SQL table alias mapping - errordatas1_
+                - alias suffix - 1_
+                - suffixed key columns - {applicat4_1_1_}
+                - entity-element alias suffix - 2_
+                - 2_entity-element suffixed key columns - ID1_1_2_
+                - JOIN (JoinDefinedByMetadata(elements)) : <gen:1> -> <gen:2>
+                   - EntityQuerySpaceImpl(uid=<gen:2>, entity=com.enterprise.dashboard.model.ErrorData)
+                      - SQL table alias mapping - errordatas1_
+                      - alias suffix - 2_
+                      - suffixed key columns - {ID1_1_2_}
+
+[DEBUG] 2019-12-04 17:55:44.484 [main] EntityLoader - Static select for entity com.enterprise.dashboard.model.Application [NONE]: select applicatio0_.ID as ID1_0_0_, applicatio0_.DESCRIPTION as DESCRIPT2_0_0_, applicatio0_.NAME as NAME3_0_0_, errordatas1_.application_ID as applicat4_1_1_, errordatas1_.ID as ID1_1_1_, errordatas1_.ID as ID1_1_2_, errordatas1_.application_ID as applicat4_1_2_, errordatas1_.DESCRIPTION as DESCRIPT2_1_2_, errordatas1_.MESSAGE as MESSAGE3_1_2_ from APPLICATIONS applicatio0_ left outer join ERROR_DATA errordatas1_ on applicatio0_.ID=errordatas1_.application_ID where applicatio0_.ID=?
+[DEBUG] 2019-12-04 17:55:44.484 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@3271ec2a]
+[DEBUG] 2019-12-04 17:55:44.484 [main] MetamodelGraphWalker - Visiting attribute path : description
+[DEBUG] 2019-12-04 17:55:44.484 [main] MetamodelGraphWalker - Visiting attribute path : errorDataSet
+[DEBUG] 2019-12-04 17:55:44.484 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@1689527c]
+[DEBUG] 2019-12-04 17:55:44.484 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@21516c88]
+[DEBUG] 2019-12-04 17:55:44.485 [main] MetamodelGraphWalker - Visiting attribute path : errorDataSet.application
+[DEBUG] 2019-12-04 17:55:44.485 [main] MetamodelGraphWalker - Property path deemed to be circular : errorDataSet.application
+[DEBUG] 2019-12-04 17:55:44.485 [main] MetamodelGraphWalker - Visiting attribute path : errorDataSet.description
+[DEBUG] 2019-12-04 17:55:44.485 [main] MetamodelGraphWalker - Visiting attribute path : errorDataSet.message
+[DEBUG] 2019-12-04 17:55:44.485 [main] MetamodelGraphWalker - Visiting attribute path : name
+[DEBUG] 2019-12-04 17:55:44.485 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2019-12-04 17:55:44.485 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2019-12-04 17:55:44.486 [main] LoadPlanTreePrinter - LoadPlan(entity=com.enterprise.dashboard.model.Application)
+    - Returns
+       - EntityReturnImpl(entity=com.enterprise.dashboard.model.Application, querySpaceUid=<gen:0>, path=com.enterprise.dashboard.model.Application)
+          - CollectionAttributeFetchImpl(collection=com.enterprise.dashboard.model.Application.errorDataSet, querySpaceUid=<gen:1>, path=com.enterprise.dashboard.model.Application.errorDataSet)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=com.enterprise.dashboard.model.ErrorData, querySpaceUid=<gen:2>, path=com.enterprise.dashboard.model.Application.errorDataSet.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.enterprise.dashboard.model.Application)
+          - SQL table alias mapping - applicatio0_
+          - alias suffix - 0_
+          - suffixed key columns - {ID1_0_0_}
+          - JOIN (JoinDefinedByMetadata(errorDataSet)) : <gen:0> -> <gen:1>
+             - CollectionQuerySpaceImpl(uid=<gen:1>, collection=com.enterprise.dashboard.model.Application.errorDataSet)
+                - SQL table alias mapping - errordatas1_
+                - alias suffix - 1_
+                - suffixed key columns - {applicat4_1_1_}
+                - entity-element alias suffix - 2_
+                - 2_entity-element suffixed key columns - ID1_1_2_
+                - JOIN (JoinDefinedByMetadata(elements)) : <gen:1> -> <gen:2>
+                   - EntityQuerySpaceImpl(uid=<gen:2>, entity=com.enterprise.dashboard.model.ErrorData)
+                      - SQL table alias mapping - errordatas1_
+                      - alias suffix - 2_
+                      - suffixed key columns - {ID1_1_2_}
+
+[DEBUG] 2019-12-04 17:55:44.486 [main] EntityLoader - Static select for entity com.enterprise.dashboard.model.Application [READ]: select applicatio0_.ID as ID1_0_0_, applicatio0_.DESCRIPTION as DESCRIPT2_0_0_, applicatio0_.NAME as NAME3_0_0_, errordatas1_.application_ID as applicat4_1_1_, errordatas1_.ID as ID1_1_1_, errordatas1_.ID as ID1_1_2_, errordatas1_.application_ID as applicat4_1_2_, errordatas1_.DESCRIPTION as DESCRIPT2_1_2_, errordatas1_.MESSAGE as MESSAGE3_1_2_ from APPLICATIONS applicatio0_ left outer join ERROR_DATA errordatas1_ on applicatio0_.ID=errordatas1_.application_ID where applicatio0_.ID=?
+[DEBUG] 2019-12-04 17:55:44.488 [main] Loader - Static select for action ACTION_MERGE on entity com.enterprise.dashboard.model.Application: select applicatio0_.ID as ID1_0_1_, applicatio0_.DESCRIPTION as DESCRIPT2_0_1_, applicatio0_.NAME as NAME3_0_1_, errordatas1_.application_ID as applicat4_1_3_, errordatas1_.ID as ID1_1_3_, errordatas1_.ID as ID1_1_0_, errordatas1_.application_ID as applicat4_1_0_, errordatas1_.DESCRIPTION as DESCRIPT2_1_0_, errordatas1_.MESSAGE as MESSAGE3_1_0_ from APPLICATIONS applicatio0_ left outer join ERROR_DATA errordatas1_ on applicatio0_.ID=errordatas1_.application_ID where applicatio0_.ID=?
+[DEBUG] 2019-12-04 17:55:44.489 [main] Loader - Static select for action ACTION_REFRESH on entity com.enterprise.dashboard.model.Application: select applicatio0_.ID as ID1_0_1_, applicatio0_.DESCRIPTION as DESCRIPT2_0_1_, applicatio0_.NAME as NAME3_0_1_, errordatas1_.application_ID as applicat4_1_3_, errordatas1_.ID as ID1_1_3_, errordatas1_.ID as ID1_1_0_, errordatas1_.application_ID as applicat4_1_0_, errordatas1_.DESCRIPTION as DESCRIPT2_1_0_, errordatas1_.MESSAGE as MESSAGE3_1_0_ from APPLICATIONS applicatio0_ left outer join ERROR_DATA errordatas1_ on applicatio0_.ID=errordatas1_.application_ID where applicatio0_.ID=?
+[DEBUG] 2019-12-04 17:55:44.489 [main] AbstractEntityPersister - Static SQL for entity: com.enterprise.dashboard.model.ErrorData
+[DEBUG] 2019-12-04 17:55:44.489 [main] AbstractEntityPersister -  Version select: select ID from ERROR_DATA where ID =?
+[DEBUG] 2019-12-04 17:55:44.489 [main] AbstractEntityPersister -  Snapshot select: select errordata_.ID, errordata_.application_ID as applicat4_1_, errordata_.DESCRIPTION as DESCRIPT2_1_, errordata_.MESSAGE as MESSAGE3_1_ from ERROR_DATA errordata_ where errordata_.ID=?
+[DEBUG] 2019-12-04 17:55:44.489 [main] AbstractEntityPersister -  Insert 0: insert into ERROR_DATA (application_ID, DESCRIPTION, MESSAGE, ID) values (?, ?, ?, ?)
+[DEBUG] 2019-12-04 17:55:44.490 [main] AbstractEntityPersister -  Update 0: update ERROR_DATA set application_ID=?, DESCRIPTION=?, MESSAGE=? where ID=?
+[DEBUG] 2019-12-04 17:55:44.490 [main] AbstractEntityPersister -  Delete 0: delete from ERROR_DATA where ID=?
+[DEBUG] 2019-12-04 17:55:44.490 [main] AbstractEntityPersister -  Identity insert: insert into ERROR_DATA (application_ID, DESCRIPTION, MESSAGE) values (?, ?, ?)
+[DEBUG] 2019-12-04 17:55:44.490 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@e01a26b]
+[DEBUG] 2019-12-04 17:55:44.490 [main] MetamodelGraphWalker - Visiting attribute path : application
+[DEBUG] 2019-12-04 17:55:44.490 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@5cce40d7]
+[DEBUG] 2019-12-04 17:55:44.491 [main] MetamodelGraphWalker - Visiting attribute path : application.description
+[DEBUG] 2019-12-04 17:55:44.491 [main] MetamodelGraphWalker - Visiting attribute path : application.errorDataSet
+[DEBUG] 2019-12-04 17:55:44.491 [main] MetamodelGraphWalker - Property path deemed to be circular : application.errorDataSet
+[DEBUG] 2019-12-04 17:55:44.491 [main] MetamodelGraphWalker - Visiting attribute path : application.name
+[DEBUG] 2019-12-04 17:55:44.491 [main] MetamodelGraphWalker - Visiting attribute path : description
+[DEBUG] 2019-12-04 17:55:44.492 [main] MetamodelGraphWalker - Visiting attribute path : message
+[DEBUG] 2019-12-04 17:55:44.492 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2019-12-04 17:55:44.492 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2019-12-04 17:55:44.492 [main] LoadPlanTreePrinter - LoadPlan(entity=com.enterprise.dashboard.model.ErrorData)
+    - Returns
+       - EntityReturnImpl(entity=com.enterprise.dashboard.model.ErrorData, querySpaceUid=<gen:0>, path=com.enterprise.dashboard.model.ErrorData)
+          - EntityAttributeFetchImpl(entity=com.enterprise.dashboard.model.Application, querySpaceUid=<gen:1>, path=com.enterprise.dashboard.model.ErrorData.application)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.enterprise.dashboard.model.ErrorData)
+          - SQL table alias mapping - errordata0_
+          - alias suffix - 0_
+          - suffixed key columns - {ID1_1_0_}
+          - JOIN (JoinDefinedByMetadata(application)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=com.enterprise.dashboard.model.Application)
+                - SQL table alias mapping - applicatio1_
+                - alias suffix - 1_
+                - suffixed key columns - {ID1_0_1_}
+
+[DEBUG] 2019-12-04 17:55:44.493 [main] EntityLoader - Static select for entity com.enterprise.dashboard.model.ErrorData [NONE]: select errordata0_.ID as ID1_1_0_, errordata0_.application_ID as applicat4_1_0_, errordata0_.DESCRIPTION as DESCRIPT2_1_0_, errordata0_.MESSAGE as MESSAGE3_1_0_, applicatio1_.ID as ID1_0_1_, applicatio1_.DESCRIPTION as DESCRIPT2_0_1_, applicatio1_.NAME as NAME3_0_1_ from ERROR_DATA errordata0_ left outer join APPLICATIONS applicatio1_ on errordata0_.application_ID=applicatio1_.ID where errordata0_.ID=?
+[DEBUG] 2019-12-04 17:55:44.495 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@464aeb09]
+[DEBUG] 2019-12-04 17:55:44.496 [main] MetamodelGraphWalker - Visiting attribute path : application
+[DEBUG] 2019-12-04 17:55:44.496 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@59d6642a]
+[DEBUG] 2019-12-04 17:55:44.497 [main] MetamodelGraphWalker - Visiting attribute path : application.description
+[DEBUG] 2019-12-04 17:55:44.497 [main] MetamodelGraphWalker - Visiting attribute path : application.errorDataSet
+[DEBUG] 2019-12-04 17:55:44.497 [main] MetamodelGraphWalker - Property path deemed to be circular : application.errorDataSet
+[DEBUG] 2019-12-04 17:55:44.497 [main] MetamodelGraphWalker - Visiting attribute path : application.name
+[DEBUG] 2019-12-04 17:55:44.498 [main] MetamodelGraphWalker - Visiting attribute path : description
+[DEBUG] 2019-12-04 17:55:44.498 [main] MetamodelGraphWalker - Visiting attribute path : message
+[DEBUG] 2019-12-04 17:55:44.498 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2019-12-04 17:55:44.498 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2019-12-04 17:55:44.499 [main] LoadPlanTreePrinter - LoadPlan(entity=com.enterprise.dashboard.model.ErrorData)
+    - Returns
+       - EntityReturnImpl(entity=com.enterprise.dashboard.model.ErrorData, querySpaceUid=<gen:0>, path=com.enterprise.dashboard.model.ErrorData)
+          - EntityAttributeFetchImpl(entity=com.enterprise.dashboard.model.Application, querySpaceUid=<gen:1>, path=com.enterprise.dashboard.model.ErrorData.application)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.enterprise.dashboard.model.ErrorData)
+          - SQL table alias mapping - errordata0_
+          - alias suffix - 0_
+          - suffixed key columns - {ID1_1_0_}
+          - JOIN (JoinDefinedByMetadata(application)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=com.enterprise.dashboard.model.Application)
+                - SQL table alias mapping - applicatio1_
+                - alias suffix - 1_
+                - suffixed key columns - {ID1_0_1_}
+
+[DEBUG] 2019-12-04 17:55:44.499 [main] EntityLoader - Static select for entity com.enterprise.dashboard.model.ErrorData [READ]: select errordata0_.ID as ID1_1_0_, errordata0_.application_ID as applicat4_1_0_, errordata0_.DESCRIPTION as DESCRIPT2_1_0_, errordata0_.MESSAGE as MESSAGE3_1_0_, applicatio1_.ID as ID1_0_1_, applicatio1_.DESCRIPTION as DESCRIPT2_0_1_, applicatio1_.NAME as NAME3_0_1_ from ERROR_DATA errordata0_ left outer join APPLICATIONS applicatio1_ on errordata0_.application_ID=applicatio1_.ID where errordata0_.ID=?
+[DEBUG] 2019-12-04 17:55:44.499 [main] Loader - Static select for action ACTION_MERGE on entity com.enterprise.dashboard.model.ErrorData: select errordata0_.ID as ID1_1_0_, errordata0_.application_ID as applicat4_1_0_, errordata0_.DESCRIPTION as DESCRIPT2_1_0_, errordata0_.MESSAGE as MESSAGE3_1_0_ from ERROR_DATA errordata0_ where errordata0_.ID=?
+[DEBUG] 2019-12-04 17:55:44.499 [main] Loader - Static select for action ACTION_REFRESH on entity com.enterprise.dashboard.model.ErrorData: select errordata0_.ID as ID1_1_0_, errordata0_.application_ID as applicat4_1_0_, errordata0_.DESCRIPTION as DESCRIPT2_1_0_, errordata0_.MESSAGE as MESSAGE3_1_0_ from ERROR_DATA errordata0_ where errordata0_.ID=?
+[DEBUG] 2019-12-04 17:55:44.510 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@2d4fb0d8]
+[DEBUG] 2019-12-04 17:55:44.510 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@dc1fadd]
+[DEBUG] 2019-12-04 17:55:44.510 [main] MetamodelGraphWalker - Visiting attribute path : application
+[DEBUG] 2019-12-04 17:55:44.510 [main] MetamodelGraphWalker - Property path deemed to be circular : application
+[DEBUG] 2019-12-04 17:55:44.511 [main] MetamodelGraphWalker - Visiting attribute path : description
+[DEBUG] 2019-12-04 17:55:44.511 [main] MetamodelGraphWalker - Visiting attribute path : message
+[DEBUG] 2019-12-04 17:55:44.511 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2019-12-04 17:55:44.514 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2019-12-04 17:55:44.522 [main] LoadPlanTreePrinter - LoadPlan(collection=com.enterprise.dashboard.model.Application.errorDataSet)
+    - Returns
+       - CollectionReturnImpl(collection=com.enterprise.dashboard.model.Application.errorDataSet, querySpaceUid=<gen:0>, path=[com.enterprise.dashboard.model.Application.errorDataSet])
+          - (collection element) CollectionFetchableElementEntityGraph(entity=com.enterprise.dashboard.model.ErrorData, querySpaceUid=<gen:1>, path=[com.enterprise.dashboard.model.Application.errorDataSet].<elements>)
+    - QuerySpaces
+       - CollectionQuerySpaceImpl(uid=<gen:0>, collection=com.enterprise.dashboard.model.Application.errorDataSet)
+          - SQL table alias mapping - errordatas0_
+          - alias suffix - 0_
+          - suffixed key columns - {applicat4_1_0_}
+          - entity-element alias suffix - 1_
+          - 1_entity-element suffixed key columns - ID1_1_1_
+          - JOIN (JoinDefinedByMetadata(elements)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=com.enterprise.dashboard.model.ErrorData)
+                - SQL table alias mapping - errordatas0_
+                - alias suffix - 1_
+                - suffixed key columns - {ID1_1_1_}
+
+[DEBUG] 2019-12-04 17:55:44.523 [main] CollectionLoader - Static select for collection com.enterprise.dashboard.model.Application.errorDataSet: select errordatas0_.application_ID as applicat4_1_0_, errordatas0_.ID as ID1_1_0_, errordatas0_.ID as ID1_1_1_, errordatas0_.application_ID as applicat4_1_1_, errordatas0_.DESCRIPTION as DESCRIPT2_1_1_, errordatas0_.MESSAGE as MESSAGE3_1_1_ from ERROR_DATA errordatas0_ where errordatas0_.application_ID=?
+[DEBUG] 2019-12-04 17:55:44.587 [main] SchemaManagementToolCoordinator - No actions specified; doing nothing
+[DEBUG] 2019-12-04 17:55:44.587 [main] JtaPlatformInitiator - No JtaPlatform was specified, checking resolver
+[DEBUG] 2019-12-04 17:55:44.587 [main] JtaPlatformResolverInitiator - No JtaPlatformResolver was specified, using default [org.hibernate.engine.transaction.jta.platform.internal.StandardJtaPlatformResolver]
+[DEBUG] 2019-12-04 17:55:44.596 [main] StandardJtaPlatformResolver - Could not resolve JtaPlatform, using default [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2019-12-04 17:55:44.596 [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[DEBUG] 2019-12-04 17:55:44.600 [main] NamedQueryRepository - Checking 0 named HQL queries
+[DEBUG] 2019-12-04 17:55:44.600 [main] NamedQueryRepository - Checking 0 named SQL queries
+[DEBUG] 2019-12-04 17:55:44.601 [main] SessionFactoryRegistry - Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@3302035b
+[DEBUG] 2019-12-04 17:55:44.603 [main] SessionFactoryRegistry - Registering SessionFactory: 14b7c9b1-61a4-49c7-bcd8-b037a3d8190d (<unnamed>)
+[DEBUG] 2019-12-04 17:55:44.603 [main] SessionFactoryRegistry - Not binding SessionFactory to JNDI, no JNDI name configured
+[DEBUG] 2019-12-04 17:55:44.759 [main] StatisticsInitiator - Statistics initialized [enabled=false]
+[DEBUG] 2019-12-04 17:55:44.827 [main] CriteriaQueryImpl - Rendered criteria query -> select generatedAlias0 from ErrorData as generatedAlias0
+[DEBUG] 2019-12-04 17:55:44.853 [main] QueryTranslatorFactoryInitiator - QueryTranslatorFactory: org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory@13cc31ae
+[DEBUG] 2019-12-04 17:55:44.922 [main] QueryTranslatorImpl - parse() - HQL: select generatedAlias0 from com.enterprise.dashboard.model.ErrorData as generatedAlias0
+[DEBUG] 2019-12-04 17:55:44.949 [main] ErrorTracker - throwQueryException() : no errors
+[DEBUG] 2019-12-04 17:55:44.960 [main] QueryTranslatorImpl - --- HQL AST ---
+ \-[QUERY] Node: 'query'
+    \-[SELECT_FROM] Node: 'SELECT_FROM'
+       +-[FROM] Node: 'from'
+       |  \-[RANGE] Node: 'RANGE'
+       |     +-[DOT] Node: '.'
+       |     |  +-[DOT] Node: '.'
+       |     |  |  +-[DOT] Node: '.'
+       |     |  |  |  +-[DOT] Node: '.'
+       |     |  |  |  |  +-[IDENT] Node: 'com'
+       |     |  |  |  |  \-[IDENT] Node: 'enterprise'
+       |     |  |  |  \-[IDENT] Node: 'dashboard'
+       |     |  |  \-[IDENT] Node: 'model'
+       |     |  \-[IDENT] Node: 'ErrorData'
+       |     \-[ALIAS] Node: 'generatedAlias0'
+       \-[SELECT] Node: 'select'
+          \-[IDENT] Node: 'generatedAlias0'
+
+[DEBUG] 2019-12-04 17:55:45.004 [main] HqlSqlBaseWalker - select << begin [level=1, statement=select]
+[DEBUG] 2019-12-04 17:55:45.019 [main] FromElement - FromClause{level=1} : com.enterprise.dashboard.model.ErrorData (generatedAlias0) -> errordata0_
+[DEBUG] 2019-12-04 17:55:45.020 [main] FromReferenceNode - Resolved : generatedAlias0 -> errordata0_.ID
+[DEBUG] 2019-12-04 17:55:45.022 [main] HqlSqlBaseWalker - select : finishing up [level=1, statement=select]
+[DEBUG] 2019-12-04 17:55:45.023 [main] HqlSqlWalker - processQuery() :  ( SELECT ( {select clause} errordata0_.ID ) ( FromClause{level=1} ERROR_DATA errordata0_ ) )
+[DEBUG] 2019-12-04 17:55:45.034 [main] JoinProcessor - Using FROM fragment [ERROR_DATA errordata0_]
+[DEBUG] 2019-12-04 17:55:45.036 [main] HqlSqlBaseWalker - select >> end [level=1, statement=select]
+[DEBUG] 2019-12-04 17:55:45.036 [main] QueryTranslatorImpl - --- SQL AST ---
+ \-[SELECT] QueryNode: 'SELECT'  querySpaces (ERROR_DATA)
+    +-[SELECT_CLAUSE] SelectClause: '{select clause}'
+    |  +-[ALIAS_REF] IdentNode: 'errordata0_.ID as ID1_1_' {alias=generatedAlias0, className=com.enterprise.dashboard.model.ErrorData, tableAlias=errordata0_}
+    |  \-[SQL_TOKEN] SqlFragment: 'errordata0_.application_ID as applicat4_1_, errordata0_.DESCRIPTION as DESCRIPT2_1_, errordata0_.MESSAGE as MESSAGE3_1_'
+    \-[FROM] FromClause: 'from' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[generatedAlias0], fromElementByTableAlias=[errordata0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+       \-[FROM_FRAGMENT] FromElement: 'ERROR_DATA errordata0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=generatedAlias0,role=null,tableName=ERROR_DATA,tableAlias=errordata0_,origin=null,columns={,className=com.enterprise.dashboard.model.ErrorData}}
+
+[DEBUG] 2019-12-04 17:55:45.037 [main] ErrorTracker - throwQueryException() : no errors
+[DEBUG] 2019-12-04 17:55:45.042 [main] QueryTranslatorImpl - HQL: select generatedAlias0 from com.enterprise.dashboard.model.ErrorData as generatedAlias0
+[DEBUG] 2019-12-04 17:55:45.043 [main] QueryTranslatorImpl - SQL: select errordata0_.ID as ID1_1_, errordata0_.application_ID as applicat4_1_, errordata0_.DESCRIPTION as DESCRIPT2_1_, errordata0_.MESSAGE as MESSAGE3_1_ from ERROR_DATA errordata0_
+[DEBUG] 2019-12-04 17:55:45.043 [main] ErrorTracker - throwQueryException() : no errors
+[DEBUG] 2019-12-04 17:55:45.071 [main] SQL - select errordata0_.ID as ID1_1_, errordata0_.application_ID as applicat4_1_, errordata0_.DESCRIPTION as DESCRIPT2_1_, errordata0_.MESSAGE as MESSAGE3_1_ from ERROR_DATA errordata0_
+[DEBUG] 2019-12-04 17:55:45.119 [main] Loader - Result set row: 0
+[DEBUG] 2019-12-04 17:55:45.124 [main] Loader - Result row: EntityKey[com.enterprise.dashboard.model.ErrorData#1]
+[DEBUG] 2019-12-04 17:55:45.131 [main] Loader - Result set row: 1
+[DEBUG] 2019-12-04 17:55:45.132 [main] Loader - Result row: EntityKey[com.enterprise.dashboard.model.ErrorData#2]
+[DEBUG] 2019-12-04 17:55:45.132 [main] Loader - Result set row: 2
+[DEBUG] 2019-12-04 17:55:45.132 [main] Loader - Result row: EntityKey[com.enterprise.dashboard.model.ErrorData#3]
+[DEBUG] 2019-12-04 17:55:45.133 [main] TwoPhaseLoad - Resolving attributes for [com.enterprise.dashboard.model.ErrorData#1]
+[DEBUG] 2019-12-04 17:55:45.134 [main] TwoPhaseLoad - Processing attribute `application` : value = 1
+[DEBUG] 2019-12-04 17:55:45.134 [main] TwoPhaseLoad - Attribute (`application`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-12-04 17:55:45.140 [main] SQL - select applicatio0_.ID as ID1_0_0_, applicatio0_.DESCRIPTION as DESCRIPT2_0_0_, applicatio0_.NAME as NAME3_0_0_, errordatas1_.application_ID as applicat4_1_1_, errordatas1_.ID as ID1_1_1_, errordatas1_.ID as ID1_1_2_, errordatas1_.application_ID as applicat4_1_2_, errordatas1_.DESCRIPTION as DESCRIPT2_1_2_, errordatas1_.MESSAGE as MESSAGE3_1_2_ from APPLICATIONS applicatio0_ left outer join ERROR_DATA errordatas1_ on applicatio0_.ID=errordatas1_.application_ID where applicatio0_.ID=?
+[DEBUG] 2019-12-04 17:55:45.155 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2019-12-04 17:55:45.156 [main] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2019-12-04 17:55:45.157 [main] CollectionReferenceInitializerImpl - Found row of collection: [com.enterprise.dashboard.model.Application.errorDataSet#1]
+[DEBUG] 2019-12-04 17:55:45.168 [main] ResultSetProcessorImpl - Starting ResultSet row #1
+[DEBUG] 2019-12-04 17:55:45.168 [main] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2019-12-04 17:55:45.169 [main] CollectionReferenceInitializerImpl - Found row of collection: [com.enterprise.dashboard.model.Application.errorDataSet#1]
+[DEBUG] 2019-12-04 17:55:45.169 [main] TwoPhaseLoad - Resolving attributes for [com.enterprise.dashboard.model.Application#1]
+[DEBUG] 2019-12-04 17:55:45.169 [main] TwoPhaseLoad - Processing attribute `description` : value = This is the first application
+[DEBUG] 2019-12-04 17:55:45.169 [main] TwoPhaseLoad - Attribute (`description`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-12-04 17:55:45.169 [main] TwoPhaseLoad - Processing attribute `errorDataSet` : value = NOT NULL COLLECTION
+[DEBUG] 2019-12-04 17:55:45.170 [main] TwoPhaseLoad - Attribute (`errorDataSet`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-12-04 17:55:45.170 [main] TwoPhaseLoad - Processing attribute `name` : value = Application 1
+[DEBUG] 2019-12-04 17:55:45.170 [main] TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-12-04 17:55:45.171 [main] TwoPhaseLoad - Done materializing entity [com.enterprise.dashboard.model.Application#1]
+[DEBUG] 2019-12-04 17:55:45.171 [main] CollectionLoadContext - 1 collections were found in result set for role: com.enterprise.dashboard.model.Application.errorDataSet
+[DEBUG] 2019-12-04 17:55:45.173 [main] CollectionLoadContext - Collection fully initialized: [com.enterprise.dashboard.model.Application.errorDataSet#1]
+[DEBUG] 2019-12-04 17:55:45.174 [main] CollectionLoadContext - 1 collections initialized for role: com.enterprise.dashboard.model.Application.errorDataSet
+[DEBUG] 2019-12-04 17:55:45.174 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2019-12-04 17:55:45.175 [main] AbstractLoadPlanBasedEntityLoader - Done entity load : com.enterprise.dashboard.model.Application#1
+[DEBUG] 2019-12-04 17:55:45.175 [main] TwoPhaseLoad - Processing attribute `description` : value = ERROR processing request
+[DEBUG] 2019-12-04 17:55:45.175 [main] TwoPhaseLoad - Attribute (`description`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-12-04 17:55:45.175 [main] TwoPhaseLoad - Processing attribute `message` : value = ERR-100
+[DEBUG] 2019-12-04 17:55:45.175 [main] TwoPhaseLoad - Attribute (`message`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-12-04 17:55:45.175 [main] TwoPhaseLoad - Done materializing entity [com.enterprise.dashboard.model.ErrorData#1]
+[DEBUG] 2019-12-04 17:55:45.175 [main] TwoPhaseLoad - Resolving attributes for [com.enterprise.dashboard.model.ErrorData#2]
+[DEBUG] 2019-12-04 17:55:45.175 [main] TwoPhaseLoad - Processing attribute `application` : value = 2
+[DEBUG] 2019-12-04 17:55:45.175 [main] TwoPhaseLoad - Attribute (`application`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-12-04 17:55:45.175 [main] SQL - select applicatio0_.ID as ID1_0_0_, applicatio0_.DESCRIPTION as DESCRIPT2_0_0_, applicatio0_.NAME as NAME3_0_0_, errordatas1_.application_ID as applicat4_1_1_, errordatas1_.ID as ID1_1_1_, errordatas1_.ID as ID1_1_2_, errordatas1_.application_ID as applicat4_1_2_, errordatas1_.DESCRIPTION as DESCRIPT2_1_2_, errordatas1_.MESSAGE as MESSAGE3_1_2_ from APPLICATIONS applicatio0_ left outer join ERROR_DATA errordatas1_ on applicatio0_.ID=errordatas1_.application_ID where applicatio0_.ID=?
+[DEBUG] 2019-12-04 17:55:45.178 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2019-12-04 17:55:45.179 [main] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2019-12-04 17:55:45.179 [main] CollectionReferenceInitializerImpl - Found row of collection: [com.enterprise.dashboard.model.Application.errorDataSet#2]
+[DEBUG] 2019-12-04 17:55:45.180 [main] TwoPhaseLoad - Resolving attributes for [com.enterprise.dashboard.model.Application#2]
+[DEBUG] 2019-12-04 17:55:45.180 [main] TwoPhaseLoad - Processing attribute `description` : value = This is the second Application
+[DEBUG] 2019-12-04 17:55:45.180 [main] TwoPhaseLoad - Attribute (`description`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-12-04 17:55:45.180 [main] TwoPhaseLoad - Processing attribute `errorDataSet` : value = NOT NULL COLLECTION
+[DEBUG] 2019-12-04 17:55:45.181 [main] TwoPhaseLoad - Attribute (`errorDataSet`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-12-04 17:55:45.181 [main] TwoPhaseLoad - Processing attribute `name` : value = Application 2
+[DEBUG] 2019-12-04 17:55:45.181 [main] TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-12-04 17:55:45.181 [main] TwoPhaseLoad - Done materializing entity [com.enterprise.dashboard.model.Application#2]
+[DEBUG] 2019-12-04 17:55:45.181 [main] CollectionLoadContext - 1 collections were found in result set for role: com.enterprise.dashboard.model.Application.errorDataSet
+[DEBUG] 2019-12-04 17:55:45.182 [main] CollectionLoadContext - Collection fully initialized: [com.enterprise.dashboard.model.Application.errorDataSet#2]
+[DEBUG] 2019-12-04 17:55:45.182 [main] CollectionLoadContext - 1 collections initialized for role: com.enterprise.dashboard.model.Application.errorDataSet
+[DEBUG] 2019-12-04 17:55:45.182 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2019-12-04 17:55:45.182 [main] AbstractLoadPlanBasedEntityLoader - Done entity load : com.enterprise.dashboard.model.Application#2
+[DEBUG] 2019-12-04 17:55:45.182 [main] TwoPhaseLoad - Processing attribute `description` : value = ERROR processing 2 request
+[DEBUG] 2019-12-04 17:55:45.182 [main] TwoPhaseLoad - Attribute (`description`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-12-04 17:55:45.183 [main] TwoPhaseLoad - Processing attribute `message` : value = ERR-101
+[DEBUG] 2019-12-04 17:55:45.183 [main] TwoPhaseLoad - Attribute (`message`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-12-04 17:55:45.183 [main] TwoPhaseLoad - Done materializing entity [com.enterprise.dashboard.model.ErrorData#2]
+[DEBUG] 2019-12-04 17:55:45.183 [main] TwoPhaseLoad - Resolving attributes for [com.enterprise.dashboard.model.ErrorData#3]
+[DEBUG] 2019-12-04 17:55:45.183 [main] TwoPhaseLoad - Processing attribute `application` : value = 1
+[DEBUG] 2019-12-04 17:55:45.183 [main] TwoPhaseLoad - Attribute (`application`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-12-04 17:55:45.183 [main] TwoPhaseLoad - Processing attribute `description` : value = ERROR processing 3 request
+[DEBUG] 2019-12-04 17:55:45.184 [main] TwoPhaseLoad - Attribute (`description`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-12-04 17:55:45.184 [main] TwoPhaseLoad - Processing attribute `message` : value = ERR-103
+[DEBUG] 2019-12-04 17:55:45.184 [main] TwoPhaseLoad - Attribute (`message`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-12-04 17:55:45.185 [main] TwoPhaseLoad - Done materializing entity [com.enterprise.dashboard.model.ErrorData#3]
+[DEBUG] 2019-12-04 17:55:45.204 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2019-12-04 17:55:45.293 [main] SQL - select errordata0_.ID as ID1_1_0_, errordata0_.application_ID as applicat4_1_0_, errordata0_.DESCRIPTION as DESCRIPT2_1_0_, errordata0_.MESSAGE as MESSAGE3_1_0_, applicatio1_.ID as ID1_0_1_, applicatio1_.DESCRIPTION as DESCRIPT2_0_1_, applicatio1_.NAME as NAME3_0_1_ from ERROR_DATA errordata0_ left outer join APPLICATIONS applicatio1_ on errordata0_.application_ID=applicatio1_.ID where errordata0_.ID=?
+[DEBUG] 2019-12-04 17:55:45.308 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2019-12-04 17:55:45.309 [main] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2019-12-04 17:55:45.309 [main] TwoPhaseLoad - Resolving attributes for [com.enterprise.dashboard.model.ErrorData#1]
+[DEBUG] 2019-12-04 17:55:45.309 [main] TwoPhaseLoad - Processing attribute `application` : value = 1
+[DEBUG] 2019-12-04 17:55:45.309 [main] TwoPhaseLoad - Attribute (`application`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-12-04 17:55:45.309 [main] TwoPhaseLoad - Processing attribute `description` : value = ERROR processing request
+[DEBUG] 2019-12-04 17:55:45.310 [main] TwoPhaseLoad - Attribute (`description`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-12-04 17:55:45.310 [main] TwoPhaseLoad - Processing attribute `message` : value = ERR-100
+[DEBUG] 2019-12-04 17:55:45.310 [main] TwoPhaseLoad - Attribute (`message`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-12-04 17:55:45.310 [main] TwoPhaseLoad - Done materializing entity [com.enterprise.dashboard.model.ErrorData#1]
+[DEBUG] 2019-12-04 17:55:45.310 [main] TwoPhaseLoad - Resolving attributes for [com.enterprise.dashboard.model.Application#1]
+[DEBUG] 2019-12-04 17:55:45.310 [main] TwoPhaseLoad - Processing attribute `description` : value = This is the first application
+[DEBUG] 2019-12-04 17:55:45.310 [main] TwoPhaseLoad - Attribute (`description`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-12-04 17:55:45.310 [main] TwoPhaseLoad - Processing attribute `errorDataSet` : value = NOT NULL COLLECTION
+[DEBUG] 2019-12-04 17:55:45.310 [main] TwoPhaseLoad - Attribute (`errorDataSet`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-12-04 17:55:45.310 [main] TwoPhaseLoad - Processing attribute `name` : value = Application 1
+[DEBUG] 2019-12-04 17:55:45.310 [main] TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-12-04 17:55:45.311 [main] TwoPhaseLoad - Done materializing entity [com.enterprise.dashboard.model.Application#1]
+[DEBUG] 2019-12-04 17:55:45.311 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2019-12-04 17:55:45.315 [main] AbstractLoadPlanBasedCollectionInitializer - Loading collection: [com.enterprise.dashboard.model.Application.errorDataSet#1]
+[DEBUG] 2019-12-04 17:55:45.316 [main] SQL - select errordatas0_.application_ID as applicat4_1_0_, errordatas0_.ID as ID1_1_0_, errordatas0_.ID as ID1_1_1_, errordatas0_.application_ID as applicat4_1_1_, errordatas0_.DESCRIPTION as DESCRIPT2_1_1_, errordatas0_.MESSAGE as MESSAGE3_1_1_ from ERROR_DATA errordatas0_ where errordatas0_.application_ID=?
+[DEBUG] 2019-12-04 17:55:45.319 [main] ResultSetProcessorImpl - Preparing collection initializer : [com.enterprise.dashboard.model.Application.errorDataSet#1]
+[DEBUG] 2019-12-04 17:55:45.320 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2019-12-04 17:55:45.320 [main] CollectionReferenceInitializerImpl - Found row of collection: [com.enterprise.dashboard.model.Application.errorDataSet#1]
+[DEBUG] 2019-12-04 17:55:45.321 [main] ResultSetProcessorImpl - Starting ResultSet row #1
+[DEBUG] 2019-12-04 17:55:45.321 [main] CollectionReferenceInitializerImpl - Found row of collection: [com.enterprise.dashboard.model.Application.errorDataSet#1]
+[DEBUG] 2019-12-04 17:55:45.321 [main] TwoPhaseLoad - Resolving attributes for [com.enterprise.dashboard.model.ErrorData#3]
+[DEBUG] 2019-12-04 17:55:45.321 [main] TwoPhaseLoad - Processing attribute `application` : value = 1
+[DEBUG] 2019-12-04 17:55:45.321 [main] TwoPhaseLoad - Attribute (`application`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-12-04 17:55:45.322 [main] TwoPhaseLoad - Processing attribute `description` : value = ERROR processing 3 request
+[DEBUG] 2019-12-04 17:55:45.322 [main] TwoPhaseLoad - Attribute (`description`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-12-04 17:55:45.322 [main] TwoPhaseLoad - Processing attribute `message` : value = ERR-103
+[DEBUG] 2019-12-04 17:55:45.322 [main] TwoPhaseLoad - Attribute (`message`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-12-04 17:55:45.322 [main] TwoPhaseLoad - Done materializing entity [com.enterprise.dashboard.model.ErrorData#3]
+[DEBUG] 2019-12-04 17:55:45.322 [main] CollectionLoadContext - 1 collections were found in result set for role: com.enterprise.dashboard.model.Application.errorDataSet
+[DEBUG] 2019-12-04 17:55:45.322 [main] CollectionLoadContext - Collection fully initialized: [com.enterprise.dashboard.model.Application.errorDataSet#1]
+[DEBUG] 2019-12-04 17:55:45.322 [main] CollectionLoadContext - 1 collections initialized for role: com.enterprise.dashboard.model.Application.errorDataSet
+[DEBUG] 2019-12-04 17:55:45.322 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2019-12-04 17:55:45.323 [main] AbstractLoadPlanBasedCollectionInitializer - Done loading collection
+[DEBUG] 2019-12-04 17:55:45.323 [main] AbstractLoadPlanBasedEntityLoader - Done entity load : com.enterprise.dashboard.model.ErrorData#1
+[DEBUG] 2019-12-04 17:55:45.323 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2019-12-04 17:55:45.328 [main] TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+[DEBUG] 2019-12-04 17:55:45.328 [main] TransactionImpl - begin
+[DEBUG] 2019-12-04 17:55:45.340 [main] TransactionImpl - committing
+[DEBUG] 2019-12-04 17:55:45.341 [main] AbstractFlushingEventListener - Processing flush-time cascades
+[DEBUG] 2019-12-04 17:55:45.341 [main] AbstractFlushingEventListener - Dirty checking collections
+[DEBUG] 2019-12-04 17:55:45.342 [main] AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 1 deletions to 1 objects
+[DEBUG] 2019-12-04 17:55:45.342 [main] AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+[DEBUG] 2019-12-04 17:55:45.343 [main] EntityPrinter - Listing entities:
+[DEBUG] 2019-12-04 17:55:45.344 [main] EntityPrinter - com.enterprise.dashboard.model.ErrorData{application=com.enterprise.dashboard.model.Application#1, description=ERROR processing request, id=1, message=ERR-100}
+[DEBUG] 2019-12-04 17:55:45.359 [main] SQL - delete from ERROR_DATA where ID=?
+[DEBUG] 2019-12-04 17:55:45.375 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2019-12-04 17:55:45.377 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2019-12-04 17:55:45.378 [main] JdbcCoordinatorImpl - HHH000420: Closing un-released batch
+[DEBUG] 2019-12-04 17:55:45.378 [main] CriteriaQueryImpl - Rendered criteria query -> select generatedAlias0 from ErrorData as generatedAlias0
+[DEBUG] 2019-12-04 17:55:45.378 [main] SQL - select errordata0_.ID as ID1_1_, errordata0_.application_ID as applicat4_1_, errordata0_.DESCRIPTION as DESCRIPT2_1_, errordata0_.MESSAGE as MESSAGE3_1_ from ERROR_DATA errordata0_
+[DEBUG] 2019-12-04 17:55:45.383 [main] Loader - Result set row: 0
+[DEBUG] 2019-12-04 17:55:45.383 [main] Loader - Result row: EntityKey[com.enterprise.dashboard.model.ErrorData#2]
+[DEBUG] 2019-12-04 17:55:45.383 [main] Loader - Result set row: 1
+[DEBUG] 2019-12-04 17:55:45.383 [main] Loader - Result row: EntityKey[com.enterprise.dashboard.model.ErrorData#3]
+[DEBUG] 2019-12-04 17:55:45.384 [main] TwoPhaseLoad - Resolving attributes for [com.enterprise.dashboard.model.ErrorData#2]
+[DEBUG] 2019-12-04 17:55:45.384 [main] TwoPhaseLoad - Processing attribute `application` : value = 2
+[DEBUG] 2019-12-04 17:55:45.384 [main] TwoPhaseLoad - Attribute (`application`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-12-04 17:55:45.384 [main] SQL - select applicatio0_.ID as ID1_0_0_, applicatio0_.DESCRIPTION as DESCRIPT2_0_0_, applicatio0_.NAME as NAME3_0_0_, errordatas1_.application_ID as applicat4_1_1_, errordatas1_.ID as ID1_1_1_, errordatas1_.ID as ID1_1_2_, errordatas1_.application_ID as applicat4_1_2_, errordatas1_.DESCRIPTION as DESCRIPT2_1_2_, errordatas1_.MESSAGE as MESSAGE3_1_2_ from APPLICATIONS applicatio0_ left outer join ERROR_DATA errordatas1_ on applicatio0_.ID=errordatas1_.application_ID where applicatio0_.ID=?
+[DEBUG] 2019-12-04 17:55:45.387 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2019-12-04 17:55:45.387 [main] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2019-12-04 17:55:45.387 [main] CollectionReferenceInitializerImpl - Found row of collection: [com.enterprise.dashboard.model.Application.errorDataSet#2]
+[DEBUG] 2019-12-04 17:55:45.388 [main] TwoPhaseLoad - Resolving attributes for [com.enterprise.dashboard.model.Application#2]
+[DEBUG] 2019-12-04 17:55:45.388 [main] TwoPhaseLoad - Processing attribute `description` : value = This is the second Application
+[DEBUG] 2019-12-04 17:55:45.388 [main] TwoPhaseLoad - Attribute (`description`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-12-04 17:55:45.388 [main] TwoPhaseLoad - Processing attribute `errorDataSet` : value = NOT NULL COLLECTION
+[DEBUG] 2019-12-04 17:55:45.388 [main] TwoPhaseLoad - Attribute (`errorDataSet`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-12-04 17:55:45.388 [main] TwoPhaseLoad - Processing attribute `name` : value = Application 2
+[DEBUG] 2019-12-04 17:55:45.388 [main] TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-12-04 17:55:45.388 [main] TwoPhaseLoad - Done materializing entity [com.enterprise.dashboard.model.Application#2]
+[DEBUG] 2019-12-04 17:55:45.388 [main] CollectionLoadContext - 1 collections were found in result set for role: com.enterprise.dashboard.model.Application.errorDataSet
+[DEBUG] 2019-12-04 17:55:45.388 [main] CollectionLoadContext - Collection fully initialized: [com.enterprise.dashboard.model.Application.errorDataSet#2]
+[DEBUG] 2019-12-04 17:55:45.388 [main] CollectionLoadContext - 1 collections initialized for role: com.enterprise.dashboard.model.Application.errorDataSet
+[DEBUG] 2019-12-04 17:55:45.388 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2019-12-04 17:55:45.388 [main] AbstractLoadPlanBasedEntityLoader - Done entity load : com.enterprise.dashboard.model.Application#2
+[DEBUG] 2019-12-04 17:55:45.389 [main] TwoPhaseLoad - Processing attribute `description` : value = ERROR processing 2 request
+[DEBUG] 2019-12-04 17:55:45.389 [main] TwoPhaseLoad - Attribute (`description`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-12-04 17:55:45.389 [main] TwoPhaseLoad - Processing attribute `message` : value = ERR-101
+[DEBUG] 2019-12-04 17:55:45.389 [main] TwoPhaseLoad - Attribute (`message`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-12-04 17:55:45.389 [main] TwoPhaseLoad - Done materializing entity [com.enterprise.dashboard.model.ErrorData#2]
+[DEBUG] 2019-12-04 17:55:45.389 [main] TwoPhaseLoad - Resolving attributes for [com.enterprise.dashboard.model.ErrorData#3]
+[DEBUG] 2019-12-04 17:55:45.389 [main] TwoPhaseLoad - Processing attribute `application` : value = 1
+[DEBUG] 2019-12-04 17:55:45.389 [main] TwoPhaseLoad - Attribute (`application`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-12-04 17:55:45.389 [main] SQL - select applicatio0_.ID as ID1_0_0_, applicatio0_.DESCRIPTION as DESCRIPT2_0_0_, applicatio0_.NAME as NAME3_0_0_, errordatas1_.application_ID as applicat4_1_1_, errordatas1_.ID as ID1_1_1_, errordatas1_.ID as ID1_1_2_, errordatas1_.application_ID as applicat4_1_2_, errordatas1_.DESCRIPTION as DESCRIPT2_1_2_, errordatas1_.MESSAGE as MESSAGE3_1_2_ from APPLICATIONS applicatio0_ left outer join ERROR_DATA errordatas1_ on applicatio0_.ID=errordatas1_.application_ID where applicatio0_.ID=?
+[DEBUG] 2019-12-04 17:55:45.392 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2019-12-04 17:55:45.392 [main] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2019-12-04 17:55:45.392 [main] CollectionReferenceInitializerImpl - Found row of collection: [com.enterprise.dashboard.model.Application.errorDataSet#1]
+[DEBUG] 2019-12-04 17:55:45.392 [main] TwoPhaseLoad - Resolving attributes for [com.enterprise.dashboard.model.Application#1]
+[DEBUG] 2019-12-04 17:55:45.392 [main] TwoPhaseLoad - Processing attribute `description` : value = This is the first application
+[DEBUG] 2019-12-04 17:55:45.392 [main] TwoPhaseLoad - Attribute (`description`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-12-04 17:55:45.392 [main] TwoPhaseLoad - Processing attribute `errorDataSet` : value = NOT NULL COLLECTION
+[DEBUG] 2019-12-04 17:55:45.392 [main] TwoPhaseLoad - Attribute (`errorDataSet`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-12-04 17:55:45.393 [main] TwoPhaseLoad - Processing attribute `name` : value = Application 1
+[DEBUG] 2019-12-04 17:55:45.393 [main] TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-12-04 17:55:45.393 [main] TwoPhaseLoad - Done materializing entity [com.enterprise.dashboard.model.Application#1]
+[DEBUG] 2019-12-04 17:55:45.393 [main] CollectionLoadContext - 1 collections were found in result set for role: com.enterprise.dashboard.model.Application.errorDataSet
+[DEBUG] 2019-12-04 17:55:45.393 [main] CollectionLoadContext - Collection fully initialized: [com.enterprise.dashboard.model.Application.errorDataSet#1]
+[DEBUG] 2019-12-04 17:55:45.393 [main] CollectionLoadContext - 1 collections initialized for role: com.enterprise.dashboard.model.Application.errorDataSet
+[DEBUG] 2019-12-04 17:55:45.393 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2019-12-04 17:55:45.393 [main] AbstractLoadPlanBasedEntityLoader - Done entity load : com.enterprise.dashboard.model.Application#1
+[DEBUG] 2019-12-04 17:55:45.393 [main] TwoPhaseLoad - Processing attribute `description` : value = ERROR processing 3 request
+[DEBUG] 2019-12-04 17:55:45.394 [main] TwoPhaseLoad - Attribute (`description`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-12-04 17:55:45.394 [main] TwoPhaseLoad - Processing attribute `message` : value = ERR-103
+[DEBUG] 2019-12-04 17:55:45.394 [main] TwoPhaseLoad - Attribute (`message`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-12-04 17:55:45.394 [main] TwoPhaseLoad - Done materializing entity [com.enterprise.dashboard.model.ErrorData#3]
+[DEBUG] 2019-12-04 17:55:45.394 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2019-12-04 17:55:45.468 [main] SQL - select errordata0_.ID as ID1_1_0_, errordata0_.application_ID as applicat4_1_0_, errordata0_.DESCRIPTION as DESCRIPT2_1_0_, errordata0_.MESSAGE as MESSAGE3_1_0_, applicatio1_.ID as ID1_0_1_, applicatio1_.DESCRIPTION as DESCRIPT2_0_1_, applicatio1_.NAME as NAME3_0_1_ from ERROR_DATA errordata0_ left outer join APPLICATIONS applicatio1_ on errordata0_.application_ID=applicatio1_.ID where errordata0_.ID=?
+[DEBUG] 2019-12-04 17:55:45.472 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2019-12-04 17:55:45.473 [main] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2019-12-04 17:55:45.473 [main] TwoPhaseLoad - Resolving attributes for [com.enterprise.dashboard.model.ErrorData#1]
+[DEBUG] 2019-12-04 17:55:45.473 [main] TwoPhaseLoad - Processing attribute `application` : value = 1
+[DEBUG] 2019-12-04 17:55:45.474 [main] TwoPhaseLoad - Attribute (`application`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-12-04 17:55:45.474 [main] TwoPhaseLoad - Processing attribute `description` : value = ERROR processing request
+[DEBUG] 2019-12-04 17:55:45.474 [main] TwoPhaseLoad - Attribute (`description`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-12-04 17:55:45.474 [main] TwoPhaseLoad - Processing attribute `message` : value = ERR-100
+[DEBUG] 2019-12-04 17:55:45.474 [main] TwoPhaseLoad - Attribute (`message`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-12-04 17:55:45.474 [main] TwoPhaseLoad - Done materializing entity [com.enterprise.dashboard.model.ErrorData#1]
+[DEBUG] 2019-12-04 17:55:45.474 [main] TwoPhaseLoad - Resolving attributes for [com.enterprise.dashboard.model.Application#1]
+[DEBUG] 2019-12-04 17:55:45.474 [main] TwoPhaseLoad - Processing attribute `description` : value = This is the first application
+[DEBUG] 2019-12-04 17:55:45.474 [main] TwoPhaseLoad - Attribute (`description`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-12-04 17:55:45.474 [main] TwoPhaseLoad - Processing attribute `errorDataSet` : value = NOT NULL COLLECTION
+[DEBUG] 2019-12-04 17:55:45.474 [main] TwoPhaseLoad - Attribute (`errorDataSet`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-12-04 17:55:45.475 [main] TwoPhaseLoad - Processing attribute `name` : value = Application 1
+[DEBUG] 2019-12-04 17:55:45.475 [main] TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-12-04 17:55:45.475 [main] TwoPhaseLoad - Done materializing entity [com.enterprise.dashboard.model.Application#1]
+[DEBUG] 2019-12-04 17:55:45.475 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2019-12-04 17:55:45.475 [main] AbstractLoadPlanBasedCollectionInitializer - Loading collection: [com.enterprise.dashboard.model.Application.errorDataSet#1]
+[DEBUG] 2019-12-04 17:55:45.475 [main] SQL - select errordatas0_.application_ID as applicat4_1_0_, errordatas0_.ID as ID1_1_0_, errordatas0_.ID as ID1_1_1_, errordatas0_.application_ID as applicat4_1_1_, errordatas0_.DESCRIPTION as DESCRIPT2_1_1_, errordatas0_.MESSAGE as MESSAGE3_1_1_ from ERROR_DATA errordatas0_ where errordatas0_.application_ID=?
+[DEBUG] 2019-12-04 17:55:45.478 [main] ResultSetProcessorImpl - Preparing collection initializer : [com.enterprise.dashboard.model.Application.errorDataSet#1]
+[DEBUG] 2019-12-04 17:55:45.478 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2019-12-04 17:55:45.479 [main] CollectionReferenceInitializerImpl - Found row of collection: [com.enterprise.dashboard.model.Application.errorDataSet#1]
+[DEBUG] 2019-12-04 17:55:45.479 [main] ResultSetProcessorImpl - Starting ResultSet row #1
+[DEBUG] 2019-12-04 17:55:45.479 [main] CollectionReferenceInitializerImpl - Found row of collection: [com.enterprise.dashboard.model.Application.errorDataSet#1]
+[DEBUG] 2019-12-04 17:55:45.480 [main] TwoPhaseLoad - Resolving attributes for [com.enterprise.dashboard.model.ErrorData#3]
+[DEBUG] 2019-12-04 17:55:45.480 [main] TwoPhaseLoad - Processing attribute `application` : value = 1
+[DEBUG] 2019-12-04 17:55:45.480 [main] TwoPhaseLoad - Attribute (`application`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-12-04 17:55:45.480 [main] TwoPhaseLoad - Processing attribute `description` : value = ERROR processing 3 request
+[DEBUG] 2019-12-04 17:55:45.480 [main] TwoPhaseLoad - Attribute (`description`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-12-04 17:55:45.480 [main] TwoPhaseLoad - Processing attribute `message` : value = ERR-103
+[DEBUG] 2019-12-04 17:55:45.480 [main] TwoPhaseLoad - Attribute (`message`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-12-04 17:55:45.480 [main] TwoPhaseLoad - Done materializing entity [com.enterprise.dashboard.model.ErrorData#3]
+[DEBUG] 2019-12-04 17:55:45.481 [main] CollectionLoadContext - 1 collections were found in result set for role: com.enterprise.dashboard.model.Application.errorDataSet
+[DEBUG] 2019-12-04 17:55:45.481 [main] CollectionLoadContext - Collection fully initialized: [com.enterprise.dashboard.model.Application.errorDataSet#1]
+[DEBUG] 2019-12-04 17:55:45.481 [main] CollectionLoadContext - 1 collections initialized for role: com.enterprise.dashboard.model.Application.errorDataSet
+[DEBUG] 2019-12-04 17:55:45.481 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2019-12-04 17:55:45.481 [main] AbstractLoadPlanBasedCollectionInitializer - Done loading collection
+[DEBUG] 2019-12-04 17:55:45.481 [main] AbstractLoadPlanBasedEntityLoader - Done entity load : com.enterprise.dashboard.model.ErrorData#1
+[DEBUG] 2019-12-04 17:55:45.481 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2019-12-04 17:55:45.550 [main] SQL - select errordata0_.ID as ID1_1_0_, errordata0_.application_ID as applicat4_1_0_, errordata0_.DESCRIPTION as DESCRIPT2_1_0_, errordata0_.MESSAGE as MESSAGE3_1_0_, applicatio1_.ID as ID1_0_1_, applicatio1_.DESCRIPTION as DESCRIPT2_0_1_, applicatio1_.NAME as NAME3_0_1_ from ERROR_DATA errordata0_ left outer join APPLICATIONS applicatio1_ on errordata0_.application_ID=applicatio1_.ID where errordata0_.ID=?
+[DEBUG] 2019-12-04 17:55:45.559 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2019-12-04 17:55:45.559 [main] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2019-12-04 17:55:45.560 [main] TwoPhaseLoad - Resolving attributes for [com.enterprise.dashboard.model.ErrorData#1]
+[DEBUG] 2019-12-04 17:55:45.560 [main] TwoPhaseLoad - Processing attribute `application` : value = 1
+[DEBUG] 2019-12-04 17:55:45.560 [main] TwoPhaseLoad - Attribute (`application`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-12-04 17:55:45.560 [main] TwoPhaseLoad - Processing attribute `description` : value = ERROR processing request
+[DEBUG] 2019-12-04 17:55:45.560 [main] TwoPhaseLoad - Attribute (`description`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-12-04 17:55:45.561 [main] TwoPhaseLoad - Processing attribute `message` : value = ERR-100
+[DEBUG] 2019-12-04 17:55:45.561 [main] TwoPhaseLoad - Attribute (`message`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-12-04 17:55:45.561 [main] TwoPhaseLoad - Done materializing entity [com.enterprise.dashboard.model.ErrorData#1]
+[DEBUG] 2019-12-04 17:55:45.561 [main] TwoPhaseLoad - Resolving attributes for [com.enterprise.dashboard.model.Application#1]
+[DEBUG] 2019-12-04 17:55:45.561 [main] TwoPhaseLoad - Processing attribute `description` : value = This is the first application
+[DEBUG] 2019-12-04 17:55:45.561 [main] TwoPhaseLoad - Attribute (`description`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-12-04 17:55:45.561 [main] TwoPhaseLoad - Processing attribute `errorDataSet` : value = NOT NULL COLLECTION
+[DEBUG] 2019-12-04 17:55:45.561 [main] TwoPhaseLoad - Attribute (`errorDataSet`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-12-04 17:55:45.562 [main] TwoPhaseLoad - Processing attribute `name` : value = Application 1
+[DEBUG] 2019-12-04 17:55:45.562 [main] TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-12-04 17:55:45.562 [main] TwoPhaseLoad - Done materializing entity [com.enterprise.dashboard.model.Application#1]
+[DEBUG] 2019-12-04 17:55:45.562 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2019-12-04 17:55:45.562 [main] AbstractLoadPlanBasedCollectionInitializer - Loading collection: [com.enterprise.dashboard.model.Application.errorDataSet#1]
+[DEBUG] 2019-12-04 17:55:45.563 [main] SQL - select errordatas0_.application_ID as applicat4_1_0_, errordatas0_.ID as ID1_1_0_, errordatas0_.ID as ID1_1_1_, errordatas0_.application_ID as applicat4_1_1_, errordatas0_.DESCRIPTION as DESCRIPT2_1_1_, errordatas0_.MESSAGE as MESSAGE3_1_1_ from ERROR_DATA errordatas0_ where errordatas0_.application_ID=?
+[DEBUG] 2019-12-04 17:55:45.568 [main] ResultSetProcessorImpl - Preparing collection initializer : [com.enterprise.dashboard.model.Application.errorDataSet#1]
+[DEBUG] 2019-12-04 17:55:45.568 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2019-12-04 17:55:45.568 [main] CollectionReferenceInitializerImpl - Found row of collection: [com.enterprise.dashboard.model.Application.errorDataSet#1]
+[DEBUG] 2019-12-04 17:55:45.569 [main] ResultSetProcessorImpl - Starting ResultSet row #1
+[DEBUG] 2019-12-04 17:55:45.569 [main] CollectionReferenceInitializerImpl - Found row of collection: [com.enterprise.dashboard.model.Application.errorDataSet#1]
+[DEBUG] 2019-12-04 17:55:45.569 [main] TwoPhaseLoad - Resolving attributes for [com.enterprise.dashboard.model.ErrorData#3]
+[DEBUG] 2019-12-04 17:55:45.569 [main] TwoPhaseLoad - Processing attribute `application` : value = 1
+[DEBUG] 2019-12-04 17:55:45.569 [main] TwoPhaseLoad - Attribute (`application`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-12-04 17:55:45.569 [main] TwoPhaseLoad - Processing attribute `description` : value = ERROR processing 3 request
+[DEBUG] 2019-12-04 17:55:45.569 [main] TwoPhaseLoad - Attribute (`description`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-12-04 17:55:45.569 [main] TwoPhaseLoad - Processing attribute `message` : value = ERR-103
+[DEBUG] 2019-12-04 17:55:45.570 [main] TwoPhaseLoad - Attribute (`message`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-12-04 17:55:45.570 [main] TwoPhaseLoad - Done materializing entity [com.enterprise.dashboard.model.ErrorData#3]
+[DEBUG] 2019-12-04 17:55:45.570 [main] CollectionLoadContext - 1 collections were found in result set for role: com.enterprise.dashboard.model.Application.errorDataSet
+[DEBUG] 2019-12-04 17:55:45.570 [main] CollectionLoadContext - Collection fully initialized: [com.enterprise.dashboard.model.Application.errorDataSet#1]
+[DEBUG] 2019-12-04 17:55:45.570 [main] CollectionLoadContext - 1 collections initialized for role: com.enterprise.dashboard.model.Application.errorDataSet
+[DEBUG] 2019-12-04 17:55:45.570 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2019-12-04 17:55:45.570 [main] AbstractLoadPlanBasedCollectionInitializer - Done loading collection
+[DEBUG] 2019-12-04 17:55:45.570 [main] AbstractLoadPlanBasedEntityLoader - Done entity load : com.enterprise.dashboard.model.ErrorData#1
+[DEBUG] 2019-12-04 17:55:45.570 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2019-12-04 17:55:45.573 [main] TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+[DEBUG] 2019-12-04 17:55:45.574 [main] TransactionImpl - begin
+[DEBUG] 2019-12-04 17:55:45.578 [main] TransactionImpl - committing
+[DEBUG] 2019-12-04 17:55:45.578 [main] AbstractFlushingEventListener - Processing flush-time cascades
+[DEBUG] 2019-12-04 17:55:45.578 [main] AbstractFlushingEventListener - Dirty checking collections
+[DEBUG] 2019-12-04 17:55:45.579 [main] AbstractFlushingEventListener - Flushed: 0 insertions, 1 updates, 0 deletions to 1 objects
+[DEBUG] 2019-12-04 17:55:45.579 [main] AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+[DEBUG] 2019-12-04 17:55:45.579 [main] EntityPrinter - Listing entities:
+[DEBUG] 2019-12-04 17:55:45.579 [main] EntityPrinter - com.enterprise.dashboard.model.ErrorData{application=com.enterprise.dashboard.model.Application#1, description=ERROR processing request, id=1, message=ERR-111}
+[DEBUG] 2019-12-04 17:55:45.580 [main] SQL - update ERROR_DATA set application_ID=?, DESCRIPTION=?, MESSAGE=? where ID=?
+[DEBUG] 2019-12-04 17:55:45.589 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2019-12-04 17:55:45.591 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2019-12-04 17:55:45.592 [main] SQL - select errordata0_.ID as ID1_1_0_, errordata0_.application_ID as applicat4_1_0_, errordata0_.DESCRIPTION as DESCRIPT2_1_0_, errordata0_.MESSAGE as MESSAGE3_1_0_, applicatio1_.ID as ID1_0_1_, applicatio1_.DESCRIPTION as DESCRIPT2_0_1_, applicatio1_.NAME as NAME3_0_1_ from ERROR_DATA errordata0_ left outer join APPLICATIONS applicatio1_ on errordata0_.application_ID=applicatio1_.ID where errordata0_.ID=?
+[DEBUG] 2019-12-04 17:55:45.599 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2019-12-04 17:55:45.600 [main] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2019-12-04 17:55:45.600 [main] TwoPhaseLoad - Resolving attributes for [com.enterprise.dashboard.model.ErrorData#1]
+[DEBUG] 2019-12-04 17:55:45.600 [main] TwoPhaseLoad - Processing attribute `application` : value = 1
+[DEBUG] 2019-12-04 17:55:45.600 [main] TwoPhaseLoad - Attribute (`application`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-12-04 17:55:45.600 [main] TwoPhaseLoad - Processing attribute `description` : value = ERROR processing request
+[DEBUG] 2019-12-04 17:55:45.600 [main] TwoPhaseLoad - Attribute (`description`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-12-04 17:55:45.601 [main] TwoPhaseLoad - Processing attribute `message` : value = ERR-111
+[DEBUG] 2019-12-04 17:55:45.601 [main] TwoPhaseLoad - Attribute (`message`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-12-04 17:55:45.601 [main] TwoPhaseLoad - Done materializing entity [com.enterprise.dashboard.model.ErrorData#1]
+[DEBUG] 2019-12-04 17:55:45.601 [main] TwoPhaseLoad - Resolving attributes for [com.enterprise.dashboard.model.Application#1]
+[DEBUG] 2019-12-04 17:55:45.601 [main] TwoPhaseLoad - Processing attribute `description` : value = This is the first application
+[DEBUG] 2019-12-04 17:55:45.601 [main] TwoPhaseLoad - Attribute (`description`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-12-04 17:55:45.601 [main] TwoPhaseLoad - Processing attribute `errorDataSet` : value = NOT NULL COLLECTION
+[DEBUG] 2019-12-04 17:55:45.601 [main] TwoPhaseLoad - Attribute (`errorDataSet`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-12-04 17:55:45.601 [main] TwoPhaseLoad - Processing attribute `name` : value = Application 1
+[DEBUG] 2019-12-04 17:55:45.601 [main] TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-12-04 17:55:45.601 [main] TwoPhaseLoad - Done materializing entity [com.enterprise.dashboard.model.Application#1]
+[DEBUG] 2019-12-04 17:55:45.601 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2019-12-04 17:55:45.602 [main] AbstractLoadPlanBasedCollectionInitializer - Loading collection: [com.enterprise.dashboard.model.Application.errorDataSet#1]
+[DEBUG] 2019-12-04 17:55:45.602 [main] SQL - select errordatas0_.application_ID as applicat4_1_0_, errordatas0_.ID as ID1_1_0_, errordatas0_.ID as ID1_1_1_, errordatas0_.application_ID as applicat4_1_1_, errordatas0_.DESCRIPTION as DESCRIPT2_1_1_, errordatas0_.MESSAGE as MESSAGE3_1_1_ from ERROR_DATA errordatas0_ where errordatas0_.application_ID=?
+[DEBUG] 2019-12-04 17:55:45.604 [main] ResultSetProcessorImpl - Preparing collection initializer : [com.enterprise.dashboard.model.Application.errorDataSet#1]
+[DEBUG] 2019-12-04 17:55:45.605 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2019-12-04 17:55:45.605 [main] CollectionReferenceInitializerImpl - Found row of collection: [com.enterprise.dashboard.model.Application.errorDataSet#1]
+[DEBUG] 2019-12-04 17:55:45.606 [main] ResultSetProcessorImpl - Starting ResultSet row #1
+[DEBUG] 2019-12-04 17:55:45.607 [main] CollectionReferenceInitializerImpl - Found row of collection: [com.enterprise.dashboard.model.Application.errorDataSet#1]
+[DEBUG] 2019-12-04 17:55:45.608 [main] TwoPhaseLoad - Resolving attributes for [com.enterprise.dashboard.model.ErrorData#3]
+[DEBUG] 2019-12-04 17:55:45.608 [main] TwoPhaseLoad - Processing attribute `application` : value = 1
+[DEBUG] 2019-12-04 17:55:45.609 [main] TwoPhaseLoad - Attribute (`application`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-12-04 17:55:45.609 [main] TwoPhaseLoad - Processing attribute `description` : value = ERROR processing 3 request
+[DEBUG] 2019-12-04 17:55:45.609 [main] TwoPhaseLoad - Attribute (`description`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-12-04 17:55:45.609 [main] TwoPhaseLoad - Processing attribute `message` : value = ERR-103
+[DEBUG] 2019-12-04 17:55:45.609 [main] TwoPhaseLoad - Attribute (`message`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-12-04 17:55:45.610 [main] TwoPhaseLoad - Done materializing entity [com.enterprise.dashboard.model.ErrorData#3]
+[DEBUG] 2019-12-04 17:55:45.610 [main] CollectionLoadContext - 1 collections were found in result set for role: com.enterprise.dashboard.model.Application.errorDataSet
+[DEBUG] 2019-12-04 17:55:45.610 [main] CollectionLoadContext - Collection fully initialized: [com.enterprise.dashboard.model.Application.errorDataSet#1]
+[DEBUG] 2019-12-04 17:55:45.610 [main] CollectionLoadContext - 1 collections initialized for role: com.enterprise.dashboard.model.Application.errorDataSet
+[DEBUG] 2019-12-04 17:55:45.610 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2019-12-04 17:55:45.610 [main] AbstractLoadPlanBasedCollectionInitializer - Done loading collection
+[DEBUG] 2019-12-04 17:55:45.610 [main] AbstractLoadPlanBasedEntityLoader - Done entity load : com.enterprise.dashboard.model.ErrorData#1
+[DEBUG] 2019-12-04 17:55:45.610 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2019-12-04 17:55:45.680 [main] SQL - select applicatio0_.ID as ID1_0_0_, applicatio0_.DESCRIPTION as DESCRIPT2_0_0_, applicatio0_.NAME as NAME3_0_0_, errordatas1_.application_ID as applicat4_1_1_, errordatas1_.ID as ID1_1_1_, errordatas1_.ID as ID1_1_2_, errordatas1_.application_ID as applicat4_1_2_, errordatas1_.DESCRIPTION as DESCRIPT2_1_2_, errordatas1_.MESSAGE as MESSAGE3_1_2_ from APPLICATIONS applicatio0_ left outer join ERROR_DATA errordatas1_ on applicatio0_.ID=errordatas1_.application_ID where applicatio0_.ID=?
+[DEBUG] 2019-12-04 17:55:45.687 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2019-12-04 17:55:45.687 [main] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2019-12-04 17:55:45.688 [main] CollectionReferenceInitializerImpl - Found row of collection: [com.enterprise.dashboard.model.Application.errorDataSet#1]
+[DEBUG] 2019-12-04 17:55:45.688 [main] ResultSetProcessorImpl - Starting ResultSet row #1
+[DEBUG] 2019-12-04 17:55:45.688 [main] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2019-12-04 17:55:45.689 [main] CollectionReferenceInitializerImpl - Found row of collection: [com.enterprise.dashboard.model.Application.errorDataSet#1]
+[DEBUG] 2019-12-04 17:55:45.690 [main] TwoPhaseLoad - Resolving attributes for [com.enterprise.dashboard.model.Application#1]
+[DEBUG] 2019-12-04 17:55:45.690 [main] TwoPhaseLoad - Processing attribute `description` : value = This is the first application
+[DEBUG] 2019-12-04 17:55:45.690 [main] TwoPhaseLoad - Attribute (`description`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-12-04 17:55:45.690 [main] TwoPhaseLoad - Processing attribute `errorDataSet` : value = NOT NULL COLLECTION
+[DEBUG] 2019-12-04 17:55:45.690 [main] TwoPhaseLoad - Attribute (`errorDataSet`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-12-04 17:55:45.690 [main] TwoPhaseLoad - Processing attribute `name` : value = Application 1
+[DEBUG] 2019-12-04 17:55:45.690 [main] TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-12-04 17:55:45.690 [main] TwoPhaseLoad - Done materializing entity [com.enterprise.dashboard.model.Application#1]
+[DEBUG] 2019-12-04 17:55:45.690 [main] TwoPhaseLoad - Resolving attributes for [com.enterprise.dashboard.model.ErrorData#1]
+[DEBUG] 2019-12-04 17:55:45.690 [main] TwoPhaseLoad - Processing attribute `application` : value = 1
+[DEBUG] 2019-12-04 17:55:45.690 [main] TwoPhaseLoad - Attribute (`application`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-12-04 17:55:45.691 [main] TwoPhaseLoad - Processing attribute `description` : value = ERROR processing request
+[DEBUG] 2019-12-04 17:55:45.691 [main] TwoPhaseLoad - Attribute (`description`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-12-04 17:55:45.691 [main] TwoPhaseLoad - Processing attribute `message` : value = ERR-100
+[DEBUG] 2019-12-04 17:55:45.691 [main] TwoPhaseLoad - Attribute (`message`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-12-04 17:55:45.691 [main] TwoPhaseLoad - Done materializing entity [com.enterprise.dashboard.model.ErrorData#1]
+[DEBUG] 2019-12-04 17:55:45.691 [main] TwoPhaseLoad - Resolving attributes for [com.enterprise.dashboard.model.ErrorData#3]
+[DEBUG] 2019-12-04 17:55:45.691 [main] TwoPhaseLoad - Processing attribute `application` : value = 1
+[DEBUG] 2019-12-04 17:55:45.691 [main] TwoPhaseLoad - Attribute (`application`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-12-04 17:55:45.691 [main] TwoPhaseLoad - Processing attribute `description` : value = ERROR processing 3 request
+[DEBUG] 2019-12-04 17:55:45.691 [main] TwoPhaseLoad - Attribute (`description`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-12-04 17:55:45.691 [main] TwoPhaseLoad - Processing attribute `message` : value = ERR-103
+[DEBUG] 2019-12-04 17:55:45.691 [main] TwoPhaseLoad - Attribute (`message`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-12-04 17:55:45.692 [main] TwoPhaseLoad - Done materializing entity [com.enterprise.dashboard.model.ErrorData#3]
+[DEBUG] 2019-12-04 17:55:45.692 [main] CollectionLoadContext - 1 collections were found in result set for role: com.enterprise.dashboard.model.Application.errorDataSet
+[DEBUG] 2019-12-04 17:55:45.692 [main] CollectionLoadContext - Collection fully initialized: [com.enterprise.dashboard.model.Application.errorDataSet#1]
+[DEBUG] 2019-12-04 17:55:45.692 [main] CollectionLoadContext - 1 collections initialized for role: com.enterprise.dashboard.model.Application.errorDataSet
+[DEBUG] 2019-12-04 17:55:45.692 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2019-12-04 17:55:45.692 [main] AbstractLoadPlanBasedEntityLoader - Done entity load : com.enterprise.dashboard.model.Application#1
+[DEBUG] 2019-12-04 17:55:45.692 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2019-12-04 17:55:45.699 [main] TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+[DEBUG] 2019-12-04 17:55:45.699 [main] TransactionImpl - begin
+[DEBUG] 2019-12-04 17:55:45.706 [main] ActionQueue - Executing identity-insert immediately
+[DEBUG] 2019-12-04 17:55:45.707 [main] SQL - insert into ERROR_DATA (application_ID, DESCRIPTION, MESSAGE) values (?, ?, ?)
+[DEBUG] 2019-12-04 17:55:45.713 [main] IdentifierGeneratorHelper - Natively generated identity: 34
+[DEBUG] 2019-12-04 17:55:45.714 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2019-12-04 17:55:45.717 [main] TransactionImpl - committing
+[DEBUG] 2019-12-04 17:55:45.717 [main] AbstractFlushingEventListener - Processing flush-time cascades
+[DEBUG] 2019-12-04 17:55:45.718 [main] AbstractFlushingEventListener - Dirty checking collections
+[DEBUG] 2019-12-04 17:55:45.718 [main] AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
+[DEBUG] 2019-12-04 17:55:45.718 [main] AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+[DEBUG] 2019-12-04 17:55:45.718 [main] EntityPrinter - Listing entities:
+[DEBUG] 2019-12-04 17:55:45.719 [main] EntityPrinter - com.enterprise.dashboard.model.ErrorData{application=com.enterprise.dashboard.model.Application#1, description=this is a test error , id=34, message=ERR-111}
+[DEBUG] 2019-12-04 17:55:45.726 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2019-12-04 17:55:45.728 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2019-12-04 17:55:45.728 [main] SQL - select errordata0_.ID as ID1_1_0_, errordata0_.application_ID as applicat4_1_0_, errordata0_.DESCRIPTION as DESCRIPT2_1_0_, errordata0_.MESSAGE as MESSAGE3_1_0_, applicatio1_.ID as ID1_0_1_, applicatio1_.DESCRIPTION as DESCRIPT2_0_1_, applicatio1_.NAME as NAME3_0_1_ from ERROR_DATA errordata0_ left outer join APPLICATIONS applicatio1_ on errordata0_.application_ID=applicatio1_.ID where errordata0_.ID=?
+[DEBUG] 2019-12-04 17:55:45.735 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2019-12-04 17:55:45.735 [main] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2019-12-04 17:55:45.736 [main] TwoPhaseLoad - Resolving attributes for [com.enterprise.dashboard.model.ErrorData#34]
+[DEBUG] 2019-12-04 17:55:45.736 [main] TwoPhaseLoad - Processing attribute `application` : value = 1
+[DEBUG] 2019-12-04 17:55:45.736 [main] TwoPhaseLoad - Attribute (`application`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-12-04 17:55:45.736 [main] TwoPhaseLoad - Processing attribute `description` : value = this is a test error 
+[DEBUG] 2019-12-04 17:55:45.736 [main] TwoPhaseLoad - Attribute (`description`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-12-04 17:55:45.737 [main] TwoPhaseLoad - Processing attribute `message` : value = ERR-111
+[DEBUG] 2019-12-04 17:55:45.737 [main] TwoPhaseLoad - Attribute (`message`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-12-04 17:55:45.737 [main] TwoPhaseLoad - Done materializing entity [com.enterprise.dashboard.model.ErrorData#34]
+[DEBUG] 2019-12-04 17:55:45.737 [main] TwoPhaseLoad - Resolving attributes for [com.enterprise.dashboard.model.Application#1]
+[DEBUG] 2019-12-04 17:55:45.737 [main] TwoPhaseLoad - Processing attribute `description` : value = This is the first application
+[DEBUG] 2019-12-04 17:55:45.737 [main] TwoPhaseLoad - Attribute (`description`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-12-04 17:55:45.737 [main] TwoPhaseLoad - Processing attribute `errorDataSet` : value = NOT NULL COLLECTION
+[DEBUG] 2019-12-04 17:55:45.737 [main] TwoPhaseLoad - Attribute (`errorDataSet`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-12-04 17:55:45.737 [main] TwoPhaseLoad - Processing attribute `name` : value = Application 1
+[DEBUG] 2019-12-04 17:55:45.737 [main] TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-12-04 17:55:45.737 [main] TwoPhaseLoad - Done materializing entity [com.enterprise.dashboard.model.Application#1]
+[DEBUG] 2019-12-04 17:55:45.737 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2019-12-04 17:55:45.737 [main] AbstractLoadPlanBasedCollectionInitializer - Loading collection: [com.enterprise.dashboard.model.Application.errorDataSet#1]
+[DEBUG] 2019-12-04 17:55:45.738 [main] SQL - select errordatas0_.application_ID as applicat4_1_0_, errordatas0_.ID as ID1_1_0_, errordatas0_.ID as ID1_1_1_, errordatas0_.application_ID as applicat4_1_1_, errordatas0_.DESCRIPTION as DESCRIPT2_1_1_, errordatas0_.MESSAGE as MESSAGE3_1_1_ from ERROR_DATA errordatas0_ where errordatas0_.application_ID=?
+[DEBUG] 2019-12-04 17:55:45.740 [main] ResultSetProcessorImpl - Preparing collection initializer : [com.enterprise.dashboard.model.Application.errorDataSet#1]
+[DEBUG] 2019-12-04 17:55:45.740 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2019-12-04 17:55:45.740 [main] CollectionReferenceInitializerImpl - Found row of collection: [com.enterprise.dashboard.model.Application.errorDataSet#1]
+[DEBUG] 2019-12-04 17:55:45.741 [main] ResultSetProcessorImpl - Starting ResultSet row #1
+[DEBUG] 2019-12-04 17:55:45.741 [main] CollectionReferenceInitializerImpl - Found row of collection: [com.enterprise.dashboard.model.Application.errorDataSet#1]
+[DEBUG] 2019-12-04 17:55:45.741 [main] ResultSetProcessorImpl - Starting ResultSet row #2
+[DEBUG] 2019-12-04 17:55:45.741 [main] CollectionReferenceInitializerImpl - Found row of collection: [com.enterprise.dashboard.model.Application.errorDataSet#1]
+[DEBUG] 2019-12-04 17:55:45.741 [main] TwoPhaseLoad - Resolving attributes for [com.enterprise.dashboard.model.ErrorData#1]
+[DEBUG] 2019-12-04 17:55:45.741 [main] TwoPhaseLoad - Processing attribute `application` : value = 1
+[DEBUG] 2019-12-04 17:55:45.741 [main] TwoPhaseLoad - Attribute (`application`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-12-04 17:55:45.741 [main] TwoPhaseLoad - Processing attribute `description` : value = ERROR processing request
+[DEBUG] 2019-12-04 17:55:45.741 [main] TwoPhaseLoad - Attribute (`description`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-12-04 17:55:45.741 [main] TwoPhaseLoad - Processing attribute `message` : value = ERR-100
+[DEBUG] 2019-12-04 17:55:45.741 [main] TwoPhaseLoad - Attribute (`message`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-12-04 17:55:45.741 [main] TwoPhaseLoad - Done materializing entity [com.enterprise.dashboard.model.ErrorData#1]
+[DEBUG] 2019-12-04 17:55:45.741 [main] TwoPhaseLoad - Resolving attributes for [com.enterprise.dashboard.model.ErrorData#3]
+[DEBUG] 2019-12-04 17:55:45.742 [main] TwoPhaseLoad - Processing attribute `application` : value = 1
+[DEBUG] 2019-12-04 17:55:45.742 [main] TwoPhaseLoad - Attribute (`application`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-12-04 17:55:45.742 [main] TwoPhaseLoad - Processing attribute `description` : value = ERROR processing 3 request
+[DEBUG] 2019-12-04 17:55:45.742 [main] TwoPhaseLoad - Attribute (`description`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-12-04 17:55:45.742 [main] TwoPhaseLoad - Processing attribute `message` : value = ERR-103
+[DEBUG] 2019-12-04 17:55:45.742 [main] TwoPhaseLoad - Attribute (`message`)  - enhanced for lazy-loading? - false
+[DEBUG] 2019-12-04 17:55:45.742 [main] TwoPhaseLoad - Done materializing entity [com.enterprise.dashboard.model.ErrorData#3]
+[DEBUG] 2019-12-04 17:55:45.742 [main] CollectionLoadContext - 1 collections were found in result set for role: com.enterprise.dashboard.model.Application.errorDataSet
+[DEBUG] 2019-12-04 17:55:45.742 [main] CollectionLoadContext - Collection fully initialized: [com.enterprise.dashboard.model.Application.errorDataSet#1]
+[DEBUG] 2019-12-04 17:55:45.742 [main] CollectionLoadContext - 1 collections initialized for role: com.enterprise.dashboard.model.Application.errorDataSet
+[DEBUG] 2019-12-04 17:55:45.742 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2019-12-04 17:55:45.742 [main] AbstractLoadPlanBasedCollectionInitializer - Done loading collection
+[DEBUG] 2019-12-04 17:55:45.742 [main] AbstractLoadPlanBasedEntityLoader - Done entity load : com.enterprise.dashboard.model.ErrorData#34
+[DEBUG] 2019-12-04 17:55:45.742 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction

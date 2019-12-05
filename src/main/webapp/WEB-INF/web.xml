@@ -22,7 +22,7 @@
     </web-resource-collection>
 <!--    constraints the page to load only if the role matches the following-->
     <auth-constraint>
-      <role-name>admin</role-name>
+      <role-name>team1</role-name>
     </auth-constraint>
   </security-constraint>
 

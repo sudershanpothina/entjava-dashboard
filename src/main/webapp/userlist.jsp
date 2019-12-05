@@ -17,4 +17,19 @@
             </tr>
         </c:forEach>
     </table>
+    <h2>All applications of Team1 </h2>
+    <table style="width:100%; border-spacing: 5px">
+        <tr>
+            <th> ID </th>
+            <th> Name </th>
+            <th> Description </th>
+        </tr>
+        <c:forEach var="application" items="${applications}">
+            <tr>
+                <td>${application.id}</td>
+                <td>${application.name}</td>
+                <td>${application.description}</td>
+            </tr>
+        </c:forEach>
+    </table>
 </div>
