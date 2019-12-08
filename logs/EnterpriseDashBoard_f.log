@@ -1,3 +1,9 @@
-[INFO ] 2019-12-04 17:50:51.788 [http-nio-8080-exec-3] Team1Members - ------GenericPrincipal[jpaul(admin,team1,)]
-[INFO ] 2019-12-04 17:56:24.105 [http-nio-8080-exec-3] Team1Members - ------jpaul
-[INFO ] 2019-12-04 17:56:24.121 [http-nio-8080-exec-3] Team1Members - ------GenericPrincipal[jpaul(admin,team1,)]
+[INFO ] 2019-12-07 21:46:50.618 [http-nio-8080-exec-2] Team1Members - ------jpaul
+[INFO ] 2019-12-07 21:46:50.627 [http-nio-8080-exec-2] Team1Members - ------GenericPrincipal[jpaul(admin,team1,)]
+[INFO ] 2019-12-07 21:46:50.627 [http-nio-8080-exec-2] Team1Members - ------GenericPrincipal[jpaul(admin,team1,)]
+[INFO ] 2019-12-07 22:04:01.177 [http-nio-8080-exec-5] TeamMembers - ------jpaul
+[INFO ] 2019-12-07 22:04:01.188 [http-nio-8080-exec-5] TeamMembers - ------GenericPrincipal[jpaul(admin,team1,)]
+[INFO ] 2019-12-07 22:04:01.188 [http-nio-8080-exec-5] TeamMembers - ------GenericPrincipal[jpaul(admin,team1,)]
+[INFO ] 2019-12-07 22:05:44.069 [http-nio-8080-exec-2] TeamMembers - ------jpaul
+[INFO ] 2019-12-07 22:05:44.087 [http-nio-8080-exec-2] TeamMembers - ------GenericPrincipal[jpaul(admin,team1,)]
+[INFO ] 2019-12-07 22:05:44.087 [http-nio-8080-exec-2] TeamMembers - ------GenericPrincipal[jpaul(admin,team1,)]

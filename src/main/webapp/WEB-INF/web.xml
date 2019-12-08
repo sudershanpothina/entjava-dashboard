@@ -18,7 +18,7 @@
   <security-constraint>
     <web-resource-collection>
       <web-resource-name>any</web-resource-name>
-      <url-pattern>/team1page</url-pattern>
+      <url-pattern>/teamPage</url-pattern>
     </web-resource-collection>
 <!--    constraints the page to load only if the role matches the following-->
     <auth-constraint>

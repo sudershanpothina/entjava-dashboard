@@ -15,9 +15,9 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 @WebServlet(
-        urlPatterns = {"/team1page"}
+        urlPatterns = {"/teamPage"}
 )
-public class Team1Members extends HttpServlet {
+public class TeamMembers extends HttpServlet {
     private final Logger logger = LogManager.getLogger(this.getClass());
 
     @Override
@@ -29,7 +29,8 @@ public class Team1Members extends HttpServlet {
         GenericDao applicationDAO = new GenericDao(Application.class);
         req.setAttribute("users", userDAO.getAll());
         req.setAttribute("applications", applicationDAO.getAll());
-        RequestDispatcher dispatcher = req.getRequestDispatcher("/userlist.jsp");
+        req.setAttribute("teamName", "Team Avengers");
+        RequestDispatcher dispatcher = req.getRequestDispatcher("/userList.jsp");
         dispatcher.forward(req, resp);
     }
 }
