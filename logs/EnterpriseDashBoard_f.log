@@ -1,9 +1,42 @@
-[INFO ] 2019-12-07 21:46:50.618 [http-nio-8080-exec-2] Team1Members - ------jpaul
-[INFO ] 2019-12-07 21:46:50.627 [http-nio-8080-exec-2] Team1Members - ------GenericPrincipal[jpaul(admin,team1,)]
-[INFO ] 2019-12-07 21:46:50.627 [http-nio-8080-exec-2] Team1Members - ------GenericPrincipal[jpaul(admin,team1,)]
-[INFO ] 2019-12-07 22:04:01.177 [http-nio-8080-exec-5] TeamMembers - ------jpaul
-[INFO ] 2019-12-07 22:04:01.188 [http-nio-8080-exec-5] TeamMembers - ------GenericPrincipal[jpaul(admin,team1,)]
-[INFO ] 2019-12-07 22:04:01.188 [http-nio-8080-exec-5] TeamMembers - ------GenericPrincipal[jpaul(admin,team1,)]
-[INFO ] 2019-12-07 22:05:44.069 [http-nio-8080-exec-2] TeamMembers - ------jpaul
-[INFO ] 2019-12-07 22:05:44.087 [http-nio-8080-exec-2] TeamMembers - ------GenericPrincipal[jpaul(admin,team1,)]
-[INFO ] 2019-12-07 22:05:44.087 [http-nio-8080-exec-2] TeamMembers - ------GenericPrincipal[jpaul(admin,team1,)]
+[INFO ] 2019-12-10 18:54:55.256 [http-nio-8080-exec-2] TeamMembers - ------tstark
+[INFO ] 2019-12-10 18:54:55.266 [http-nio-8080-exec-2] TeamMembers - ------GenericPrincipal[tstark(team1,team1admin,)]
+[INFO ] 2019-12-10 18:54:55.266 [http-nio-8080-exec-2] TeamMembers - ------GenericPrincipal[tstark(team1,team1admin,)]
+[INFO ] 2019-12-10 18:55:00.789 [http-nio-8080-exec-2] TeamMembers - -----true
+[ERROR] 2019-12-10 18:55:47.047 [http-nio-8080-exec-7] Applications - Application{name='Application 3', description='This is the third application'}
+[INFO ] 2019-12-10 19:02:30.214 [http-nio-8080-exec-2] TeamMembers - ------tstark
+[INFO ] 2019-12-10 19:02:30.228 [http-nio-8080-exec-2] TeamMembers - ------GenericPrincipal[tstark(team1,team1admin,)]
+[INFO ] 2019-12-10 19:02:30.228 [http-nio-8080-exec-2] TeamMembers - ------GenericPrincipal[tstark(team1,team1admin,)]
+[INFO ] 2019-12-10 19:02:35.114 [http-nio-8080-exec-2] TeamMembers - -----true
+[ERROR] 2019-12-10 19:03:00.183 [http-nio-8080-exec-6] Applications - Application{name='Application 3', description='This is the third application'}
+[ERROR] 2019-12-10 19:03:12.923 [http-nio-8080-exec-10] Applications - Application{name='Application 3', description='This is the third application'}
+[INFO ] 2019-12-10 19:14:05.365 [http-nio-8080-exec-3] TeamMembers - ------tstark
+[INFO ] 2019-12-10 19:14:05.378 [http-nio-8080-exec-3] TeamMembers - ------GenericPrincipal[tstark(team1,team1admin,)]
+[INFO ] 2019-12-10 19:14:05.378 [http-nio-8080-exec-3] TeamMembers - ------GenericPrincipal[tstark(team1,team1admin,)]
+[INFO ] 2019-12-10 19:14:10.256 [http-nio-8080-exec-3] TeamMembers - -----true
+[INFO ] 2019-12-10 19:16:28.545 [http-nio-8080-exec-3] TeamMembers - ------tstark
+[INFO ] 2019-12-10 19:16:28.565 [http-nio-8080-exec-3] TeamMembers - ------GenericPrincipal[tstark(team1,team1admin,)]
+[INFO ] 2019-12-10 19:16:28.565 [http-nio-8080-exec-3] TeamMembers - ------GenericPrincipal[tstark(team1,team1admin,)]
+[INFO ] 2019-12-10 19:16:36.180 [http-nio-8080-exec-3] TeamMembers - -----true
+[INFO ] 2019-12-10 19:17:42.859 [http-nio-8080-exec-2] TeamMembers - ------tstark
+[INFO ] 2019-12-10 19:17:42.869 [http-nio-8080-exec-2] TeamMembers - ------GenericPrincipal[tstark(team1,team1admin,)]
+[INFO ] 2019-12-10 19:17:42.870 [http-nio-8080-exec-2] TeamMembers - ------GenericPrincipal[tstark(team1,team1admin,)]
+[INFO ] 2019-12-10 19:17:48.268 [http-nio-8080-exec-2] TeamMembers - -----true
+[ERROR] 2019-12-10 19:18:04.190 [http-nio-8080-exec-6] Applications - Application{name='Application 3', description='This is the third application'}
+[ERROR] 2019-12-10 19:18:12.822 [http-nio-8080-exec-9] Applications - Application{name='Application 4', description='This is the third application'}
+[ERROR] 2019-12-10 19:18:33.225 [http-nio-8080-exec-2] Applications - Application{name='Application 4', description='This is the fourth application'}
+[INFO ] 2019-12-10 19:27:36.665 [http-nio-8080-exec-3] TeamMembers - ------tstark
+[INFO ] 2019-12-10 19:27:36.676 [http-nio-8080-exec-3] TeamMembers - ------GenericPrincipal[tstark(team1,team1admin,)]
+[INFO ] 2019-12-10 19:27:36.677 [http-nio-8080-exec-3] TeamMembers - ------GenericPrincipal[tstark(team1,team1admin,)]
+[INFO ] 2019-12-10 19:27:42.906 [http-nio-8080-exec-3] TeamMembers - -----true
+[ERROR] 2019-12-10 19:27:52.049 [http-nio-8080-exec-7] Applications - Application{name='Application 3', description='This is the third application'}
+[INFO ] 2019-12-10 19:27:59.150 [http-nio-8080-exec-10] Applications - updating application
+[ERROR] 2019-12-10 19:27:59.150 [http-nio-8080-exec-10] Applications - Application{name='Application 3', description='This is the third application'}
+[INFO ] 2019-12-10 19:29:52.217 [http-nio-8080-exec-2] TeamMembers - ------tstark
+[INFO ] 2019-12-10 19:29:52.227 [http-nio-8080-exec-2] TeamMembers - ------GenericPrincipal[tstark(team1,team1admin,)]
+[INFO ] 2019-12-10 19:29:52.227 [http-nio-8080-exec-2] TeamMembers - ------GenericPrincipal[tstark(team1,team1admin,)]
+[INFO ] 2019-12-10 19:29:57.250 [http-nio-8080-exec-2] TeamMembers - -----true
+[INFO ] 2019-12-10 19:30:05.933 [http-nio-8080-exec-6] Applications - updating application
+[ERROR] 2019-12-10 19:30:05.933 [http-nio-8080-exec-6] Applications - Application{name='Application 4', description='This is the third application'}
+[INFO ] 2019-12-10 19:30:12.761 [http-nio-8080-exec-8] Applications - updating application
+[ERROR] 2019-12-10 19:30:12.761 [http-nio-8080-exec-8] Applications - Application{name='Application 4', description='This is the fourth application'}
+[ERROR] 2019-12-10 19:30:17.697 [http-nio-8080-exec-10] Applications - Application{name='Application 3', description='This is the third application'}

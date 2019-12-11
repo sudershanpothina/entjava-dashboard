@@ -1,13 +1,42 @@
 create database dashboard;
 use dashboard;
-create table USER_ROLES
+
+create table USER
 (
-	ID int auto_increment,
-	NAME VARCHAR(15) null,
-	DESCRIPTION VARCHAR(30) null,
-	constraint USER_ROLES_pk
-		primary key (ID)
+    ID INT AUTO_INCREMENT,
+    FIRST_NAME VARCHAR(15) NULL,
+    LAST_NAME VARCHAR(15) NULL,
+    USER_NAME VARCHAR(15) NULL,
+    PASSWORD VARCHAR(15) null,
+    TEAM_ID INT NULL,
+    DATE_OF_BIRTH DATE NULL,
+    CONSTRAINT user_id_uindex
+        UNIQUE (ID),
+    CONSTRAINT users_user_name_uindex
+        UNIQUE (USER_NAME)
 );
+
+CREATE TABLE ROLE
+(
+    ID        INT AUTO_INCREMENT
+        PRIMARY KEY,
+    ROLE_NAME VARCHAR(25) NOT NULL,
+    USER_NAME VARCHAR(15) NOT NULL,
+    USER_ID   INT         NOT NULL,
+    CONSTRAINT role_id_uindex
+        UNIQUE (ID),
+    CONSTRAINT role_user_user_id_fk
+        FOREIGN KEY (USER_ID) REFERENCES USER (ID)
+            ON UPDATE CASCADE
+            ON DELETE CASCADE
+)
+    ENGINE = InnoDB;
+
+CREATE INDEX role_user_user_id_fk
+    ON ROLE (USER_ID);
+
+
+
 create table TEAMS
 (
 	ID int auto_increment,

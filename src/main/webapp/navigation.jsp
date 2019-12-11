@@ -11,8 +11,8 @@
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
                 <li><a href="teamPage">Team Avengers</a></li>
-                <li><a href="#">Team Justice League</a></li>
-                <li><a href="#">Team Olympus</a></li>
+                <li><a href="#">Team XMen</a></li>
+                <li><a href="#">Team TMNT</a></li>
             </ul>
         </div>
     </div>

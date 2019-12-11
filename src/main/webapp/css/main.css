@@ -2,6 +2,11 @@
   height: 200px;
   background: #aaa;
 }
+.fakeimg1 {
+  height: 100px;
+  background: #aaa;
+  max-width:10%;
+}
 .form-group {
   height: 200px;
   width: 200px;

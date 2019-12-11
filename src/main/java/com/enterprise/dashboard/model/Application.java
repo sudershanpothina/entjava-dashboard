@@ -3,9 +3,7 @@ package com.enterprise.dashboard.model;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
-import java.util.HashSet;
 import java.util.Objects;
-import java.util.Set;
 
 /**
  * The type Application.
@@ -25,8 +23,13 @@ public class Application {
     @Column(name = "DESCRIPTION")
     private String description;
 
-    @OneToMany(mappedBy = "application", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
-    private Set<ErrorData> errorDataSet = new HashSet<>();
+    @Column(name = "TEAM_ID")
+    private String teamId;
+
+//    @ManyToOne
+//    private Team team;
+//    @OneToMany(mappedBy = "application", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
+//    private Set<ErrorData> errorDataSet = new HashSet<>();
 
     /**
      * Instantiates a new Application.
@@ -40,9 +43,10 @@ public class Application {
      * @param name        the name
      * @param description the description
      */
-    public Application(String name, String description) {
+    public Application(String name, String description, String teamId) {
         this.name = name;
         this.description = description;
+        this.teamId = teamId;
     }
 
     /**
@@ -99,31 +103,40 @@ public class Application {
         this.description = description;
     }
 
+//    /**
+//     * Gets team.
+//     *
+//     * @return the team
+//     */
+//    public Team getTeam() {
+//        return team;
+//    }
+//
+//    /**
+//     * Sets team.
+//     *
+//     * @param team the team
+//     */
+//    public void setTeam(Team team) {
+//        this.team = team;
+//    }
+
     /**
-     * Gets error data set.
+     * Gets team id.
      *
-     * @return the error data set
+     * @return the team id
      */
-    public Set<ErrorData> getErrorDataSet() {
-        return errorDataSet;
+    public String getTeamId() {
+        return teamId;
     }
 
     /**
-     * Sets error data set.
+     * Sets team id.
      *
-     * @param errorDataSet the error data set
+     * @param teamId the team id
      */
-    public void setErrorDataSet(Set<ErrorData> errorDataSet) {
-        this.errorDataSet = errorDataSet;
-    }
-
-    /**
-     * Add error data.
-     *
-     * @param errorData the error data
-     */
-    public void addErrorData(ErrorData errorData) {
-        this.errorDataSet.add(errorData);
+    public void setTeamId(String teamId) {
+        this.teamId = teamId;
     }
 
     @Override
@@ -140,5 +153,13 @@ public class Application {
     @Override
     public int hashCode() {
         return Objects.hash(getId(), getName(), getDescription());
+    }
+
+    @Override
+    public String toString() {
+        return "Application{" +
+                "name='" + name + '\'' +
+                ", description='" + description + '\'' +
+                '}';
     }
 }

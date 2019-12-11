@@ -56,6 +56,16 @@ public class GenericDao<T> {
         transaction.commit();
         session.close();
     }
+    public List<T> getByProperty(String name, String value) {
+        Session session = getSession();
+        CriteriaBuilder builder = session.getCriteriaBuilder();
+        CriteriaQuery<T> query = builder.createQuery( type );
+        Root<T> root = query.from( type );
+        query.select(root).where(builder.equal(root.get(name), value));
+        List<T> entities = session.createQuery( query ).getResultList();
+        session.close();
+        return entities;
+    }
     private Session getSession() {
         return SessionFactoryProvider.getSessionFactory().openSession();
     }
