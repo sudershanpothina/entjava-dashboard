@@ -3,7 +3,9 @@ package com.enterprise.dashboard.model;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
+import java.util.HashSet;
 import java.util.Objects;
+import java.util.Set;
 
 /**
  * The type Application.
@@ -26,10 +28,8 @@ public class Application {
     @Column(name = "TEAM_ID")
     private String teamId;
 
-//    @ManyToOne
-//    private Team team;
-//    @OneToMany(mappedBy = "application", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
-//    private Set<ErrorData> errorDataSet = new HashSet<>();
+    @OneToMany(mappedBy = "application", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
+    private Set<ErrorData> errorDataSet = new HashSet<>();
 
     /**
      * Instantiates a new Application.
@@ -42,6 +42,7 @@ public class Application {
      *
      * @param name        the name
      * @param description the description
+     * @param teamId      the team id
      */
     public Application(String name, String description, String teamId) {
         this.name = name;
@@ -103,23 +104,6 @@ public class Application {
         this.description = description;
     }
 
-//    /**
-//     * Gets team.
-//     *
-//     * @return the team
-//     */
-//    public Team getTeam() {
-//        return team;
-//    }
-//
-//    /**
-//     * Sets team.
-//     *
-//     * @param team the team
-//     */
-//    public void setTeam(Team team) {
-//        this.team = team;
-//    }
 
     /**
      * Gets team id.
@@ -137,6 +121,24 @@ public class Application {
      */
     public void setTeamId(String teamId) {
         this.teamId = teamId;
+    }
+
+    /**
+     * Gets error data set.
+     *
+     * @return the error data set
+     */
+    public Set<ErrorData> getErrorDataSet() {
+        return errorDataSet;
+    }
+
+    /**
+     * Sets error data set.
+     *
+     * @param errorDataSet the error data set
+     */
+    public void setErrorDataSet(Set<ErrorData> errorDataSet) {
+        this.errorDataSet = errorDataSet;
     }
 
     @Override

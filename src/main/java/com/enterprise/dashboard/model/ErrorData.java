@@ -3,6 +3,7 @@ package com.enterprise.dashboard.model;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
+import java.sql.Date;
 import java.util.Objects;
 
 /**
@@ -22,6 +23,9 @@ public class ErrorData {
 
     @Column(name = "DESCRIPTION")
     private String description;
+
+    @Column(name = "DTTM")
+    private Date dttm;
 
     @ManyToOne
     private Application application;
@@ -115,6 +119,24 @@ public class ErrorData {
      */
     public void setApplication(Application application) {
         this.application = application;
+    }
+
+    /**
+     * Gets dttm.
+     *
+     * @return the dttm
+     */
+    public Date getDttm() {
+        return dttm;
+    }
+
+    /**
+     * Sets dttm.
+     *
+     * @param dttm the dttm
+     */
+    public void setDttm(Date dttm) {
+        this.dttm = dttm;
     }
 
     @Override

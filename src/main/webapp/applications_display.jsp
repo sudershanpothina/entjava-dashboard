@@ -37,6 +37,7 @@
         <tr>
             <td>${application.name}</td>
             <td>${application.description}</td>
+            <td><a href="errors?application_id=<c:out value='${application.id}' />">Errors</a></td>
             <td><a href="applications?application_id=<c:out value='${application.id}&action=edit' />">Edit</a></td>
             <td><a href="applications?application_id=<c:out value='${application.id}&action=delete' />">Delete</a></td>
         </tr>

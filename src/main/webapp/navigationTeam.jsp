@@ -14,7 +14,7 @@
             <ul class="nav navbar-nav">
                 <li><a href="teamPage">Home</a></li>
                 <li><a href="applications">Applications</a></li>
-                <li><a href="#">Errors</a></li>
+                <li><a href="errors">Errors</a></li>
                 <c:if test="${isAdmin != null}">
                     <li><a href="teamPage">Add Member</a> </li>
                 </c:if>

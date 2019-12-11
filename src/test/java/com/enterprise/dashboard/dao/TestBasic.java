@@ -15,6 +15,7 @@ public class TestBasic {
     GenericDao userDao;
     GenericDao teamDao;
     GenericDao applicationDao;
+    GenericDao errorDao;
 
     @BeforeEach
     public void setup() {
@@ -24,14 +25,15 @@ public class TestBasic {
         userDao = new GenericDao(User.class);
         teamDao = new GenericDao(Team.class);
         applicationDao = new GenericDao(Application.class);
+        errorDao = new GenericDao(ErrorData.class);
     }
     @Test
     public void getAllSuccess() {
-        System.out.println(userDao.getAll());
-        System.out.println(teamDao.getAll());
+        System.out.println(((Application) applicationDao.getById(1)).getErrorDataSet());
+    }
+
+    @Test
+    public void getTeamApplication() {
         System.out.println(applicationDao.getByProperty("teamId", "1"));
-        Application application = new Application("Application3", "This is the third application", "1");
-        applicationDao.insert(application);
-        applicationDao.delete(application);
     }
 }
