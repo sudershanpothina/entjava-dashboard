@@ -42,6 +42,23 @@ public class User {
     }
 
     /**
+     * Instantiates a new User.
+     *
+     * @param firstName the first name
+     * @param lastName  the last name
+     * @param userName  the user name
+     * @param dob       the dob
+     * @param teamId    the team id
+     */
+    public User(String firstName, String lastName, String userName, Date dob, String teamId) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.userName = userName;
+        this.dob = dob;
+        this.teamId = teamId;
+    }
+
+    /**
      * Gets id.
      *
      * @return the id

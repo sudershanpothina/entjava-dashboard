@@ -24,7 +24,7 @@ public class Applications extends HttpServlet {
     private GenericDao applicationDao;
 
     public void init() {
-        userDao  = new GenericDao(User.class);;
+        userDao  = new GenericDao(User.class);
         applicationDao = new GenericDao(Application.class);
     }
     @Override

@@ -16,11 +16,13 @@
             <div class="col-sm-8">
                 <h5>Name: ${user.firstName} ${user.lastName}</h5>
                 <p>Date of Birth: ${user.dob}</p>
+                <c:if test="${user.roles != null}">
                 <p>Roles: </p>
                     <c:forEach var="role" items="${user.roles}">
                         <p> -  ${role}</p>
                     </c:forEach>
                     <br>
+                </c:if>
             </div>
         </div>
             </c:forEach>

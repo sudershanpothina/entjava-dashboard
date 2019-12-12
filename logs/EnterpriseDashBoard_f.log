@@ -1,8 +1,7 @@
-[INFO ] 2019-12-10 20:13:07.359 [http-nio-8080-exec-4] TeamMembers - ------tstark
-[INFO ] 2019-12-10 20:13:07.368 [http-nio-8080-exec-4] TeamMembers - ------GenericPrincipal[tstark(team1,team1admin,)]
-[INFO ] 2019-12-10 20:13:07.369 [http-nio-8080-exec-4] TeamMembers - ------GenericPrincipal[tstark(team1,team1admin,)]
-[INFO ] 2019-12-10 20:13:12.439 [http-nio-8080-exec-4] TeamMembers - -----true
-[INFO ] 2019-12-10 20:17:23.285 [http-nio-8080-exec-2] TeamMembers - ------tstark
-[INFO ] 2019-12-10 20:17:23.299 [http-nio-8080-exec-2] TeamMembers - ------GenericPrincipal[tstark(team1,team1admin,)]
-[INFO ] 2019-12-10 20:17:23.300 [http-nio-8080-exec-2] TeamMembers - ------GenericPrincipal[tstark(team1,team1admin,)]
-[INFO ] 2019-12-10 20:17:28.427 [http-nio-8080-exec-2] TeamMembers - -----true
+[INFO ] 2019-12-11 19:39:03.870 [http-nio-8080-exec-2] TeamMembers - ------tstark
+[INFO ] 2019-12-11 19:39:03.882 [http-nio-8080-exec-2] TeamMembers - ------GenericPrincipal[tstark(team1,team1admin,)]
+[INFO ] 2019-12-11 19:39:03.882 [http-nio-8080-exec-2] TeamMembers - ------GenericPrincipal[tstark(team1,team1admin,)]
+[INFO ] 2019-12-11 19:39:09.443 [http-nio-8080-exec-2] TeamMembers - -----true
+[INFO ] 2019-12-11 19:39:28.259 [http-nio-8080-exec-7] Users - Wed Mar 11 00:00:00 CST 1964
+[INFO ] 2019-12-11 19:39:28.275 [http-nio-8080-exec-7] Users - updating user
+[INFO ] 2019-12-11 19:39:48.652 [http-nio-8080-exec-10] Users - Thu Dec 12 00:00:00 CST 2019

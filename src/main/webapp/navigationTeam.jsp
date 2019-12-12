@@ -16,7 +16,7 @@
                 <li><a href="applications">Applications</a></li>
                 <li><a href="errors">Errors</a></li>
                 <c:if test="${isAdmin != null}">
-                    <li><a href="teamPage">Add Member</a> </li>
+                    <li><a href="users">Add Member</a> </li>
                 </c:if>
                 <li><a href="logout.jsp">Logout</a></li>
             </ul>
