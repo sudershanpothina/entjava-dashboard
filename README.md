@@ -5,7 +5,7 @@
 - [x] add link to call rest call
 - [x] add records to database
 - [ ] unit tests
-- [ ] deploy to gke
+- [x] deploy to gke
 - [ ] deploy to aws
 - [ ] update design documents 
 - [ ] record 

@@ -34,13 +34,16 @@
         </thead>
         <tbody>
         <c:forEach var="application" items="${applications}">
-        <tr>
+        <c>
             <td>${application.name}</td>
             <td>${application.description}</td>
             <td><a href="applications?application_id=<c:out value='${application.id}&action=error'/>">Use Application</a></td>
             <td><a href="errors?application_id=<c:out value='${application.id}' />">Errors</a></td>
-            <td><a href="applications?application_id=<c:out value='${application.id}&action=edit' />">Edit</a></td>
-            <td><a href="applications?application_id=<c:out value='${application.id}&action=delete' />">Delete</a></td>
+            <c:if test="${isAdmin != null}">
+                <td><a href="applications?application_id=<c:out value='${application.id}&action=edit' />">Edit</a></td>
+                <td><a href="applications?application_id=<c:out value='${application.id}&action=delete' />">Delete</a></td>
+            </c:if>
+        </tr>
         </tr>
         </c:forEach>
         </tbody>
