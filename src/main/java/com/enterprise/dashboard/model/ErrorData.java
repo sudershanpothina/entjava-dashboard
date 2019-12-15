@@ -140,6 +140,15 @@ public class ErrorData {
     }
 
     @Override
+    public String toString() {
+        return "ErrorData{" +
+                "message='" + message + '\'' +
+                ", description='" + description + '\'' +
+                ", dttm=" + dttm +
+                '}';
+    }
+
+    @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (!(o instanceof ErrorData)) return false;

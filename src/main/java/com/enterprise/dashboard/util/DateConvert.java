@@ -9,7 +9,6 @@ import java.text.SimpleDateFormat;
  * The type Date convert.
  */
 public class DateConvert {
-
     /**
      * Gets sql date.
      *
