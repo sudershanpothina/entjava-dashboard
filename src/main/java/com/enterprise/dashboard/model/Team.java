@@ -23,8 +23,6 @@ public class Team {
     @Column(name = "DESCRIPTION")
     private String description;
 
-//    @OneToMany(mappedBy = "team", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
-//    private Set<Application> applications;
 
     /**
      * Gets id.
@@ -79,24 +77,6 @@ public class Team {
     public void setDescription(String description) {
         this.description = description;
     }
-
-//    /**
-//     * Gets applications.
-//     *
-//     * @return the applications
-//     */
-//    public Set<Application> getApplications() {
-//        return applications;
-//    }
-//
-//    /**
-//     * Sets applications.
-//     *
-//     * @param applications the applications
-//     */
-//    public void setApplications(Set<Application> applications) {
-//        this.applications = applications;
-//    }
 
     @Override
     public String toString() {

@@ -1,6 +1,5 @@
 package com.enterprise.dashboard.dao;
 
-import com.enterprise.dashboard.Error;
 import com.enterprise.dashboard.model.Application;
 import com.enterprise.dashboard.model.ErrorData;
 import com.enterprise.dashboard.model.Team;
@@ -12,21 +11,19 @@ import com.fasterxml.jackson.core.Version;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.module.SimpleModule;
-import org.junit.experimental.theories.DataPoint;
-import org.junit.experimental.theories.Theories;
-import org.junit.experimental.theories.Theory;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.junit.runner.RunWith;
 
 import javax.ws.rs.client.Client;
 import javax.ws.rs.client.ClientBuilder;
 import javax.ws.rs.client.WebTarget;
 import javax.ws.rs.core.MediaType;
 
-import java.net.ConnectException;
-import java.util.List;
+import java.util.Set;
 
+import static com.enterprise.dashboard.util.ErrorService.getErrorData;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 
@@ -48,7 +45,7 @@ public class TestBasic {
     }
     @Test
     public void getAllSuccess() {
-        System.out.println(((Application) applicationDao.getById(1)).getErrorDataSet());
+//        System.out.println(((Application) applicationDao.getById(3)).getErrorDataSet());
     }
 
     @Test
@@ -60,7 +57,7 @@ public class TestBasic {
     public void testRestCall() {
         Client client = ClientBuilder.newClient();
         WebTarget target =
-                client.target("http://localhost:8080");
+                client.target("http://localhost:8081");
         String response = null;
         try {
             response = target.request(MediaType.APPLICATION_JSON).get(String.class);
@@ -68,18 +65,33 @@ public class TestBasic {
             response = "[]";
         }
         ObjectMapper mapper = new ObjectMapper();
+        Application application = new Application("Application Test", "This is a test Application", "1");
+
+
         SimpleModule module =
                 new SimpleModule("CustomErrorDeserializer",
                         new Version(1, 0, 0, null, null, null));
         module.addDeserializer(ErrorData.class, new CustomErrorDeserializer());
         mapper.registerModule(module);
         try {
-            List<ErrorData> errorData = mapper.readValue(response, new TypeReference<>() {});
+            Set<ErrorData> errorData = mapper.readValue(response, new TypeReference<>() {});
+            application.setErrorDataSet(errorData);
             for(ErrorData error: errorData) {
                 System.out.println(error);
             }
         } catch (JsonProcessingException e) {
             e.printStackTrace();
+        }
+        applicationDao.insert(application);
+        applicationDao.delete(application);
+    }
+
+    @Test
+    public void getErrorServiceData() {
+        Logger logger = LogManager.getLogger(this.getClass());
+        Set<ErrorData> errorDataSet = getErrorData(logger);
+        for(ErrorData errorData : errorDataSet) {
+            System.out.println(errorData);
         }
     }
 

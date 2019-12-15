@@ -1,11 +1,7 @@
 package com.enterprise.dashboard.controllers;
 
 import com.enterprise.dashboard.dao.GenericDao;
-import com.enterprise.dashboard.model.Application;
-import com.enterprise.dashboard.model.Team;
 import com.enterprise.dashboard.model.User;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -24,9 +20,9 @@ import static com.enterprise.dashboard.impl.TeamInfo.getTeamId;
         urlPatterns = {"/teamPage"}
 )
 public class TeamMembers extends HttpServlet {
-    private final Logger logger = LogManager.getLogger(this.getClass());
     private GenericDao userDao;
 
+    @Override
     public void init() {
         userDao  = new GenericDao(User.class);
     }

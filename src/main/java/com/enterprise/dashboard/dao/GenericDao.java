@@ -12,7 +12,6 @@ import java.util.List;
 
 public class GenericDao<T> {
     private Class<T> type;
-    private final Logger logger = LogManager.getLogger(this.getClass());
 
     public GenericDao(Class<T> type) {
         this.type = type;
@@ -32,13 +31,7 @@ public class GenericDao<T> {
     }
     public List<T> getAll() {
 
-        Session session = getSession();
-        CriteriaBuilder builder = session.getCriteriaBuilder();
-        CriteriaQuery<T> query = builder.createQuery( type );
-        Root<T> root = query.from( type );
-        List<T> entities = session.createQuery( query ).getResultList();
-        session.close();
-        return entities;
+        return getEntities("", "");
     }
     public int insert(T entity) {
         int id = 0;
@@ -57,15 +50,22 @@ public class GenericDao<T> {
         session.close();
     }
     public List<T> getByProperty(String name, String value) {
+        return getEntities(name, value);
+    }
+
+    private List<T> getEntities(String name, String value) {
         Session session = getSession();
         CriteriaBuilder builder = session.getCriteriaBuilder();
         CriteriaQuery<T> query = builder.createQuery( type );
         Root<T> root = query.from( type );
-        query.select(root).where(builder.equal(root.get(name), value));
+        if(name.length()!=0 && value.length()!=0) {
+            query.select(root).where(builder.equal(root.get(name), value));
+        }
         List<T> entities = session.createQuery( query ).getResultList();
         session.close();
         return entities;
     }
+
     private Session getSession() {
         return SessionFactoryProvider.getSessionFactory().openSession();
     }

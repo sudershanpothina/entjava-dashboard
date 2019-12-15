@@ -24,10 +24,10 @@ import static com.enterprise.dashboard.impl.TeamInfo.getTeamId;
         urlPatterns = {"/errors"}
 )
 public class Errors extends HttpServlet {
-    private final Logger logger = LogManager.getLogger(this.getClass());
     private GenericDao applicationDao;
     private GenericDao userDao;
 
+    @Override
     public void init() {
         applicationDao  = new GenericDao(Application.class);
         userDao  = new GenericDao(User.class);;

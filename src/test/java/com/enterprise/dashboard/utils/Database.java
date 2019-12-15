@@ -123,7 +123,7 @@ public class Database {
                     break;
                 }
                 stmt.executeUpdate(sql);
-
+                stmt.close();
             }
 
         } catch (SQLException se) {

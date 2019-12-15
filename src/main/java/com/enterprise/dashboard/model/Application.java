@@ -149,7 +149,6 @@ public class Application {
         return Objects.equals(getId(), that.getId()) &&
                 Objects.equals(getName(), that.getName()) &&
                 Objects.equals(getDescription(), that.getDescription());
-//                Objects.equals(getErrorDataSet(), that.getErrorDataSet());
     }
 
     @Override
