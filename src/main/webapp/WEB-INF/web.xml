@@ -22,37 +22,17 @@
     </web-resource-collection>
 <!--    constraints the page to load only if the role matches the following-->
     <auth-constraint>
-      <role-name>team1</role-name>
+      <role-name>team-admin</role-name>
+      <role-name>team-member</role-name>
     </auth-constraint>
   </security-constraint>
 
-  <security-constraint>
-    <web-resource-collection>
-      <web-resource-name>any</web-resource-name>
-      <url-pattern>/team2page</url-pattern>
-    </web-resource-collection>
-    <!--    constraints the page to load only if the role matches the following-->
-    <auth-constraint>
-      <role-name>admin</role-name>
-    </auth-constraint>
-  </security-constraint>
-
-  <security-constraint>
-    <web-resource-collection>
-      <web-resource-name>any</web-resource-name>
-      <url-pattern>/team2page</url-pattern>
-    </web-resource-collection>
-    <!--    constraints the page to load only if the role matches the following-->
-    <auth-constraint>
-      <role-name>admin</role-name>
-    </auth-constraint>
-  </security-constraint>
 
 <!--  define all the possible roles-->
   <security-role>
-    <role-name>admin</role-name>
+    <role-name>team-admin</role-name>
   </security-role>
   <security-role>
-    <role-name>team1</role-name>
+    <role-name>team-member</role-name>
   </security-role>
 </web-app>

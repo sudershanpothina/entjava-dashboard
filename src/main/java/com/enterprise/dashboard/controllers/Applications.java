@@ -15,6 +15,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
+import static com.enterprise.dashboard.impl.TeamInfo.getTeamId;
+
 @WebServlet(
         urlPatterns = {"/applications"}
 )
@@ -30,10 +32,7 @@ public class Applications extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-        String teamId = ((User) userDao.getByProperty("userName", req.getUserPrincipal().getName()).get(0)).getTeamId();
-        if(req.getUserPrincipal().toString().contains("admin")) {
-            req.setAttribute("isAdmin", req.getUserPrincipal().toString().contains("admin"));
-        }
+        String teamId = getTeamId(req, userDao);
 
         if(req.getAttribute("insert") != null) {
             Application application = new Application(req.getParameter("name"),

@@ -19,7 +19,10 @@ public class Role {
     @Column(name = "ROLE_NAME")
     private String name;
 
-    @ManyToOne
+    @Column(name = "USER_NAME")
+    private String userName;
+
+    @OneToOne
     private User user;
 
     /**
@@ -74,6 +77,24 @@ public class Role {
      */
     public void setUser(User user) {
         this.user = user;
+    }
+
+    /**
+     * Gets user name.
+     *
+     * @return the user name
+     */
+    public String getUserName() {
+        return userName;
+    }
+
+    /**
+     * Sets user name.
+     *
+     * @param userName the role name
+     */
+    public void setUserName(String userName) {
+        this.userName = userName;
     }
 
     @Override

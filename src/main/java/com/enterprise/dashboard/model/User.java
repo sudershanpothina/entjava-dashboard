@@ -25,6 +25,8 @@ public class User {
     private String lastName;
     @Column(name = "USER_NAME")
     private String userName;
+    @Column(name = "PASSWORD")
+    private String password;
     @Column(name = "TEAM_ID")
     private String teamId;
     @Column(name = "DATE_OF_BIRTH")
@@ -32,8 +34,8 @@ public class User {
     @Column(name = "IMAGE_URL")
     private String imageUrl;
 
-    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
-    private Set<Role> roles = new HashSet<>();
+    @OneToOne(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
+    private Role role;
 
     /**
      * Instantiates a new User.
@@ -47,15 +49,17 @@ public class User {
      * @param firstName the first name
      * @param lastName  the last name
      * @param userName  the user name
+     * @param password  the password
      * @param dob       the dob
      * @param teamId    the team id
      */
-    public User(String firstName, String lastName, String userName, Date dob, String teamId) {
+    public User(String firstName, String lastName, String userName, String password, Date dob, String teamId) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.userName = userName;
         this.dob = dob;
         this.teamId = teamId;
+        this.password = password;
     }
 
     /**
@@ -185,21 +189,39 @@ public class User {
     }
 
     /**
-     * Gets roles.
+     * Gets role.
      *
-     * @return the roles
+     * @return the role
      */
-    public Set<Role> getRoles() {
-        return roles;
+    public Role getRole() {
+        return role;
     }
 
     /**
-     * Sets roles.
+     * Sets role.
      *
-     * @param roles the roles
+     * @param role the role
      */
-    public void setRoles(Set<Role> roles) {
-        this.roles = roles;
+    public void setRole(Role role) {
+        this.role = role;
+    }
+
+    /**
+     * Gets password.
+     *
+     * @return the password
+     */
+    public String getPassword() {
+        return password;
+    }
+
+    /**
+     * Sets password.
+     *
+     * @param password the password
+     */
+    public void setPassword(String password) {
+        this.password = password;
     }
 
     @Override

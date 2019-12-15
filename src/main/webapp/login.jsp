@@ -14,7 +14,6 @@
             <input type="submit" value="Log In">
         </div>
     </form>
-    <a href="logout.jsp">Click here to log out</a>
     <%@include file="footer.jsp"%>
 </body>
 </html>

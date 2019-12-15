@@ -5,8 +5,12 @@ import com.enterprise.dashboard.model.ErrorData;
 import com.enterprise.dashboard.model.Team;
 import com.enterprise.dashboard.model.User;
 import com.enterprise.dashboard.utils.Database;
+import org.junit.experimental.theories.DataPoint;
+import org.junit.experimental.theories.Theories;
+import org.junit.experimental.theories.Theory;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.junit.runner.RunWith;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -36,4 +40,5 @@ public class TestBasic {
     public void getTeamApplication() {
         System.out.println(applicationDao.getByProperty("teamId", "1"));
     }
+
 }
