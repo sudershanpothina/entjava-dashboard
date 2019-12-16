@@ -27,6 +27,7 @@ Individual Members will be able to view all the applications the team would own 
 * [Project Plan](ProjectPlan.md)
 * [Technologies](Technologies.md)
 * [Journal](Journal.md)
+* External project source code - https://github.com/sudershanpothina/ErrorGenerator
 
 # steps to install
 * https://github.com/MadJavaEntF19/home/blob/master/setup/personalLaptopSetup.md
