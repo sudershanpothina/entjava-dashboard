@@ -13,6 +13,10 @@
   * Log4j2
 * Cloud hosting
   * aws
+  * gke
 * Unit testing
   * JUnit5
+* Containars
+  * docker
+  * kubernetes
 * IDE: Intellj IDEA

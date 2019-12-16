@@ -1,0 +1,3 @@
+INSERT INTO dashboard.TEAMS (ID, NAME, DESCRIPTION, IMAGE_URL) VALUES (1, 'Avengers', 'Team assigned to watch and protect east America', null);
+INSERT INTO dashboard.TEAMS (ID, NAME, DESCRIPTION, IMAGE_URL) VALUES (2, 'XMen', 'Team assigned to watch and protect all mutants', null);
+INSERT INTO dashboard.TEAMS (ID, NAME, DESCRIPTION, IMAGE_URL) VALUES (3, 'TMNT', 'Team assigned to watch and protect NewYork sewers', null);

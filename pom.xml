@@ -133,7 +133,6 @@
       <version>2.10.0</version>
     </dependency>
   </dependencies>
-
   <build>
     <finalName>entjava-dashboard</finalName>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
@@ -157,4 +156,5 @@
       </plugins>
     </pluginManagement>
   </build>
+
 </project>
