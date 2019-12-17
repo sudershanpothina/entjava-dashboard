@@ -1,14 +1,5 @@
 # Enterprise Java Individual Project
 
-### TODO
-- [x] add rest call for errors
-- [x] add link to call rest call
-- [x] add records to database
-- [ ] unit tests
-- [x] deploy to gke
-- [x] deploy to aws
-- [x] update design documents 
-- [x] record 
 ---
 
 ## Project Statement
