@@ -6,7 +6,7 @@
 - [x] add records to database
 - [ ] unit tests
 - [x] deploy to gke
-- [ ] deploy to aws
+- [x] deploy to aws
 - [ ] update design documents 
 - [ ] record 
 ---
