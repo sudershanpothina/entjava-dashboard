@@ -8,7 +8,7 @@
 - [x] deploy to gke
 - [x] deploy to aws
 - [ ] update design documents 
-- [ ] record 
+- [x] record 
 ---
 
 ## Project Statement
