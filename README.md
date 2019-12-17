@@ -7,7 +7,7 @@
 - [ ] unit tests
 - [x] deploy to gke
 - [x] deploy to aws
-- [ ] update design documents 
+- [x] update design documents 
 - [x] record 
 ---
 
