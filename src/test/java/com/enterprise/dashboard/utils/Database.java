@@ -107,7 +107,6 @@ public class Database {
      * @param sqlFile the sql file to be read and executed line by line
      */
     public void runSQL(String sqlFile) {
-
         Statement stmt = null;
         ClassLoader classloader = Thread.currentThread().getContextClassLoader();
         InputStream inputStream = classloader.getResourceAsStream(sqlFile);
@@ -123,7 +122,6 @@ public class Database {
                     break;
                 }
                 stmt.executeUpdate(sql);
-                stmt.close();
             }
 
         } catch (SQLException se) {
