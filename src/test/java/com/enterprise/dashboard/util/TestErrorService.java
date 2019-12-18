@@ -1,8 +1,6 @@
 package com.enterprise.dashboard.util;
 
-import com.enterprise.dashboard.model.Application;
 import com.enterprise.dashboard.model.ErrorData;
-import com.enterprise.dashboard.util.ErrorService;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.core.Version;
 import com.fasterxml.jackson.core.type.TypeReference;
@@ -18,17 +16,30 @@ import javax.ws.rs.client.ClientBuilder;
 import javax.ws.rs.client.WebTarget;
 import javax.ws.rs.core.MediaType;
 import java.util.Set;
+
 import static org.junit.Assert.assertTrue;
 
+/**
+ * The type Test error service.
+ */
 public class TestErrorService {
     private final Logger logger = LogManager.getLogger(this.getClass());
+    /**
+     * The Error service.
+     */
     ErrorService errorService;
 
+    /**
+     * Sets .
+     */
     @BeforeEach
     public void setup() {
         errorService = new ErrorService();
     }
 
+    /**
+     * Checkif response is error data.
+     */
     @Test
     public void checkifResponseIsErrorData() {
         Set<ErrorData> errors = errorService.getErrorData(logger);
@@ -37,6 +48,11 @@ public class TestErrorService {
         }
     }
 
+    /**
+     * Test rest call.
+     *
+     * @throws JsonProcessingException the json processing exception
+     */
     @Test
     public void testRestCall() throws JsonProcessingException {
         Client client = ClientBuilder.newClient();

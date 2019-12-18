@@ -14,8 +14,17 @@ import javax.ws.rs.client.WebTarget;
 import javax.ws.rs.core.MediaType;
 import java.util.Set;
 
+/**
+ * The type Error service.
+ */
 public class ErrorService {
 
+    /**
+     * Gets error data.
+     *
+     * @param logger the logger
+     * @return the error data
+     */
     public Set<ErrorData> getErrorData(Logger logger) {
 
         Set<ErrorData> errorData = null;

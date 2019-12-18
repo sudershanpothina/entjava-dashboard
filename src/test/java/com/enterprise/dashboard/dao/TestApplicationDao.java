@@ -11,10 +11,22 @@ import java.util.Set;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+/**
+ * The type Test application dao.
+ */
 public class TestApplicationDao {
+    /**
+     * The Error data dao.
+     */
     GenericDao errorDataDao;
+    /**
+     * The Application dao.
+     */
     GenericDao applicationDao;
 
+    /**
+     * Sets .
+     */
     @BeforeEach
     public void setup() {
         Database database = Database.getInstance();
@@ -22,21 +34,37 @@ public class TestApplicationDao {
         errorDataDao = new GenericDao(ErrorData.class);
         applicationDao = new GenericDao(Application.class);
     }
+
+    /**
+     * Gets all success.
+     */
     @Test
     public void getAllSuccess() {
         assertEquals(applicationDao.getAll().size(), 1);
     }
+
+    /**
+     * Gets by id success.
+     */
     @Test
     public void getByIdSuccess() {
         Application application = (Application) applicationDao.getById(1);
         assertEquals((int) application.getId(), 1);
     }
+
+    /**
+     * Delete success.
+     */
     @Test
     public void deleteSuccess() {
         Application application = (Application) applicationDao.getById(1);
         applicationDao.delete(application);
         assertEquals(applicationDao.getAll().size(), 0);
     }
+
+    /**
+     * Update application success.
+     */
     @Test
     public void updateApplicationSuccess() {
         Application application = (Application) applicationDao.getById(1);
@@ -44,6 +72,10 @@ public class TestApplicationDao {
         applicationDao.saveOrUpdate(application);
         assertEquals(applicationDao.getById(1), application);
     }
+
+    /**
+     * Insert success.
+     */
     @Test
     public void insertSuccess() {
         Application application = new Application();
@@ -52,6 +84,10 @@ public class TestApplicationDao {
         int id = applicationDao.insert(application);
         assertEquals(applicationDao.getAll().size(), 2);
     }
+
+    /**
+     * Insert with error record success.
+     */
     @Test
     public void insertWithErrorRecordSuccess() {
         Application application = new Application();

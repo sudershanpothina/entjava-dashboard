@@ -15,10 +15,12 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.sql.Date;
 
 import static com.enterprise.dashboard.util.DateConvert.getSqlDate;
 
+/**
+ * The type Users.
+ */
 @WebServlet(
         urlPatterns = {"/users"}
 )

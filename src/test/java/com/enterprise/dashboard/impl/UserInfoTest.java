@@ -1,8 +1,6 @@
 package com.enterprise.dashboard.impl;
 
 import com.enterprise.dashboard.dao.GenericDao;
-import com.enterprise.dashboard.model.Application;
-import com.enterprise.dashboard.model.ErrorData;
 import com.enterprise.dashboard.model.Role;
 import com.enterprise.dashboard.model.User;
 import com.enterprise.dashboard.utils.Database;
@@ -14,8 +12,11 @@ import org.junit.jupiter.api.Test;
 import java.sql.Date;
 
 import static com.enterprise.dashboard.util.DateConvert.getSqlDate;
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
+/**
+ * The type User info test.
+ */
 class UserInfoTest {
     private GenericDao userDao;
     private GenericDao roleDao;
@@ -23,6 +24,9 @@ class UserInfoTest {
     private final Logger logger = LogManager.getLogger(this.getClass());
     private Date date;
 
+    /**
+     * Sets .
+     */
     @BeforeEach
     public void setup() {
         Database database = Database.getInstance();
@@ -33,12 +37,18 @@ class UserInfoTest {
         date = getSqlDate("2019-05-01", logger);
     }
 
+    /**
+     * Update user.
+     */
     @Test
     void updateUser() {
         userInfo.updateUser("1","Tom","Ramo", "tramo", "123", date, "http://url", "test-role", userDao, roleDao);
         assertEquals(((User)userDao.getById(1)).getFirstName(), "Tom");
     }
 
+    /**
+     * Create user.
+     */
     @Test
     void createUser() {
         userInfo.createUser("Tom", "Ramo", "tramo",

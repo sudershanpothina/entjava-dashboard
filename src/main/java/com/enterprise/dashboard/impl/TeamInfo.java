@@ -7,7 +7,17 @@ import com.enterprise.dashboard.model.User;
 import javax.servlet.http.HttpServletRequest;
 
 
+/**
+ * The type Team info.
+ */
 public class TeamInfo {
+    /**
+     * Gets team id.
+     *
+     * @param req     the req
+     * @param userDao the user dao
+     * @return the team id
+     */
     public String getTeamId(HttpServletRequest req, GenericDao userDao) {
         String teamId = ((User) userDao.getByProperty("userName", req.getUserPrincipal().getName()).get(0)).getTeamId();
         if(req.getUserPrincipal().toString().contains("admin")) {

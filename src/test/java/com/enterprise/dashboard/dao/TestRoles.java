@@ -9,12 +9,18 @@ import org.junit.jupiter.api.Test;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
+/**
+ * The type Test roles.
+ */
 public class TestRoles {
     private GenericDao roleDao;
     private GenericDao userDao;
     private Role role;
     private User user;
 
+    /**
+     * Sets .
+     */
     @BeforeEach
     public void setup() {
         Database database = Database.getInstance();
@@ -29,17 +35,26 @@ public class TestRoles {
         role.setUser(user);
     }
 
+    /**
+     * Gets all roles.
+     */
     @Test
     public void getAllRoles() {
         assertEquals(4, roleDao.getAll().size());
     }
 
+    /**
+     * Insert role.
+     */
     @Test
     public void insertRole() {
         int id = roleDao.insert(role);
         assertTrue(id != 0);
     }
 
+    /**
+     * Update role.
+     */
     @Test
     public void updateRole() {
         int id = roleDao.insert(role);
@@ -50,6 +65,9 @@ public class TestRoles {
 
     }
 
+    /**
+     * Delete role.
+     */
     @Test void deleteRole() {
         roleDao.delete(roleDao.getById(1));
         assertTrue(roleDao.getAll().size() != 4);

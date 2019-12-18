@@ -15,6 +15,9 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 
+/**
+ * The type Test user dao.
+ */
 public class TestUserDao {
     private final Logger logger = LogManager.getLogger(this.getClass());
     private GenericDao userDao;
@@ -22,6 +25,9 @@ public class TestUserDao {
     private User user;
     private Role role;
 
+    /**
+     * Sets .
+     */
     @BeforeEach
     public void setup() {
         Database database = Database.getInstance();
@@ -42,14 +48,25 @@ public class TestUserDao {
         role.setUser(user);
     }
 
+    /**
+     * Gets all users.
+     */
     @Test
     public void getAllUsers() {
         assertEquals(4, userDao.getAll().size());
     }
+
+    /**
+     * Insert user.
+     */
     @Test
     public void insertUser() {
         userDao.insert(user);
     }
+
+    /**
+     * Insert user with role.
+     */
     @Test void insertUserWithRole() {
         int id = userDao.insert(user);
         roleDao.insert(role);
@@ -58,12 +75,20 @@ public class TestUserDao {
         assertTrue(resultUser.getRole() != null);
         assertEquals(resultUser.getRole().getName(), role.getName() );
     }
+
+    /**
+     * Delete user.
+     */
     @Test void deleteUser() {
         userDao.insert(user);
         assertEquals(userDao.getAll().size(), 5);
         userDao.delete(user);
         assertEquals(userDao.getAll().size(), 4);
     }
+
+    /**
+     * Delete user with role.
+     */
     @Test void deleteUserWithRole() {
         userDao.insert(user);
         roleDao.insert(role);
@@ -75,6 +100,9 @@ public class TestUserDao {
         assertEquals(roleDao.getAll().size(), 4);
     }
 
+    /**
+     * Update user.
+     */
     @Test void updateUser() {
         user.setUserName("test1234");
         userDao.saveOrUpdate(user);

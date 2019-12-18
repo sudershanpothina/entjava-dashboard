@@ -6,7 +6,24 @@ import com.enterprise.dashboard.model.User;
 
 import java.sql.Date;
 
+/**
+ * The type User info.
+ */
 public class UserInfo {
+    /**
+     * Update user.
+     *
+     * @param id        the id
+     * @param firstName the first name
+     * @param lastName  the last name
+     * @param userName  the user name
+     * @param password  the password
+     * @param sqlDate   the sql date
+     * @param imageUrl  the image url
+     * @param roleName  the role name
+     * @param userDao   the user dao
+     * @param roleDao   the role dao
+     */
     public void updateUser(String id , String firstName, String lastName, String userName,
                             String password, Date sqlDate, String imageUrl,
                            String roleName, GenericDao userDao, GenericDao roleDao) {
@@ -32,6 +49,20 @@ public class UserInfo {
         userDao.saveOrUpdate(user);
         roleDao.saveOrUpdate(role);
     }
+
+    /**
+     * Create user.
+     *
+     * @param firstName the first name
+     * @param lastName  the last name
+     * @param userName  the user name
+     * @param password  the password
+     * @param sqlDate   the sql date
+     * @param teamId    the team id
+     * @param roleName  the role name
+     * @param userDao   the user dao
+     * @param roleDao   the role dao
+     */
     public void createUser(String firstName, String lastName, String userName, String password, Date sqlDate,
                            String teamId, String roleName, GenericDao userDao, GenericDao roleDao){
         User user = new User(firstName,

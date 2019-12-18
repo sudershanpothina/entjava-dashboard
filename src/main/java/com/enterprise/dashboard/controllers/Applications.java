@@ -6,7 +6,6 @@ import com.enterprise.dashboard.impl.TeamInfo;
 import com.enterprise.dashboard.model.Application;
 import com.enterprise.dashboard.model.ErrorData;
 import com.enterprise.dashboard.model.User;
-import com.enterprise.dashboard.util.ErrorService;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -17,7 +16,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.util.Set;
 
 @WebServlet(
         urlPatterns = {"/applications"}
