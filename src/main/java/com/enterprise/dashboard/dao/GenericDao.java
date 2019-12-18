@@ -102,6 +102,12 @@ public class GenericDao<T> {
         return getEntities(name, value);
     }
 
+    /**
+     *
+     * @param name the name
+     * @param value the value
+     * @return the by property
+     */
     private List<T> getEntities(String name, String value) {
         Session session = getSession();
         CriteriaBuilder builder = session.getCriteriaBuilder();
