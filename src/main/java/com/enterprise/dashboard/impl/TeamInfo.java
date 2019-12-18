@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 
 
 public class TeamInfo {
-    public static String getTeamId(HttpServletRequest req, GenericDao userDao) {
+    public String getTeamId(HttpServletRequest req, GenericDao userDao) {
         String teamId = ((User) userDao.getByProperty("userName", req.getUserPrincipal().getName()).get(0)).getTeamId();
         if(req.getUserPrincipal().toString().contains("admin")) {
             req.setAttribute("isAdmin", req.getUserPrincipal().toString().contains("admin"));

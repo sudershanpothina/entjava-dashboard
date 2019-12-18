@@ -17,10 +17,10 @@ import static org.junit.Assert.assertTrue;
 
 public class TestUserDao {
     private final Logger logger = LogManager.getLogger(this.getClass());
-    GenericDao userDao;
-    GenericDao roleDao;
-    User user;
-    Role role;
+    private GenericDao userDao;
+    private GenericDao roleDao;
+    private User user;
+    private Role role;
 
     @BeforeEach
     public void setup() {

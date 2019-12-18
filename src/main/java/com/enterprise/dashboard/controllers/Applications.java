@@ -1,9 +1,12 @@
 package com.enterprise.dashboard.controllers;
 
 import com.enterprise.dashboard.dao.GenericDao;
+import com.enterprise.dashboard.impl.ApplicationInfo;
+import com.enterprise.dashboard.impl.TeamInfo;
 import com.enterprise.dashboard.model.Application;
 import com.enterprise.dashboard.model.ErrorData;
 import com.enterprise.dashboard.model.User;
+import com.enterprise.dashboard.util.ErrorService;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -15,9 +18,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.Set;
-
-import static com.enterprise.dashboard.impl.TeamInfo.getTeamId;
-import static com.enterprise.dashboard.util.ErrorService.getErrorData;
 
 @WebServlet(
         urlPatterns = {"/applications"}
@@ -35,24 +35,16 @@ public class Applications extends HttpServlet {
     }
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-
-        String teamId = getTeamId(req, userDao);
+        TeamInfo teamInfo = new TeamInfo();
+        String teamId = teamInfo.getTeamId(req, userDao);
+        ApplicationInfo applicationInfo = new ApplicationInfo();
         final String application_id = req.getParameter("application_id");
         final String insert = (String) req.getAttribute("insert");
         final String action = req.getParameter("action");
 
         if(insert != null) {
-            Application application = new Application(req.getParameter("name"),
-                    req.getParameter("description"), teamId);
-            if(req.getParameter("id") != null) {
-                application = (Application) applicationDao.getById(Integer.parseInt(
-                        req.getParameter("id")));
-                application.setName(req.getParameter("name"));
-                application.setDescription(req.getParameter("description"));
-                logger.info("updating application");
-            }
-            logger.error(application);
-            applicationDao.saveOrUpdate(application);
+            applicationInfo.insertApplication(req.getParameter("id"),req.getParameter("name"),
+                    req.getParameter("description"), teamId, applicationDao, logger);
         }else {
 
             if(action != null && action.equalsIgnoreCase("add") ) {
@@ -63,13 +55,7 @@ public class Applications extends HttpServlet {
                     applicationDao.delete(applicationDao.getById(Integer.parseInt(application_id)));
                 }
                 else if(action != null && action.equalsIgnoreCase("error") ) {
-                    Application application = (Application) applicationDao.getById(Integer.parseInt(application_id));
-                    Set<ErrorData> errorDataSet = application.getErrorDataSet();
-                    errorDataSet.addAll(getErrorData(logger));
-                    for(ErrorData errorData: application.getErrorDataSet()) {
-                        errorData.setApplication(application);
-                        errorDao.saveOrUpdate(errorData);
-                    }
+                    applicationInfo.updateErrors(application_id, applicationDao, errorDao, logger);
                 }
                 else if(action != null && action.equalsIgnoreCase("edit") ) {
                     req.setAttribute("action", "add");

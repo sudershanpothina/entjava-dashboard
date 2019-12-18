@@ -1,6 +1,8 @@
 package com.enterprise.dashboard.controllers;
 
 import com.enterprise.dashboard.dao.GenericDao;
+import com.enterprise.dashboard.impl.TeamInfo;
+import com.enterprise.dashboard.impl.UserInfo;
 import com.enterprise.dashboard.model.Role;
 import com.enterprise.dashboard.model.User;
 import org.apache.logging.log4j.LogManager;
@@ -13,10 +15,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
+import java.sql.Date;
 
-import static com.enterprise.dashboard.impl.TeamInfo.getTeamId;
 import static com.enterprise.dashboard.util.DateConvert.getSqlDate;
 
 @WebServlet(
@@ -34,64 +34,43 @@ public class Users extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        String teamId = getTeamId(req, userDao);
+        TeamInfo teamInfo = new TeamInfo();
+        String teamId = teamInfo.getTeamId(req, userDao);
+        java.sql.Date sqlDate = getSqlDate(req.getParameter("dob"), logger);
+        final String firstName = req.getParameter("firstName");
+        final String id = req.getParameter("id");
+        final String lastName = req.getParameter("lastName");
+        final String userName = req.getParameter("userName");
+        final String password = req.getParameter("password");
+        final String roleName = req.getParameter("role");
+        final String imageUrl = req.getParameter("imageUrl");
+        final String action = req.getParameter("action");
+
+        UserInfo userinfo = new UserInfo();
+
         if (req.getAttribute("insert") != null) {
-//            SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
-            java.sql.Date sqlDate = getSqlDate(req.getParameter("dob"), logger);
-//            try {
-//                java.util.Date utilDate = sdf.parse(req.getParameter("dob"));
-//                sqlDate = new java.sql.Date(utilDate.getTime());
-//            } catch (ParseException e) {
-//                logger.error(e);
-//            }
-            User user = new User(req.getParameter("firstName"),
-                    req.getParameter("lastName"),
-                    req.getParameter("userName"),
-                    req.getParameter("password"),
-                    sqlDate,
-                    teamId);
-            user.setImageUrl("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJJHxTYMlVcuxOjif7Nu6LGy4Amfa8NXYhmS0MfBf0Ilnbm12j&s");
-
-            Role role = new Role();
-            role.setUserName(user.getUserName());
-            role.setName(req.getParameter("role"));
-            role.setUser(user);
-
-            if (req.getParameter("id") != null) {
-                user = (User) userDao.getById(Integer.parseInt(
-                        req.getParameter("id")));
-                user.setFirstName(req.getParameter("firstName"));
-                user.setLastName(req.getParameter("lastName"));
-                user.setUserName(req.getParameter("userName"));
-                user.setPassword(req.getParameter("password"));
-                user.setDob(sqlDate);
-                user.setImageUrl(req.getParameter("imageUrl"));
-
-                if(user.getRole() != null) {
-                    role = user.getRole();
-                } else {
-                    role = new Role();
-                }
-                role.setUser(user);
-                role.setName(req.getParameter("role"));
-                role.setUserName(user.getUserName());
-                role.setUser(user);
-
+            if (id != null) {
+                userinfo.updateUser(id, firstName, lastName, userName,
+                        password, sqlDate, imageUrl, roleName, userDao, roleDao);
                 logger.info("updating user");
+            } else {
+                userinfo.createUser(firstName, lastName, userName, password,
+                        sqlDate, teamId, roleName, userDao, roleDao);
+                logger.info("inserting user");
             }
 
-            userDao.saveOrUpdate(user);
-            roleDao.saveOrUpdate(role);
-        } else if (req.getParameter("action") != null && req.getParameter("action").equalsIgnoreCase("add")) {
-            req.setAttribute("action", "add");
-        }else if(req.getParameter("action") != null && req.getParameter("action").equalsIgnoreCase("delete") ) {
-            userDao.delete(userDao.getById(Integer.parseInt(req.getParameter("user_id"))));
-        }
-        else if(req.getParameter("action") != null && req.getParameter("action").equalsIgnoreCase("edit") ) {
-            req.setAttribute("action", "add");
-            req.setAttribute("user",userDao.getById(Integer.parseInt(req.getParameter("user_id"))));
-            RequestDispatcher dispatcher = req.getRequestDispatcher("/users_display.jsp");
-            dispatcher.forward(req, resp);
+        } else {
+
+            if (action != null && action.equalsIgnoreCase("add")) {
+                req.setAttribute("action", "add");
+            }else if(action != null && action.equalsIgnoreCase("delete") ) {
+                userDao.delete(userDao.getById(Integer.parseInt(req.getParameter("user_id"))));
+            } else if(action != null && action.equalsIgnoreCase("edit") ) {
+                req.setAttribute("action", "add");
+                req.setAttribute("user",userDao.getById(Integer.parseInt(req.getParameter("user_id"))));
+                RequestDispatcher dispatcher = req.getRequestDispatcher("/users_display.jsp");
+                dispatcher.forward(req, resp);
+            }
         }
 
         req.setAttribute("users", userDao.getByProperty("teamId", teamId));
@@ -104,4 +83,6 @@ public class Users extends HttpServlet {
         req.setAttribute("insert", "insert");
         doGet(req, resp);
     }
+
+
 }
